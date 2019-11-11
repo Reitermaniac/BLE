@@ -1,0 +1,107 @@
+  \documentclass[twoside=true, %  doppelseitiger Druck
+    DIV=15
+    ,% 11 DIV Faktor für Satzspiegelberechnung - muss bei anderen Schriftgrößen als 11pt angepasst werden , sie Doku zu KOMA Script
+    BCOR=15mm, % Bindekorrektur
+    headinclude=true,
+    footinclude=false,
+    pagesize,%         write pagesize to DVI or PDF
+    fontsize=11pt,%             use this font size
+    paper=a4,%          use ISO A4
+%    bibliography=totoc,%         write bibliography-chapter to table of contents
+    numbers=noenddot
+  ]{scrartcl}
+
+\usepackage[utf8]{inputenc}
+\usepackage{makeidx}
+\usepackage{amsfonts}
+%\usepackage[slantedGreek,sc]{mathpazo}  % Schriftart Palatino
+\usepackage{lmodern}    % statt mathpazo, falls CM fonts verwendet werden sollen
+\usepackage[scaled=.95]{helvet}
+\usepackage{courier}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{amsmath}            % standard math notation (vectors/sets/...)
+\usepackage{bm}        % standard math notation (fonts)
+\usepackage{fixmath}        % standard math notation (fonts)
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{scrlayer-scrpage}
+% \usepackage{pstool}  % einbinden falls psfrag verwendet werden soll
+\usepackage{epstopdf}
+\usepackage[ngerman]{babel}
+\usepackage{ellipsis}  % Korrigiert den Weißraum um Auslassungspunkte
+\usepackage{microtype}  % optischer Randausgleich etc.
+\usepackage{acronym}
+
+
+\usepackage{lipsum} % kann weg, nur zur Generierung von etwas Text im Beispieldokument
+
+
+\selectlanguage{ngerman}
+
+
+\deffootnote{1em}{1em}{%
+ \makebox[1em][l]{\thefootnotemark}}
+
+\newcommand{\real}{\mathord{\mathrm{I\!R}}}
+
+\begin{document}
+\selectlanguage{ngerman}
+\def\figdir{figures}
+\def\tabledir{tables}
+
+\titlehead{
+\raggedleft
+\includegraphics[scale=0.7]{\figdir/logo-th-rosenheim-2019_master_quer_2c.eps}
+}
+
+\title{
+\vspace*{0cm}
+Bluetooth Low Energy - Funktionsweise und Einordnung in den Bereich der IOT Kommunikationsprotokolle
+}
+
+\author{
+Thomas Randl\\
+Fakultät für Informatik}
+
+\date{WS 2019/20}
+
+\maketitle
+
+\begin{abstract}
+In dieser Arbeit wird der Aufbau und die Funktionsweise der Funktechnik \ac{ble} erläutert. Dabei wird zuerst der Protokollstack im Bezug auf die einzelnen Layer und die \ac{ble} spezifischen Profile betrachtet. Anschließend wird genauer auf die Kommunikation zwischen den einzelnen Verbindungspartnern eingegangen. Dabei wird insbesondere erklärt, welche Schritte notwendig sind um Datenpakete zu übertragen. Des Weiteren wird erläutert, wie der Verbindungsaufbau zwischen den Kommunikationspartnern abläuft und welche Rollen die jeweiligen Partner dabei einnehmen. Nachdem die Funktionsweise erläutert wurde, wird das "`Featureset"' von \ac{ble} erklärt und mit aktuellen \ac{iot} Protokollen verglichen. Anhand der erarbeiteten Informationen wird dann am konkreten Beispiel der "`iBeacons"' erläutert, wie \ac{ble} in der Praxis Anwendung findet.
+\end{abstract}
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\section*{Abkürzungsverzeichnis} %Abkürzungsverzeichnis 
+\begin{acronym}[ECUAF]
+	\acro{ble}[BLE]{Bluetooth Low Energy}
+	\acro{iot}[IOT]{Internet of Things}
+\end{acronym}
+
+%\pagestyle{scrheadings}
+
+
+\addtokomafont{caption}{\small}
+
+
+\include{chapters}
+
+
+
+\appendix
+\include{append}
+
+
+\bibliographystyle{natger}
+\bibliography{thesis}
+
+
+
+\end{document}

@@ -1,0 +1,17 @@
+\begin{thebibliography}{Aue00}
+
+\bibitem[Aue00]{Auer00:HTF}
+T.~Auer.
+\newblock \emph{{Hybrid Tracking for Augmented Reality}}.
+\newblock Dissertation, Tech\-ni\-sche Universit{\"a}t Graz, Graz, Austria,
+  2000.
+
+\bibitem[Sch01]{Schmidt01:PAO}
+J.~Schmidt, I.~Scholz und H.~Niemann.
+\newblock {Placing Arbitrary Objects in a Real Scene Using a Color Cube for
+  Pose Estimation}.
+\newblock In B.~Radig und S.~Florczyk, Hg., \emph{{Pattern Recognition, 23rd
+  DAGM Symposium}}, Bd. 2191 von \emph{Lecture Notes in Computer Science}, S.
+  421--428. Springer-Verlag, Berlin, Heidelberg, New York, 2001.
+
+\end{thebibliography}
