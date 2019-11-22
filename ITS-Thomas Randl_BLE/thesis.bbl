@@ -1,4 +1,4 @@
-\begin{thebibliography}{Aue00}
+\begin{thebibliography}{Tow14}
 
 \bibitem[Aue00]{Auer00:HTF}
 T.~Auer.
@@ -13,5 +13,11 @@ J.~Schmidt, I.~Scholz und H.~Niemann.
 \newblock In B.~Radig und S.~Florczyk, Hg., \emph{{Pattern Recognition, 23rd
   DAGM Symposium}}, Bd. 2191 von \emph{Lecture Notes in Computer Science}, S.
   421--428. Springer-Verlag, Berlin, Heidelberg, New York, 2001.
+
+\bibitem[Tow14]{Townsend14:GSB}
+K.~Townsend, C.~Cufi, Akiba und R.Davidson.
+\newblock {Getting Started with Bluetooth Low Energy}.
+\newblock In \emph{Tools and techniques for lowpower networking}, S.~1.
+  O'Reilly Media Inc., Sebastopol, United States of America, 2014.
 
 \end{thebibliography}

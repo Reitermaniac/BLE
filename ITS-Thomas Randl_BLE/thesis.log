@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.5.14)  11 NOV 2019 16:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.5.14)  22 NOV 2019 13:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -802,28 +802,58 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
  (./tables/CodebookOverview.tex
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 5.
-))
-Underfull \vbox (badness 10000) has occurred while \output is active []
+)
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
 
- [4
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--68
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
+
+ []
+
+[4
 
 ]
-[5]
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
+
+ []
+
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5]
+[6]
 \openout2 = `append.aux'.
 
- (./append.tex) [6
+ (./append.tex) [7
 
 
-] (./thesis.bbl) [7
+] (./thesis.bbl) [8
 
 ] (./thesis.aux (./chapters.aux)
 (./append.aux)) ) 
 Here is how much of TeX's memory you used:
- 10831 strings out of 494587
- 208373 string characters out of 6177759
- 512547 words of memory out of 5000000
- 14172 multiletter control sequences out of 15000+600000
- 98209 words of font info for 113 fonts, out of 8000000 for 9000
+ 10860 strings out of 494587
+ 208740 string characters out of 6177759
+ 512611 words of memory out of 5000000
+ 14179 multiletter control sequences out of 15000+600000
+ 99169 words of font info for 124 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  55i,19n,79p,9085b,554s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/
@@ -840,10 +870,10 @@ mf-dist/fonts/type1/public/lm/lmri10.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/lm/lmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/
 lmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb>
-Output written on thesis.pdf (7 pages, 202683 bytes).
+Output written on thesis.pdf (8 pages, 208588 bytes).
 PDF statistics:
- 92 PDF objects out of 1000 (max. 8388607)
- 67 compressed objects within 1 object stream
+ 95 PDF objects out of 1000 (max. 8388607)
+ 69 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  26118 words of extra memory for PDF output out of 29859 (max. 10000000)
 

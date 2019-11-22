@@ -54,7 +54,37 @@ Tabelle \ref{t:CodebookOverview} gibt einen Überblick über XYZ.
   \label{t:CodebookOverview}
 \end{table}
 
+\section{Technische Grundlagen und Implementierungen}
+\label{s:grundlagen}
 
+Im folgenden Kapitel wird ein Überblick über die zentralsten \ac{ble} Anwendungen gegeben. Zusätzlich wird die Hardwareebene im Bezug auf die physikalischen Voraussetzungen und die genutzten Frequenzbereiche näher betrachtet. 
+
+\subsection{Beispiele für Implementierungen}
+\label{ss:grundlagen:beispiele}
+
+Im einundzwanzigsten Jahrhundert steigt die Verwendung von Geräten, welche drahtlos mit einem Empfangsgerät kommunizieren können. Vor allem die Einführung des Smartphones hat an diesem Punkt die drahtlose Kommunikation vorangetrieben. Nutzer wollen viele Funktionen zur Verfügung gestellt bekommen, um den persönlichen Alltag einfacher gestalten zu können.\\
+
+\noindent Schon vor der Einführung des Smartphones war das Kommunikationsprotokoll "`Bluetooth"' auf Mobiltelefonen verfügbar. Dabei wurde es hauptsächlich zum Datentransfer zwischen zwei Bluetoothfähigen Endgeräten verwendet. Das Hauptproblem, welches der Nutzer dabei erfahren musste, ist, dass diese Form der Datenübertragung sehr viel Zeit in Anspruch genommen hat. Dies lässt sich auf die geringe Datenmenge zurückführen, die pro Paket möglich ist.\\
+
+\noindent Nachdem das Smartphone immer mehr an Beliebtheit gewonnen hat und sich der Begriff des \ac{iot} entwickelt hat, reagierte die Bluetooth \ac{sig}, indem sie ein Protokoll erarbeiteten, welches einen möglichst geringen Stromverbrauch, eine geringe Bandbreite und niedrige Komplexität bietet \cite{Townsend14:GSB}.\\
+
+\noindent Mit der Einführung von \ac{ble} kam die Möglichkeit kleine Datensignale zwischen Geräten auszutauschen. Ein aktuell sehr bekanntes Beispiel sind dabei sogenannte "`Smartwatches"'. Diese bieten neben der Möglichkeit die Uhrzeit bereitzustellen viele weitere Funktionen, wie beispielsweise die Steuerung von Telefongesprächen, oder die Fernsteuerung der Musikwiedergabe. Der Nutzer erhält durch ein derartiges Gerät die Möglichkeit, sein Smartphone in gewissen Bereichen fernzusteuern.\\
+
+\noindent Beinahe jeder Mensch in der heutigen Zeit besitzt und nutzt ein Smartphone. Jedes Smartphone ist dabei mit einer Bluetoothschnittstelle ausgestattet. Dieser Sachverhalt liefert die Möglichkeit, nicht nur eine "`Smartwatch"' mit dem Smartphone zu verbinden, sondern jegliches Empfangsgerät, welches der Nutzer benötigen könnte. Besonders beliebt sind dabei Fitnessgeräte, die dem Nutzer Informationen über sein Fitnesslevel liefern.\\
+
+\noindent Allerdings liefert der Sachverhalt, dass beinahe jeder Nutzer Bluetooth nutzt auch andere "`Usecases"'. Mit sogenannten "`Bluetooth beacons"' (siehe Kapitel \ref{s:ibeacon}) kann man beispielsweise mittels Triangluation die Position einer Person in einem Raum bestimmen. Dies kann beispielsweise bei der Umsetzung von autonomen Supermärkten behilflich sein, um zu bestimmen, welche Lebensmittel der Kunde besucht hat. Auch für die Marktforschung kann dies sehr interessant sein.\\
+
+\noindent Sollte man die Absicht haben, ein eigenes Gerät zu entwickeln, welches mittels \ac{ble} kommuniziert, gibt es mehrere Anbieter für Hardwarekomponenten für verschiedene Anwendungsfälle. Besonders nennenswert sind dabei die Firmen "`Nordic"' und "`Texas Instruments"'.\\
+
+\noindent  
+
+\subsection{Hardware}
+\label{ss:grundlagen:hardware}
+
+
+
+\subsection{Frequenzbereich}
+\label{ss:grundlagen:frequenz}
 
 \section{Funktionsweise Bluetooth Low Energy}
 \label{s:funktionsweise}
@@ -95,6 +125,12 @@ Tabelle \ref{t:CodebookOverview} gibt einen Überblick über XYZ.
 
 \subsection{Kommunikation}
 \label{ss:ibeacon:kommunikation}
+
+\section{Vergleich mit anderen Kommunikationsprotokollen}
+\label{s:vergleich}
+
+\subsection{ZigBee}
+\label{ss:vergleich:zigbee}
 
 \section{Fazit}
 \label{s:fazit}

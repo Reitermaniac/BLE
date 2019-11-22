@@ -5,44 +5,44 @@ A level-1 auxiliary file: chapters.aux
 A level-1 auxiliary file: append.aux
 The style file: natger.bst
 Database file #1: thesis.bib
-You've used 2 entries,
+You've used 3 entries,
             2811 wiz_defined-function locations,
-            662 strings with 6803 characters,
-and the built_in function-call counts, 1103 in all, are:
-= -- 85
-> -- 31
-< -- 4
-+ -- 10
-- -- 10
-* -- 78
-:= -- 153
-add.period$ -- 7
-call.type$ -- 2
-change.case$ -- 12
-chr.to.int$ -- 2
-cite$ -- 2
-duplicate$ -- 94
-empty$ -- 85
-format.name$ -- 16
-if$ -- 224
+            670 strings with 7025 characters,
+and the built_in function-call counts, 1677 in all, are:
+= -- 126
+> -- 53
+< -- 6
++ -- 18
+- -- 18
+* -- 117
+:= -- 225
+add.period$ -- 11
+call.type$ -- 3
+change.case$ -- 21
+chr.to.int$ -- 3
+cite$ -- 3
+duplicate$ -- 146
+empty$ -- 131
+format.name$ -- 27
+if$ -- 343
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 21
-newline$ -- 13
-num.names$ -- 6
-pop$ -- 36
+missing$ -- 34
+newline$ -- 18
+num.names$ -- 8
+pop$ -- 63
 preamble$ -- 1
-purify$ -- 14
+purify$ -- 23
 quote$ -- 0
-skip$ -- 34
+skip$ -- 51
 stack$ -- 0
-substring$ -- 42
-swap$ -- 60
-text.length$ -- 4
-text.prefix$ -- 2
+substring$ -- 51
+swap$ -- 90
+text.length$ -- 6
+text.prefix$ -- 3
 top$ -- 0
-type$ -- 16
+type$ -- 24
 warning$ -- 0
-while$ -- 7
+while$ -- 10
 width$ -- 4
-write$ -- 27
+write$ -- 39
