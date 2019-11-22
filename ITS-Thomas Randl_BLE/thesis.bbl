@@ -6,6 +6,12 @@ T.~Auer.
 \newblock Dissertation, Tech\-ni\-sche Universit{\"a}t Graz, Graz, Austria,
   2000.
 
+\bibitem[Sau18]{Sauter18:GMK}
+M.~Sauter.
+\newblock LTE-Advanced Pro, UMTS, HSPA, GSM, GPRS, Wireless LAN und Bluetooth.
+\newblock In \emph{{Grundkurs Mobile Kommunikationssysteme}}, Bd.~7, S. 410.
+  Springer Vieweg, Wiesbaden (Deutschland), 2018.
+
 \bibitem[Sch01]{Schmidt01:PAO}
 J.~Schmidt, I.~Scholz und H.~Niemann.
 \newblock {Placing Arbitrary Objects in a Real Scene Using a Color Cube for
@@ -16,8 +22,9 @@ J.~Schmidt, I.~Scholz und H.~Niemann.
 
 \bibitem[Tow14]{Townsend14:GSB}
 K.~Townsend, C.~Cufi, Akiba und R.Davidson.
-\newblock {Getting Started with Bluetooth Low Energy}.
-\newblock In \emph{Tools and techniques for lowpower networking}, S.~1.
-  O'Reilly Media Inc., Sebastopol, United States of America, 2014.
+\newblock Tools and techniques for lowpower networking.
+\newblock In \emph{{Getting Started with Bluetooth Low Energy}}, S. 1, 15 --
+  16, 75, 79. O'Reilly Media Inc., Sebastopol (Vereinigte Staaten von Amerika),
+  2014.
 
 \end{thebibliography}

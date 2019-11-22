@@ -66,32 +66,48 @@ Im einundzwanzigsten Jahrhundert steigt die Verwendung von Geräten, welche drah
 
 \noindent Schon vor der Einführung des Smartphones war das Kommunikationsprotokoll "`Bluetooth"' auf Mobiltelefonen verfügbar. Dabei wurde es hauptsächlich zum Datentransfer zwischen zwei Bluetoothfähigen Endgeräten verwendet. Das Hauptproblem, welches der Nutzer dabei erfahren musste, ist, dass diese Form der Datenübertragung sehr viel Zeit in Anspruch genommen hat. Dies lässt sich auf die geringe Datenmenge zurückführen, die pro Paket möglich ist.\\
 
-\noindent Nachdem das Smartphone immer mehr an Beliebtheit gewonnen hat und sich der Begriff des \ac{iot} entwickelt hat, reagierte die Bluetooth \ac{sig}, indem sie ein Protokoll erarbeiteten, welches einen möglichst geringen Stromverbrauch, eine geringe Bandbreite und niedrige Komplexität bietet \cite{Townsend14:GSB}.\\
+\noindent Nachdem das Smartphone immer mehr an Beliebtheit gewonnen hat und sich der Begriff des \ac{iot} entwickelt hat, reagierte die Bluetooth \ac{sig}, indem sie ein Protokoll erarbeiteten, welches einen möglichst geringen Stromverbrauch, eine geringe Bandbreite und niedrige Komplexität bietet \cite[Seite 1]{Townsend14:GSB}.\\
 
 \noindent Mit der Einführung von \ac{ble} kam die Möglichkeit kleine Datensignale zwischen Geräten auszutauschen. Ein aktuell sehr bekanntes Beispiel sind dabei sogenannte "`Smartwatches"'. Diese bieten neben der Möglichkeit die Uhrzeit bereitzustellen viele weitere Funktionen, wie beispielsweise die Steuerung von Telefongesprächen, oder die Fernsteuerung der Musikwiedergabe. Der Nutzer erhält durch ein derartiges Gerät die Möglichkeit, sein Smartphone in gewissen Bereichen fernzusteuern.\\
 
 \noindent Beinahe jeder Mensch in der heutigen Zeit besitzt und nutzt ein Smartphone. Jedes Smartphone ist dabei mit einer Bluetoothschnittstelle ausgestattet. Dieser Sachverhalt liefert die Möglichkeit, nicht nur eine "`Smartwatch"' mit dem Smartphone zu verbinden, sondern jegliches Empfangsgerät, welches der Nutzer benötigen könnte. Besonders beliebt sind dabei Fitnessgeräte, die dem Nutzer Informationen über sein Fitnesslevel liefern.\\
 
-\noindent Allerdings liefert der Sachverhalt, dass beinahe jeder Nutzer Bluetooth nutzt auch andere "`Usecases"'. Mit sogenannten "`Bluetooth beacons"' (siehe Kapitel \ref{s:ibeacon}) kann man beispielsweise mittels Triangluation die Position einer Person in einem Raum bestimmen. Dies kann beispielsweise bei der Umsetzung von autonomen Supermärkten behilflich sein, um zu bestimmen, welche Lebensmittel der Kunde besucht hat. Auch für die Marktforschung kann dies sehr interessant sein.\\
+\noindent Allerdings liefert der Sachverhalt, dass beinahe jeder Nutzer Bluetooth nutzt auch andere "`Usecases"'. Mit sogenannten "`Beacons"' (siehe Kapitel \ref{s:ibeacon}) kann man beispielsweise mit einem Smartphone Informationen von einem oder mehreren "`Beacons"' erfassen und in einer App oder im Browser gesammelt aufbereitet anzeigen. Ein "`Beacon"' ist ein \ac{ble} Gerät, welches ausschließlich Informationen sendet. So kann man beispielsweise in einem Raum mit mehreren solchen Geräten stehen und Informationen über verschiedene Lebensmittel, oder deren Preise erhalten. Mit dieser Möglichkeit kann ein Nutzer noch besser und zielgerichteter mit sachdienlichen Informationen versorgt werden.\\
 
 \noindent Sollte man die Absicht haben, ein eigenes Gerät zu entwickeln, welches mittels \ac{ble} kommuniziert, gibt es mehrere Anbieter für Hardwarekomponenten für verschiedene Anwendungsfälle. Besonders nennenswert sind dabei die Firmen "`Nordic"' und "`Texas Instruments"'.\\
 
-\noindent  
+\noindent Die Firma "`Nordic"', welche Kompononenten für verschiedenste Kommunikationsprotokolle anbietet, ist Mitglied bei der Bluetooth \ac{sig} und hat einen signifikanten Beitrag zum fortschritt von \ac{ble} beigetragen. Sie war auch eine der ersten Firmen, die günstige \ac{ble} Komponenten auf den Markt gebracht haben \cite[Seite 75]{Townsend14:GSB}.\\
+
+\noindent Die Firma "`Texas Instruments"' hingegen war als erstes dazu in der Lage, ein \ac{ble} fähiges Peripheriegerät auf den Markt zu bringen. Zusätzlich ist "`Texas Instruments"' als einiger Anbieter "`Feature complete"'. Das heißt, dass die Geräte den kompletten Funktionsumfang des \ac{ble} Stacks anbieten \cite[Seite 79]{Townsend14:GSB}.\\ 
 
 \subsection{Hardware}
 \label{ss:grundlagen:hardware}
 
-
+  
 
 \subsection{Frequenzbereich}
 \label{ss:grundlagen:frequenz}
 
+Da \ac{ble} ein Teil des Bluetoothstacks ist, sind die physikalischen Eigenschaften, die sowohl hinter Bluetooth Klassik, als auch \ac{ble} stecken identisch. Der Frequenzbereich, indem Bluetooth sendet ist dementsprechend auch der selbe. Allerdings gibt es einen Unterschied, was die Kanäle angeht, in denen gesendet wird.\\
+
+\noindent Der Frequenzbereich in dem sich Bluetooth bewegt liegt zwischen 2,4GHz und 2,4835GHz auf dem \ac{ism} Band \cite[Seite 16]{Townsend14:GSB}. Diesen Bereich teilt sich Bluetooth mit einigen anderen Kommunikationsprotokollen, weshalb es zwischen den Protokollen zu Kollisionen bei der Übertragung kommen kann. Aus diesem Grund teilt Bluetooth seinen Bereich in mehrere Kanäle auf. Bei Bluetooth Klassik ist der Frequenzbereich in insgesamt 79 Kanäle unterteilt \cite[Seite 410]{Sauter18:GMK}. \ac{ble} teilt den Bereich allerdings nur in 40 Kanäle auf \cite[Seite 16]{Townsend14:GSB}. Daraus resultiert, dass die Kanäle bei \ac{ble} doppelt so groß sind wie bei Bluetooth Klassik. Der Grund für diese Kanalunterteilung ist das sogenannte "`Frequency Hopping"', welches unter Kapitel \ref{sss:funktionsweise:physical} näher betrachtet wird.\\  
+
 \section{Funktionsweise Bluetooth Low Energy}
 \label{s:funktionsweise}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Im nachfolgenden Kapitel wird nun auf die Softwareseitigen Aspekte des \ac{ble} Stacks eingegangen. Dabei finden die Architektur und die Kommunikation besondere Beachtung. Zusätzlich wird ein Überblick geboten, welche Möglichkeiten diese Technologie dem Nutzer bietet.\\  
+
 \subsection{Protokollstack}
 \label{ss:funktionsweise:protokollstack}
+
+In Abbildung \ref{FIG:protokollstack} ist der Protokollstack von \ac{ble} zu sehen. Dabei sind die drei Ebenen "`Controller"', "`Host"' und "`Application"' zu erkennen. Auf der untersten Ebene liegt der "`Controller"', welcher das "`Physical Layer"' und das "`Linked Layer"' enthält. Zwischen "`Host und "`Controller"' liegt das sogenannte \ac{hci}, welches die Schnittstelle zwischen den beiden Kommunikationspartnern darstellt. Im "`Host"' wiederum befinden sich sämtliche Protokolle und Profile, die für die Kommunikation notwendig sind. An der Spitze des Protokollstacks befindet sich die "`Application"' in der die Logik und die Nutzerschnittstelle des aktuellen Anwendungsfalls liegt \cite[15]{Townsend14:GSB}. Wie diese einzelnen Komponenten funktionieren und untereinander kommunizieren ist in den nachfolgenden Abschnitten erläutert.\\  
+ 
+\begin{figure}[h]
+\centering
+\includegraphics[width=\linewidth]{\figdir/BLE_Protokolstack}
+\caption{\ac{ble} Protokollstack \cite[Seite 16]{Townsend14:GSB}}
+\label{FIG:protokollstack}
+\end{figure}
 
 \subsubsection{Physical Layer}
 \label{sss:funktionsweise:physical}
