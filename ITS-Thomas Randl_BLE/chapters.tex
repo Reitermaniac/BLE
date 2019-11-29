@@ -100,7 +100,7 @@ Im nachfolgenden Kapitel wird nun auf die Softwareseitigen Aspekte des \ac{ble} 
 \subsection{Protokollstack}
 \label{ss:funktionsweise:protokollstack}
 
-In Abbildung \ref{FIG:protokollstack} ist der Protokollstack von \ac{ble} zu sehen. Dabei sind die drei Ebenen "`Controller"', "`Host"' und "`Application"' zu erkennen. Auf der untersten Ebene liegt der "`Controller"', welcher das "`Physical Layer"' und das "`Linked Layer"' enthält. Zwischen "`Host und "`Controller"' liegt das sogenannte \ac{hci}, welches die Schnittstelle zwischen den beiden Kommunikationspartnern darstellt. Im "`Host"' wiederum befinden sich sämtliche Protokolle und Profile, die für die Kommunikation notwendig sind. An der Spitze des Protokollstacks befindet sich die "`Application"' in der die Logik und die Nutzerschnittstelle des aktuellen Anwendungsfalls liegt \cite[15]{Townsend14:GSB}. Wie diese einzelnen Komponenten funktionieren und untereinander kommunizieren ist in den nachfolgenden Abschnitten erläutert.\\  
+In Abbildung \ref{FIG:protokollstack} ist der Protokollstack von \ac{ble} zu sehen. Dabei sind die drei Ebenen "`Controller"', "`Host"' und "`Application"' zu erkennen. Auf der untersten Ebene liegt der "`Controller"', in welchem das "`Physical Layer"' und das "`Linked Layer"' enthalten sind. Zwischen "`Host und "`Controller"' liegt das sogenannte \ac{hci}, welches die Schnittstelle zwischen den beiden Kommunikationspartnern darstellt. Im "`Host"' wiederum befinden sich sämtliche Protokolle und Profile, die notwendig sind, um Kommunikation zu ermöglichen. An der Spitze des Protokollstacks befindet sich die "`Applikation"' in der die Logik und Nutzerschnittstelle des aktuellen Anwendungsfalls liegt \cite[15]{Townsend14:GSB}. Wie diese einzelnen Komponenten funktionieren und untereinander kommunizieren ist in den nachfolgenden Abschnitten erläutert.\\  
  
 \begin{figure}[h]
 \centering
@@ -111,6 +111,25 @@ In Abbildung \ref{FIG:protokollstack} ist der Protokollstack von \ac{ble} zu seh
 
 \subsubsection{Physical Layer}
 \label{sss:funktionsweise:physical}
+
+Das sogenannte "`Physical Layer"' bildet die Basis der Kommunikation bei allen digitalen Geräten. In dieser Schicht werden digitale Signale, also Bitfolgen, in analoge Signale umgewandelt. Dieser Vorgang wird zum Senden von Nachrichten über eine physikalische Schnittstelle benötigt. Die Rückübersetzung in eine digitale Bitfolge wird ebenfalls im "`Physical Layer"' erledigt \cite[Seite 16]{Townsend14:GSB}. Als physikalisches Medium bieten sich dabei eine Vielzahl von Möglichkeiten, wie beispielsweise Magnetismus, Strom, oder Licht \cite[Seite 95 - 101]{Tanenbaum14:CN}.\\
+
+\noindent Bei \ac{ble} ist besagte physikalische Schnittstelle die Luft. \ac{ble} nutzt in dieser wie in Kapitel \ref{ss:grundlagen:frequenz} einen definierten Frequenzbereich um Nachrichten zu übertragen. Dabei belegt \ac{ble} nur einen sehr kleinen Bereich des verfügbaren Spektrums. Insgesamt ist der verfügbare Frequenzbereich in etwa 30.000GHz groß. In ihm werden unter anderem Radiowellen, Fernsehübertragungen, Satellitensignale und viele andere Signale transportiert \cite[Seite 107]{Tanenbaum14:CN}. Im Frequenzbereich in dem \ac{ble} übertragen wird befinden sich trotz des großen Spektrums einige konkurrierende Technologien, wie beispielsweise "`Wireless LAN"' \cite[Seite 17]{Townsend14:GSB}. Aus diesem Grund verwendet Bluetooth im allgemeinen das sogenannte "`Frequency Hopping Spread Spectrum"'. Dafür wird der verfügbare Frequenzbereich im Fall von \ac{ble} in 40 Kanäle aufgeteilt. Von diesen werden drei Kanäle zum "`Advertisment"', also zur Bekanntmachung, verwendet. Über diese gibt sich ein Gerät zu erkennen, welches bereit zum Verbinden ist. Ein suchendes Gerät wiederum überprüft ausschließlich diese drei Kanäle nach verfügbaren Geräten. Die restlichen 37 Kanäle werden anschließend für die Übertragung verwendet. Dabei wird zu Beginn des Datenaustausches eine Sprungfrequenz vereinbart, welche daher für jede neue Verbindung voneinander abweicht. Nachdem die Verbindungsinformationen vereinbart wurden, beginnt der Datenaustausch. Hierbei wechseln sämtliche Kommunikationspartner nach der vereinbarten Zeit die Kanäle aufgrund der Berechnung in Formel \ref{eq:ble:frequencyhopping} \cite[Seite 17]{Townsend14:GSB}. 
+\begin{equation}
+\label{eq:ble:frequencyhopping}
+Kanal = (aktueller Kanal + Sprungfrequenz) \mod 37
+\end{equation}
+Sollte dennoch ein Paket bei der Übertragung verloren gehen, wird dieses nach sofortigem Kanalwechsel erneut übertragen. Sollte es mehrfach zu Problemen mit einem oder mehreren Kanälen kommen führt Bluetooth eine Kanalabschätzung durch. Dabei wird eine "`Channel Bitmap"' mit Kanälen erzeugt, welche eine hohe Interferenz aufweisen. Diese werden anschließend für die laufende Verbindung gesperrt. Um festzulegen, ob ein Kanal blockiert ist, gibt es drei Möglichkeiten:
+
+\begin{itemize}
+	\item[1.]{\ac{rssi}}
+	\item[2.]{Eine hohe Packetfehlerrate}
+	\item[3.]{Informationen eines Endgerätes mit Zugriff auf konkurrierende Funktechnologien}
+\end{itemize}       
+
+\noindent Welche dieser Optionen verwendet wird ist allerdings vom Standard nicht vorgeschrieben und kann deshalb selbstständig definiert werden \cite[Seite 411]{Sauter18:GMK}.\\
+
+\noindent 
 
 \subsubsection{Linked Layer}
 \label{sss:funktionsweise:linked}

@@ -9,18 +9,18 @@
 \contentsline {subsection}{\numberline {2.3}Frequenzbereich}{6}
 \contentsline {section}{\numberline {3}Funktionsweise Bluetooth Low Energy}{6}
 \contentsline {subsection}{\numberline {3.1}Protokollstack}{6}
-\contentsline {subsubsection}{\numberline {3.1.1}Physical Layer}{8}
-\contentsline {subsubsection}{\numberline {3.1.2}Linked Layer}{8}
-\contentsline {subsubsection}{\numberline {3.1.3}Profile}{8}
-\contentsline {subsection}{\numberline {3.2}Kommunikation}{8}
-\contentsline {subsubsection}{\numberline {3.2.1}Advertisement}{8}
-\contentsline {subsubsection}{\numberline {3.2.2}Verbindung}{8}
-\contentsline {subsubsection}{\numberline {3.2.3}Datenaustausch}{8}
-\contentsline {subsection}{\numberline {3.3}Featureset (Kosten, Reichweite, Energieverbrauch, etc... am Titel muss ich noch schrauben)}{8}
-\contentsline {section}{\numberline {4}Anwendungsbeispiel iBeacon}{8}
-\contentsline {subsection}{\numberline {4.1}Funktionsweise}{8}
-\contentsline {subsection}{\numberline {4.2}Kommunikation}{8}
-\contentsline {section}{\numberline {5}Vergleich mit anderen Kommunikationsprotokollen}{8}
-\contentsline {subsection}{\numberline {5.1}ZigBee}{8}
-\contentsline {section}{\numberline {6}Fazit}{8}
-\contentsline {section}{\numberline {A}Erster Abschnitt des Anhangs}{9}
+\contentsline {subsubsection}{\numberline {3.1.1}Physical Layer}{7}
+\contentsline {subsubsection}{\numberline {3.1.2}Linked Layer}{9}
+\contentsline {subsubsection}{\numberline {3.1.3}Profile}{9}
+\contentsline {subsection}{\numberline {3.2}Kommunikation}{9}
+\contentsline {subsubsection}{\numberline {3.2.1}Advertisement}{9}
+\contentsline {subsubsection}{\numberline {3.2.2}Verbindung}{9}
+\contentsline {subsubsection}{\numberline {3.2.3}Datenaustausch}{9}
+\contentsline {subsection}{\numberline {3.3}Featureset (Kosten, Reichweite, Energieverbrauch, etc... am Titel muss ich noch schrauben)}{9}
+\contentsline {section}{\numberline {4}Anwendungsbeispiel iBeacon}{9}
+\contentsline {subsection}{\numberline {4.1}Funktionsweise}{9}
+\contentsline {subsection}{\numberline {4.2}Kommunikation}{9}
+\contentsline {section}{\numberline {5}Vergleich mit anderen Kommunikationsprotokollen}{9}
+\contentsline {subsection}{\numberline {5.1}ZigBee}{9}
+\contentsline {section}{\numberline {6}Fazit}{9}
+\contentsline {section}{\numberline {A}Erster Abschnitt des Anhangs}{10}
