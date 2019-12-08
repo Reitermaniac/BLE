@@ -1,10 +1,16 @@
 \begin{thebibliography}{Tow14}
 
-\bibitem[Aue00]{Auer00:HTF}
-T.~Auer.
-\newblock \emph{{Hybrid Tracking for Augmented Reality}}.
-\newblock Dissertation, Tech\-ni\-sche Universit{\"a}t Graz, Graz, Austria,
-  2000.
+\bibitem[Gas]{Gast14:BPA}
+M.~Gast.
+\newblock In \emph{{Building Proximity Applications with iBeacon}}.
+
+\bibitem[Gup]{Gupta:WWW}
+S.~Gupta und R.~Kumar.
+\newblock {BLE v4.2: Creating Faster, More Secure, Power-Efficient Designs?Part
+  1}.
+\newblock
+  https://www.electronicdesign.com/communications/ble-v42-creating-faster-more-secure-power-efficient-designs-part-1.
+\newblock Last visit: 8~Dez 2019.
 
 \bibitem[Sau18]{Sauter18:GMK}
 M.~Sauter.
@@ -12,24 +18,16 @@ M.~Sauter.
 \newblock In \emph{{Grundkurs Mobile Kommunikationssysteme}}, Bd.~7, S. 410.
   Springer Vieweg, Wiesbaden (Deutschland), 2018.
 
-\bibitem[Sch01]{Schmidt01:PAO}
-J.~Schmidt, I.~Scholz und H.~Niemann.
-\newblock {Placing Arbitrary Objects in a Real Scene Using a Color Cube for
-  Pose Estimation}.
-\newblock In B.~Radig und S.~Florczyk, Hg., \emph{{Pattern Recognition, 23rd
-  DAGM Symposium}}, Bd. 2191 von \emph{Lecture Notes in Computer Science}, S.
-  421--428. Springer-Verlag, Berlin, Heidelberg, New York, 2001.
-
 \bibitem[Tan14]{Tanenbaum14:CN}
 A.~Tanenbaum und D.~Wetherall.
-\newblock In \emph{{Computer Networks}}, Bd.~5, S. 95 -- 104. Pearson, Harlow
-  (Vereinigtes Koenigreich), 2014.
+\newblock In \emph{{Computer Networks}}, Bd.~5, S. 95 -- 104, 194. Pearson,
+  Harlow (Vereinigtes Koenigreich), 2014.
 
 \bibitem[Tow14]{Townsend14:GSB}
 K.~Townsend, C.~Cufi, Akiba und R.Davidson.
 \newblock Tools and techniques for lowpower networking.
-\newblock In \emph{{Getting Started with Bluetooth Low Energy}}, S. 1, 15 -- 1,
-  75, 79. O'Reilly Media Inc., Sebastopol (Vereinigte Staaten von Amerika),
+\newblock In \emph{{Getting Started with Bluetooth Low Energy}}, S. 1, 15 --
+  23, 75, 79. O'Reilly Media Inc., Sebastopol (Vereinigte Staaten von Amerika),
   2014.
 
 \end{thebibliography}

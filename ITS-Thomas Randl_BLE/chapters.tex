@@ -6,54 +6,6 @@
 \subsection{Ein Abschnitt der Einleitung}
 \label{ss:intro:abc}
 
-Einen Überblick findet man z.\,B.\ in \cite{Auer00:HTF}.
-
-\begin{figure}[t]
-\centering
-
-\begin{subfigure}{0.45\linewidth}
-\centering
-%\includegraphics[width=\linewidth]{\figdir/handorig}
-\caption{Originalbild}
-\label{FIG:arexorig}
-\end{subfigure}
-%
-\begin{subfigure}{0.45\linewidth}
-\centering
-%\includegraphics[width=\linewidth]{\figdir/handaug}
-\caption{erweitertes Bild}
-\label{FIG:arexaugm}
-\end{subfigure}
-%
-\caption[AR Beispiel]
-{Beispiel eines Augmented Reality Systems: es folgt eine Beschreibung (Bilder aus \cite{Schmidt01:PAO})}
-\label{FIG:arex}
-\end{figure}
-
-Ein Beispiel wird in Abb.\ \ref{FIG:arex} gezeigt.
-Das verwendete Objekt ist in Abb.\ \ref{FIG:arexorig} dargestellt, das Ergebnis in Abb.\ \ref{FIG:arexaugm}.
-
-Eine Formel
-\begin{equation}
-\label{eq:cvp:test}
-f(x) = \frac{1}{3} x + 5, \quad x \in \real.
-\end{equation}
-
-Und noch eine:
-\begin{equation}
-\label{eq:cvp:matvec}
-\bm{M}  = \bm{Ax} \pi, \quad \bm{A} \in \real^{2 \times 2}, \bm{x} \in \real^2.
-\end{equation}
-
-Tabelle \ref{t:CodebookOverview} gibt einen Überblick über XYZ.
-
-\begin{table}[t]
-\centering\small
-\input{\tabledir/CodebookOverview.tex}
- \caption[Testtabelle]{Datenselektion für verschiedene Testdatensätze.}
-  \label{t:CodebookOverview}
-\end{table}
-
 \section{Technische Grundlagen und Implementierungen}
 \label{s:grundlagen}
 
@@ -94,7 +46,7 @@ Da \ac{ble} ein Teil des Bluetoothstacks ist, sind die physikalischen Eigenschaf
 
 \section{Funktionsweise Bluetooth Low Energy}
 \label{s:funktionsweise}
-
+beispielsweise
 Im nachfolgenden Kapitel wird nun auf die Softwareseitigen Aspekte des \ac{ble} Stacks eingegangen. Dabei finden die Architektur und die Kommunikation besondere Beachtung. Zusätzlich wird ein Überblick geboten, welche Möglichkeiten diese Technologie dem Nutzer bietet.\\  
 
 \subsection{Protokollstack}
@@ -112,14 +64,14 @@ In Abbildung \ref{FIG:protokollstack} ist der Protokollstack von \ac{ble} zu seh
 \subsubsection{Physical Layer}
 \label{sss:funktionsweise:physical}
 
-Das sogenannte "`Physical Layer"' bildet die Basis der Kommunikation bei allen digitalen Geräten. In dieser Schicht werden digitale Signale, also Bitfolgen, in analoge Signale umgewandelt. Dieser Vorgang wird zum Senden von Nachrichten über eine physikalische Schnittstelle benötigt. Die Rückübersetzung in eine digitale Bitfolge wird ebenfalls im "`Physical Layer"' erledigt \cite[Seite 16]{Townsend14:GSB}. Als physikalisches Medium bieten sich dabei eine Vielzahl von Möglichkeiten, wie beispielsweise Magnetismus, Strom, oder Licht \cite[Seite 95 - 101]{Tanenbaum14:CN}.\\
+Das sogenannte "`Physical Layer"' bildet die Basis der Kommunikation bei einer Großzahl von Gerätearchitekturen. In dieser Schicht werden digitale Signale, also Bitfolgen, in analoge Signale umgewandelt. Dieser Vorgang wird zum Senden von Nachrichten über eine physikalische Schnittstelle benötigt. Die Rückübersetzung in eine digitale Bitfolge wird ebenfalls im "`Physical Layer"' erledigt \cite[Seite 16]{Townsend14:GSB}. Als physikalisches Medium bieten sich dabei eine Vielzahl von Möglichkeiten, wie unter anderem Magnetismus, Strom, oder Licht \cite[Seite 95 - 101]{Tanenbaum14:CN}.\\
 
-\noindent Bei \ac{ble} ist besagte physikalische Schnittstelle die Luft. \ac{ble} nutzt in dieser wie in Kapitel \ref{ss:grundlagen:frequenz} einen definierten Frequenzbereich um Nachrichten zu übertragen. Dabei belegt \ac{ble} nur einen sehr kleinen Bereich des verfügbaren Spektrums. Insgesamt ist der verfügbare Frequenzbereich in etwa 30.000GHz groß. In ihm werden unter anderem Radiowellen, Fernsehübertragungen, Satellitensignale und viele andere Signale transportiert \cite[Seite 107]{Tanenbaum14:CN}. Im Frequenzbereich in dem \ac{ble} übertragen wird befinden sich trotz des großen Spektrums einige konkurrierende Technologien, wie beispielsweise "`Wireless LAN"' \cite[Seite 17]{Townsend14:GSB}. Aus diesem Grund verwendet Bluetooth im allgemeinen das sogenannte "`Frequency Hopping Spread Spectrum"'. Dafür wird der verfügbare Frequenzbereich im Fall von \ac{ble} in 40 Kanäle aufgeteilt. Von diesen werden drei Kanäle zum "`Advertisment"', also zur Bekanntmachung, verwendet. Über diese gibt sich ein Gerät zu erkennen, welches bereit zum Verbinden ist. Ein suchendes Gerät wiederum überprüft ausschließlich diese drei Kanäle nach verfügbaren Geräten. Die restlichen 37 Kanäle werden anschließend für die Übertragung verwendet. Dabei wird zu Beginn des Datenaustausches eine Sprungfrequenz vereinbart, welche daher für jede neue Verbindung voneinander abweicht. Nachdem die Verbindungsinformationen vereinbart wurden, beginnt der Datenaustausch. Hierbei wechseln sämtliche Kommunikationspartner nach der vereinbarten Zeit die Kanäle aufgrund der Berechnung in Formel \ref{eq:ble:frequencyhopping} \cite[Seite 17]{Townsend14:GSB}. 
+\noindent Bei \ac{ble} ist die besagte physikalische Schnittstelle die Luft. \ac{ble} nutzt in dieser wie in Kapitel \ref{ss:grundlagen:frequenz} erläutert einen definierten Frequenzbereich um Nachrichten zu übertragen. Dabei belegt \ac{ble} nur einen sehr kleinen Bereich des verfügbaren Spektrums. Insgesamt deckt der verfügbare Frequenzbereich in etwa einen Bereich von 30.000GHz ab. In ihm werden unter anderem Radiowellen, Fernsehübertragungen, Satellitensignale und viele weitere Nachrichtenpakete transportiert \cite[Seite 107]{Tanenbaum14:CN}. Im Frequenzbereich in dem \ac{ble} übertragen wird befinden sich trotz des großen Spektrums einige konkurrierende Technologien, wie beispielsweise "`Wireless LAN"' \cite[Seite 17]{Townsend14:GSB}. Aus diesem Grund verwendet Bluetooth im allgemeinen das sogenannte "`Frequency Hopping Spread Spectrum"'. Dafür wird der verfügbare Frequenzbereich im Fall von \ac{ble} in 40 Kanäle aufgeteilt. Von diesen werden die letzten drei Kanäle zum "`Advertisment"', also zur Bekanntmachung, verwendet. Über diese gibt sich ein Gerät zu erkennen, welches bereit zum Verbinden ist. Ein suchendes Gerät wiederum überprüft ausschließlich diese drei Kanäle nach verfügbaren Geräten. Die restlichen 37 Kanäle werden anschließend für die Übertragung verwendet. Dabei wird zu Beginn des Datenaustausches eine Sprungfrequenz vereinbart, welche daher für jede neue Verbindung voneinander abweicht. Nachdem die Verbindungsinformationen vereinbart wurden, beginnt der Datenaustausch. In Formel \ref{eq:ble:frequencyhopping} ist zu erkennen, wie die Verbindungspartner gegenseitig abstimmen, in welchen Kanal sie als nächstes wechseln werden. Diese Berechnung führt jedes Gerät unter Berücksichtigung der vereinbarten Verbindungsinformationen selbst aus \cite[Seite 17]{Townsend14:GSB}. 
 \begin{equation}
 \label{eq:ble:frequencyhopping}
 Kanal = (aktueller Kanal + Sprungfrequenz) \mod 37
 \end{equation}
-Sollte dennoch ein Paket bei der Übertragung verloren gehen, wird dieses nach sofortigem Kanalwechsel erneut übertragen. Sollte es mehrfach zu Problemen mit einem oder mehreren Kanälen kommen führt Bluetooth eine Kanalabschätzung durch. Dabei wird eine "`Channel Bitmap"' mit Kanälen erzeugt, welche eine hohe Interferenz aufweisen. Diese werden anschließend für die laufende Verbindung gesperrt. Um festzulegen, ob ein Kanal blockiert ist, gibt es drei Möglichkeiten:
+Sollte dennoch ein Paket bei der Übertragung verloren gehen, wird dieses nach sofortigem Kanalwechsel erneut übertragen. Sollte es mehrfach zu Problemen mit einem oder mehreren Kanälen kommen führt Bluetooth eine Kanalabschätzung durch. Dabei wird eine "`Channel Bitmap"' mit Kanälen erzeugt, welche eine hohe Interferenz aufweisen. Diese werden anschließend für die laufende Verbindung gesperrt. Um festzulegen, ob ein Kanal blockiert ist, gibt es die folgenden drei Möglichkeiten:
 
 \begin{itemize}
 	\item[1.]{\ac{rssi}}
@@ -133,6 +85,36 @@ Sollte dennoch ein Paket bei der Übertragung verloren gehen, wird dieses nach s
 
 \subsubsection{Linked Layer}
 \label{sss:funktionsweise:linked}
+
+Das "`Linked Layer"' liegt in der Architektur direkt auf dem "`Physical Layer"'. Dabei stellt es entweder die zu sendenden Daten bereit, oder verarbeitet die vom "'Physical Layer"' empfangenen. Um dies bewerkstelligen zu können, werden Nachrichten nach einem definierten Schema in sogenannte "`Frames"' gepackt. Diese enthalten zusätzlich zur eigentlichen Nachricht wichtige Informationen bezüglich des Paketes. Mit diesen kann unter anderem überprüft werden, ob es zu Fehlern bei der Übertragung gekommen ist, indem man eine "`CRC Checksumme"' bildet \cite[Seite 194]{Tanenbaum14:CN}.\\
+
+\noindent Das "`Linked Layer"' wird bezüglich der zu verarbeitenden Daten für jede Kommunikationsart angepasst. Im Fall von \ac{ble} gibt es daher einige Eigenschaften, welche sich von anderen Protokollen unterscheiden. Zum einen gilt es zu beachten, dass die \ac{ble} Kommunikation auf einem Nachrichtenaustausch beruht, der sehr schmale Zeitfenster aufweist in denen Nachrichten gesendet werden können. Aus diesem Grund wird das "`Linked Layer"' hier weitestgehend von den oberen Protokollschichten getrennt und kommuniziert nur über das \ac{hci} mit diesen. Daraus Folgt wiederum, dass das "`Linked Layer"' sehr schnell in der Verarbeitung von Daten ist \cite[Seite 17f]{Townsend14:GSB}.\\
+
+\noindent Jedes \ac{ble} Gerät verfügt über eine eindeutige Adresse. Diese ist Aufgebaut wie eine "`MAC Adresse"'. Diese Adresse kann das Gerät bei einem "`Advertisement"' versuch broadcasten und andere Geräte können sich dann mit dieser Koppeln. Der Verbindungsprozess hat also verschiedene Rollenverteilungen die von der auszuführenden Aktion des Gerätes abhängen. So ist ein Gerät, welches auf einen Verbindungspartner wartet, ein "`Advertiser"'. Das bedeutet, dass dieses Gerät dauerhaft auf den Advertisementkanälen seine Adresse und andere wichtige Informationen für einen potentiellen Verbindungspartner preisgibt. Der potentielle Verbindungspartner in diesem Fall hat die Rolle des "`Scanners"' inne. Das bedeutet, dass er gerne eine Verbindung eingehen würde. Um dies zu tun überprüft er die drei Advertisementkanäle nach "`Advertisern"'. Diese werden dann beispielsweise dem Nutzer in einer Liste angezeigt. Hier werden nur Geräte angezeigt, welche noch keine aktive Verbindung aufweisen. Das liegt daran, dass die Verbindungspartner bei einer erfolgten Verbindung ihre Rollen ändern. Der "`Scanner"' wird zum "`Master"' der Verbindung und steuert diese. Der "`Advertiser"' wiederum wird zum "`Slave"' der Verbindung und folgt den Anweisungen des "`Masters"' bezüglich des Timings. In der Regel handelt es sich bei "`Slave"' Geräten um einfache Geräte mit niedrigen Funktionalitäten, wohingegen der "`Master"' meist ein leistungsstärkeres Gerät darstellt \cite[Seite 18f]{Townsend14:GSB}.\\  
+
+\noindent Bei \ac{ble} tritt gegenüber dem normalen Bluetoothprotokoll die Besonderheit auf, dass es nicht zwangsläufig zu einer Verbindung zwischen "`Master"' und "`Slave"' kommen muss. Geräte wie "`Beacons"' beispielsweise arbeiten nur auf den Advertisementkanälen und senden dauerhaft Informationen an alle \ac{ble} Geräte in Reichweite \cite[Seite 13]{Gast14:BPA}. Näheres hierzu findet sich unter Kapitel \ref{s:ibeacon}.\\
+
+
+\noindent Wenn ein Gerät auf der Suche nach einem Verbindungspartner ist, hat es zwei Möglichkeiten. Zum einen kann es einen passiven Scan auf die Advertisementkanäle durchführen, bei dem der "`Advertiser"' nicht mitbekommt, dass er erfasst wurde. Zum anderen kann ein aktiver Scan durchgeführt werden, mit dem eine aktive Anfrage an das zur Verfügung stehende Gerät gesendet wird, um weitere Informationen einzuholen und das Gerät über einen potentiellen Verbindungspartner zu informieren. Die Nachricht, welche bei einem aktiven Scan an den "`Scanner"' gesendet wird enthält drei zentrale Informationen:
+\begin{itemize}
+	\item[1.]{Die Möglichkeit einer Verbindung (Ja/Nein)}
+	\item[2.]{Die Möglichkeit einen aktiven Scan durchführen zu können (Ja/Nein)}
+	\item[3.]{Die Information, ob der "`Advertiser"' ein "`Broadcaster"' ist (Ja/Nein)}
+\end{itemize}           
+Sollte der "`Advertiser"' ein "`Broadcaster"' sein ist es erlaubt, nutzerspezifische Daten in den Nachrichten auszutauschen. In allen anderen Fällen werden hier ausschließlich verbindungsspezifische Daten ausgetauscht \cite[Seite 20f]{Townsend14:GSB}.\\
+
+\noindent Für den Fall, dass der "`Advertiser"' kein "`Broadcaster"' ist, ergibt sich die Möglichkeit eine Verbindung aufzubauen. Um das zu bewerkstelligen sendet der "`Scanner"' eine Verbindungsanfrage. Eine Verbindung in \ac{ble} steht für eine Abfolge von Verbindungsevents, bei denen Nachrichten ausgetauscht werden. Der "`Scanner"' nimmt nun die Rolle des "`Masters"' an und legt in der Verbindungsanfrage drei grundlegende Eckpunkte fest. Zum einen die Zeitspanne, die vergeht, bis ein neues Verbindungsevent stattfindet. Je größer diese Zeitspanne ist, desto weniger Energie wird verbraucht. Ein weiterer Punkt ist die Anzahl der Verbindungsevents, welche der "`Slave"' überspringen darf, ohne die Verbindung zu beenden. Der letzte Punkt ist die Zeit, die vergehen darf, bis ein Timeout ausgelöst wird \cite[Seite 21f]{Townsend14:GSB}.\\ 
+
+\noindent Im "`Linked Layer"' wird die maximale Paketgröße festgelegt. In älteren Versionen von \ac{ble} lag die Payloadgröße, welche jedes Nachrichtenpaket maximal beinhalten konnte, bei 27 Byte. In Abbildung \ref{FIG:payload} ist der Aufbau eines Nachrichtenpaketes dargestellt. Besonders wichtig ist hierbei die Größe der Payload. Bezüglich dieser kann man erkennen, dass sich diese mit Version 4.2 auf 251 Bytes erhöht hat. Das wurde durch die Einführung der "`Data Length Extension"' ermöglicht. Dieses Upgrade schafft die Voraussetzungen dafür, Nachrichten in weniger Zeit übertragen zu können, da mehr Informationen in ein Paket passen \cite{Gupta:WWW}.\\   
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\linewidth]{\figdir/Payload}
+	\caption{Aufbau eines Nachrichtenpaketes bei \ac{ble}}
+	\label{FIG:payload}
+\end{figure}
+
+\noindent Sollte ein Paket fehlerhaft übertragen werden, wird dieses mittels der CRC Checksumme entdeckt und dieses Paket wird so lange wiederholt, bis die Checksumme korrekt ist. Dabei gibt es keine Obergrenze für die Anzahl an Wiederholungen \cite[Seite 23]{Townsend14:GSB}.\\
 
 \subsubsection{Profile}
 \label{sss:funktionsweise:profiles}

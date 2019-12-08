@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.2.5)  29 NOV 2019 17:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.2.5)  8 DEC 2019 16:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1097,142 +1097,198 @@ LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 13.67995pt on input line 6.
 
-(./tables/CodebookOverview.tex
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 5.
-)
-Underfull \hbox (badness 10000) in paragraph at lines 65--66
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--68
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
+
+ []
+
+Package acronym Info: Label `acro:sig' newly defined as it shall be overridden
+although it is yet undefined on input line 21.
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
 
  []
 
 [4
 
 ]
-Package acronym Info: Label `acro:sig' newly defined as it shall be overridden
-although it is yet undefined on input line 69.
-
-Underfull \hbox (badness 10000) in paragraph at lines 69--70
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--72
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--74
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 77--78
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 79--80
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
-
- []
-
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 91--92
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
 
  []
 
 Package acronym Info: Label `acro:ism' newly defined as it shall be overridden
-although it is yet undefined on input line 93.
+although it is yet undefined on input line 45.
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--51
+
+ []
+
+
+Underfull \vbox (badness 1264) has occurred while \output is active []
+
+ [5]
+Package acronym Info: Label `acro:hci' newly defined as it shall be overridden
+although it is yet undefined on input line 55.
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
+
+ []
+
+<figures/BLE_Protokolstack.png, id=31, 708.6475pt x 569.12625pt>
+File: figures/BLE_Protokolstack.png Graphic file (type png)
+<use figures/BLE_Protokolstack.png>
+Package pdftex.def Info: figures/BLE_Protokolstack.png  used on input line 59.
+(pdftex.def)             Requested size: 443.86305pt x 356.47592pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--68
+
+ []
+
+[6]
+Package acronym Info: Label `acro:rssi' newly defined as it shall be overridden
+
+although it is yet undefined on input line 77.
+ [7 <./figures/BLE_Protokolstack.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--90
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--92
+
+ []
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 93--94
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 98--99
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
 
  []
 
-Package acronym Info: Label `acro:hci' newly defined as it shall be overridden
-although it is yet undefined on input line 103.
-
-Underfull \hbox (badness 10000) in paragraph at lines 103--104
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 104--105
 
  []
 
-[6]
-<figures/BLE_Protokolstack.png, id=42, 708.6475pt x 569.12625pt>
-File: figures/BLE_Protokolstack.png Graphic file (type png)
-<use figures/BLE_Protokolstack.png>
-Package pdftex.def Info: figures/BLE_Protokolstack.png  used on input line 107.
 
-(pdftex.def)             Requested size: 443.86305pt x 356.47592pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 115--116
+Underfull \hbox (badness 10000) in paragraph at lines 106--107
 
  []
 
-[7 <./figures/BLE_Protokolstack.png>]
-Package acronym Info: Label `acro:rssi' newly defined as it shall be overridden
 
-although it is yet undefined on input line 125.
-
-Underfull \hbox (badness 10000) in paragraph at lines 130--131
+Underfull \hbox (badness 10000) in paragraph at lines 108--109
 
  []
 
-)
-Underfull \vbox (badness 10000) has occurred while \output is active []
+<figures/Payload.png, id=47, 663.47874pt x 151.56625pt>
+File: figures/Payload.png Graphic file (type png)
+<use figures/Payload.png>
+Package pdftex.def Info: figures/Payload.png  used on input line 112.
+(pdftex.def)             Requested size: 443.86305pt x 101.39621pt.
 
- [8]
-[9]
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--118
+
+ []
+
+[9]) [10 <./figures/Payload.png>]
 \openout2 = `append.aux'.
 
- (./append.tex) [10
+ (./append.tex) [11
 
 
-] (./thesis.bbl) [11
+] (./thesis.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 8--14
+[]\T1/lmr/m/n/12 (+20) S. Gupta und R. Ku-mar.  BLE v4.2: Crea-ting
+ []
 
-] (./thesis.aux (./chapters.aux)
-(./append.aux)) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--14
+\T1/lmr/m/n/12 (+20) Fas-ter, Mo-re Se-cu-re, Power-Efficient De-si-gns?Part 1.
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--14
+\T1/lmr/m/n/12 (+20) https://www.electronicdesign.com/communications/ble-v42-cr
+eating-faster-
+ []
+
+) [12
+
+] (./thesis.aux (./chapters.aux) (./append.aux)) ) 
 Here is how much of TeX's memory you used:
- 11181 strings out of 492982
- 209731 string characters out of 6134897
- 504078 words of memory out of 5000000
- 14407 multiletter control sequences out of 15000+600000
- 89595 words of font info for 124 fonts, out of 8000000 for 9000
+ 11145 strings out of 492982
+ 208923 string characters out of 6134897
+ 504029 words of memory out of 5000000
+ 14367 multiletter control sequences out of 15000+600000
+ 79362 words of font info for 119 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,19n,79p,8817b,527s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/tex
-mf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.
-enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texlive/texm
-f-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx
-10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fon
-ts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmib10.p
-fb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/ty
-pe1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr
-/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/publi
-c/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/
-texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/urw/helvetic/uhvb8a.pfb>
-Output written on thesis.pdf (11 pages, 321465 bytes).
+ 55i,19n,82p,8817b,500s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/d
+vips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/te
+xmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texlive/texmf-dist/fonts/enc/d
+vips/base/8r.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share
+/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm
+/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/
+fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb>
+Output written on thesis.pdf (12 pages, 273553 bytes).
 PDF statistics:
- 107 PDF objects out of 1000 (max. 8388607)
- 76 compressed objects within 1 object stream
+ 91 PDF objects out of 1000 (max. 8388607)
+ 62 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 24587 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 21520 words of extra memory for PDF output out of 24883 (max. 10000000)
 
