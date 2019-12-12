@@ -5,53 +5,46 @@ A level-1 auxiliary file: chapters.aux
 A level-1 auxiliary file: append.aux
 The style file: natger.bst
 Database file #1: thesis.bib
-I was expecting a `,' or a `}'---line 113 of file thesis.bib
- :   
- :   title = {Proximity and location services with Bluetooth low energy},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-Warning--empty title in Gast14:BPA
-Warning--empty year in Gast14:BPA
 Warning--empty title in Tanenbaum14:CN
-You've used 5 entries,
+You've used 6 entries,
             2811 wiz_defined-function locations,
-            680 strings with 7257 characters,
-and the built_in function-call counts, 2720 in all, are:
-= -- 216
-> -- 60
-< -- 10
+            690 strings with 7598 characters,
+and the built_in function-call counts, 3108 in all, are:
+= -- 254
+> -- 61
+< -- 11
 + -- 20
 - -- 20
-* -- 180
-:= -- 340
-add.period$ -- 17
-call.type$ -- 5
-change.case$ -- 34
-chr.to.int$ -- 5
-cite$ -- 8
-duplicate$ -- 224
-empty$ -- 237
+* -- 195
+:= -- 375
+add.period$ -- 22
+call.type$ -- 6
+change.case$ -- 39
+chr.to.int$ -- 6
+cite$ -- 7
+duplicate$ -- 261
+empty$ -- 278
 format.name$ -- 33
-if$ -- 576
+if$ -- 673
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 52
-newline$ -- 27
+missing$ -- 60
+newline$ -- 33
 num.names$ -- 10
-pop$ -- 124
+pop$ -- 138
 preamble$ -- 1
-purify$ -- 35
+purify$ -- 41
 quote$ -- 0
-skip$ -- 80
+skip$ -- 97
 stack$ -- 0
-substring$ -- 146
-swap$ -- 124
-text.length$ -- 10
-text.prefix$ -- 5
+substring$ -- 159
+swap$ -- 148
+text.length$ -- 11
+text.prefix$ -- 6
 top$ -- 0
-type$ -- 40
-warning$ -- 3
-while$ -- 15
-width$ -- 6
-write$ -- 56
-(There was 1 error message)
+type$ -- 48
+warning$ -- 1
+while$ -- 16
+width$ -- 7
+write$ -- 70
+(There was 1 warning)

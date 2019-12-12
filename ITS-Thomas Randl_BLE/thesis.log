@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.2.5)  8 DEC 2019 16:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.2.5)  12 DEC 2019 20:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -919,6 +919,10 @@ Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 )
 \AC@clearlist=\toks24
 )
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
 (/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
 \c@lips@count=\count109
@@ -1243,38 +1247,70 @@ Underfull \hbox (badness 10000) in paragraph at lines 117--118
 
  []
 
-[9]) [10 <./figures/Payload.png>]
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 122--123
+
+ []
+
+Package acronym Info: Label `acro:l2cap' newly defined as it shall be overridde
+n
+although it is yet undefined on input line 124.
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--125
+
+ []
+
+<figures/L2CAP.png, id=51, 893.3375pt x 784.9325pt>
+File: figures/L2CAP.png Graphic file (type png)
+<use figures/L2CAP.png>
+Package pdftex.def Info: figures/L2CAP.png  used on input line 128.
+(pdftex.def)             Requested size: 221.93152pt x 194.999pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
+
+ []
+
+[10 <./figures/Payload.png>] [11 <./figures/L2CAP.png>]) [12]
 \openout2 = `append.aux'.
 
- (./append.tex) [11
+ (./append.tex)
+[13
 
 
 ] (./thesis.bbl
-Underfull \hbox (badness 10000) in paragraph at lines 8--14
-[]\T1/lmr/m/n/12 (+20) S. Gupta und R. Ku-mar.  BLE v4.2: Crea-ting
+Underfull \hbox (badness 10000) in paragraph at lines 10--16
+[]\T1/lmr/m/n/12 (+20) S. Gupta und R. Ku-mar.  BLE v4.2: Crea-ting Fas-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--14
-\T1/lmr/m/n/12 (+20) Fas-ter, Mo-re Se-cu-re, Power-Efficient De-si-gns?Part 1.
-
+Underfull \hbox (badness 10000) in paragraph at lines 10--16
+\T1/lmr/m/n/12 (+20) ter, Mo-re Se-cu-re, Power-Efficient De-si-gns - Part 1.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--14
+Underfull \hbox (badness 10000) in paragraph at lines 10--16
 \T1/lmr/m/n/12 (+20) https://www.electronicdesign.com/communications/ble-v42-cr
 eating-faster-
  []
 
-) [12
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--34
+[]\T1/lmr/m/n/12 (+20) Logical Link Con-trol and Ad-ap-ta-ti-on Layer Pro-to-co
+l (L2CAP).
+ []
+
+) [14
 
 ] (./thesis.aux (./chapters.aux) (./append.aux)) ) 
 Here is how much of TeX's memory you used:
- 11145 strings out of 492982
- 208923 string characters out of 6134897
- 504029 words of memory out of 5000000
- 14367 multiletter control sequences out of 15000+600000
- 79362 words of font info for 119 fonts, out of 8000000 for 9000
+ 11240 strings out of 492982
+ 210151 string characters out of 6134897
+ 505224 words of memory out of 5000000
+ 14455 multiletter control sequences out of 15000+600000
+ 79491 words of font info for 120 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,19n,82p,8817b,500s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/d
@@ -1285,10 +1321,10 @@ vips/base/8r.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share
 /lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/
 fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb>
-Output written on thesis.pdf (12 pages, 273553 bytes).
+Output written on thesis.pdf (14 pages, 307070 bytes).
 PDF statistics:
- 91 PDF objects out of 1000 (max. 8388607)
- 62 compressed objects within 1 object stream
+ 100 PDF objects out of 1000 (max. 8388607)
+ 67 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 21520 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 21525 words of extra memory for PDF output out of 24883 (max. 10000000)
 

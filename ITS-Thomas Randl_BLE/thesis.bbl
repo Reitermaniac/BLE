@@ -1,13 +1,15 @@
 \begin{thebibliography}{Tow14}
 
-\bibitem[Gas]{Gast14:BPA}
+\bibitem[Gas14]{Gast14:BPA}
 M.~Gast.
-\newblock In \emph{{Building Proximity Applications with iBeacon}}.
+\newblock Proximity and location services with Bluetooth low energy.
+\newblock In \emph{{Building Proximity Applications with iBeacon}}, S.~13.
+  O'Reilly, Beijing (China), Koeln (Deutschland), 2014.
 
 \bibitem[Gup]{Gupta:WWW}
 S.~Gupta und R.~Kumar.
-\newblock {BLE v4.2: Creating Faster, More Secure, Power-Efficient Designs?Part
-  1}.
+\newblock {BLE v4.2: Creating Faster, More Secure, Power-Efficient Designs -
+  Part 1}.
 \newblock
   https://www.electronicdesign.com/communications/ble-v42-creating-faster-more-secure-power-efficient-designs-part-1.
 \newblock Last visit: 8~Dez 2019.
@@ -23,11 +25,18 @@ A.~Tanenbaum und D.~Wetherall.
 \newblock In \emph{{Computer Networks}}, Bd.~5, S. 95 -- 104, 194. Pearson,
   Harlow (Vereinigtes Koenigreich), 2014.
 
+\bibitem[TI1]{TI:WWW}
+{Logical Link Control and Adaptation Layer Protocol (L2CAP)}.
+\newblock
+  http://dev.ti.com/tirex/content/simplelink\_cc2640r2\_sdk\_2\_20\_00\_49/docs
+  /blestack/ble\_user\_guide/html/ble-stack-common/l2cap.html.
+\newblock Last visit: 12~Dez 2019.
+
 \bibitem[Tow14]{Townsend14:GSB}
 K.~Townsend, C.~Cufi, Akiba und R.Davidson.
 \newblock Tools and techniques for lowpower networking.
 \newblock In \emph{{Getting Started with Bluetooth Low Energy}}, S. 1, 15 --
-  23, 75, 79. O'Reilly Media Inc., Sebastopol (Vereinigte Staaten von Amerika),
+  25, 75, 79. O'Reilly Media Inc., Sebastopol (Vereinigte Staaten von Amerika),
   2014.
 
 \end{thebibliography}

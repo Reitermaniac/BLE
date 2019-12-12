@@ -116,41 +116,81 @@ Sollte der "`Advertiser"' ein "`Broadcaster"' sein ist es erlaubt, nutzerspezifi
 
 \noindent Sollte ein Paket fehlerhaft übertragen werden, wird dieses mittels der CRC Checksumme entdeckt und dieses Paket wird so lange wiederholt, bis die Checksumme korrekt ist. Dabei gibt es keine Obergrenze für die Anzahl an Wiederholungen \cite[Seite 23]{Townsend14:GSB}.\\
 
+\subsubsection{Protokolle}
+\label{sss:funktionsweise:protocoll}
+
+In Abbildung \ref{FIG:protokollstack} ist zu erkennen, dass sich zwischen den Schichten des "`Controllers"' und des tatsächlichen "`Hosts"' das \ac{hci} befindet. Dessen Zweck zeigt sich hauptsächlich bei leistungsstarken Geräten. Diese bieten den Vorteil, dass komplexe Funktionen ausgeführt werden können. Da \ac{ble} allerdings einige Funktionalitäten aufweist, welche für die Kommunikation essenziell sind und möglichst schnell abgehandelt werden müssen, werden diese zumeist in einen separaten Hardwarechip ausgelagert. Somit liegt der "`Controller"' Teil des Protokollstacks in der Regel nicht auf dem Prozessor. Die eigene Implementierung und die dafür benötigten Protokollschichten liegen allerdings aufgrund der Leistung auf der CPU. Einzige Ausnahme davon sind kleine Geräte, welche nicht viel Leistung benötigen und nur einfache Funktionen mit \ac{ble} ausführen. Bei diesen kann es sehr wohl vorkommen, dass der komplette Protokollstack auf einem einzigen Hardwarechip lokalisiert ist \cite[Seite 24]{Townsend14:GSB}. Im Folgenden wird nun erläutert welche Schichten sich im "'Host"' befinden und es wird auf deren Funktionen eingegangen.\\  
+
+\noindent Die Basis der Protokoll bietet das \ac{l2cap}. Dessen Hauptaufgabe ist es, zu gewährleisten, dass die Pakete, welche von den höheren Schichten versendet werden wollen, den Kriterien der "`Controller"' Schichten entsprechen. Ebenfalls verarbeitet es die empfangenen Pakete der unteren Schichten. Dabei liegt das Hauptaugenmerk auf der Fragmentierung der Pakete in die entsprechenden Pakete. Wie unter Abschnitt \ref{sss:funktionsweise:linked} erläutert kann \ac{ble} nur eine begrenze Anzahl an Bytes pro Paket versenden. Das \ac{l2cap} sorgt dafür, dass Nachrichten entsprechen aufgeteilt an das Linked Layer übergeben werden \cite{TI:WWW}.\\
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\linewidth]{\figdir/L2CAP}
+	\caption{Funktionsebenen des \ac{l2cap} \cite{TI:WWW}}
+	\label{FIG:l2cap}
+\end{figure}
+
+\noindent Zusätzlich fungiert das \ac{l2cap} als Protokoll Multiplexer. Das bedeutet, dass es mehrere Schichten über sich akzeptiert und diese in das Standard \ac{ble} Paketformat bringt \cite[Seite 25]{Townsend14:GSB}. In Abbildung \ref{FIG:l2cap} sind die einzelnen Arbeitsschritte und deren Zusammenhang dargestellt. Daraus geht hervor, dass jedes Datenpaket vier Bereiche durchlaufen muss, um von den oberen Schichten in das \ac{hci} zu gelangen. In die andere Richtung werden die selben Ebenen durchlaufen. Dementsprechend werden hier Pakete segmentiert, bevor sie von der Flusskontrolle des \ac{l2cap} an die Kapselung und den "`Scheduler"' weitergereicht werden. Dieser gibt die aufgeteilten Pakete dann nach und nach in die Fragmentierung weiter, in welcher die Nachricht in Pakete geteilt wird, die den \ac{ble} Standards entsprechen. Hier wird auch der "`Payload"' Teil der Paketstruktur angelegt, welche in Abbildung \ref{FIG:payload} dargestellt ist.\\       
+
 \subsubsection{Profile}
 \label{sss:funktionsweise:profiles}
+
+Lorem Ipsum
 
 \subsection{Kommunikation}
 \label{ss:funktionsweise:kommunkation}
 
+Lorem Ipsum
+
 \subsubsection{Advertisement}
 \label{sss:funktionsweise:advertisement}
+
+Lorem Ipsum
 
 \subsubsection{Verbindung}
 \label{sss:funktionsweise:verbindung}
 
+Lorem Ipsum
+
 \subsubsection{Datenaustausch}
 \label{sss:funktionsweise:datenaustausch}
+
+Lorem Ipsum
 
 \subsection{Featureset (Kosten, Reichweite, Energieverbrauch, etc... am Titel muss ich noch schrauben)}
 \label{ss:funktionsweise:Featureset}
 
+Lorem Ipsum
+
 \section{Anwendungsbeispiel iBeacon}
 \label{s:ibeacon}
+
+Lorem Ipsum
 
 \subsection{Funktionsweise}
 \label{ss:ibeacon:funktionsweise}
 
+Lorem Ipsum
+
 \subsection{Kommunikation}
 \label{ss:ibeacon:kommunikation}
+
+Lorem Ipsum
 
 \section{Vergleich mit anderen Kommunikationsprotokollen}
 \label{s:vergleich}
 
+Lorem Ipsum
+
 \subsection{ZigBee}
 \label{ss:vergleich:zigbee}
 
+Lorem Ipsum
+
 \section{Fazit}
 \label{s:fazit}
+
+Lorem Ipsum
 %%% Local Variables: 
 %%% mode: latex
 %%% TeX-master: "thesis.tex"
