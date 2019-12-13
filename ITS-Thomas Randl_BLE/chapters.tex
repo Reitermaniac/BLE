@@ -130,7 +130,22 @@ In Abbildung \ref{FIG:protokollstack} ist zu erkennen, dass sich zwischen den Sc
 	\label{FIG:l2cap}
 \end{figure}
 
-\noindent Zusätzlich fungiert das \ac{l2cap} als Protokoll Multiplexer. Das bedeutet, dass es mehrere Schichten über sich akzeptiert und diese in das Standard \ac{ble} Paketformat bringt \cite[Seite 25]{Townsend14:GSB}. In Abbildung \ref{FIG:l2cap} sind die einzelnen Arbeitsschritte und deren Zusammenhang dargestellt. Daraus geht hervor, dass jedes Datenpaket vier Bereiche durchlaufen muss, um von den oberen Schichten in das \ac{hci} zu gelangen. In die andere Richtung werden die selben Ebenen durchlaufen. Dementsprechend werden hier Pakete segmentiert, bevor sie von der Flusskontrolle des \ac{l2cap} an die Kapselung und den "`Scheduler"' weitergereicht werden. Dieser gibt die aufgeteilten Pakete dann nach und nach in die Fragmentierung weiter, in welcher die Nachricht in Pakete geteilt wird, die den \ac{ble} Standards entsprechen. Hier wird auch der "`Payload"' Teil der Paketstruktur angelegt, welche in Abbildung \ref{FIG:payload} dargestellt ist.\\       
+\noindent Zusätzlich fungiert das \ac{l2cap} als Protokoll Multiplexer. Das bedeutet, dass es mehrere Schichten über sich akzeptiert und diese in das Standard \ac{ble} Paketformat bringt \cite[Seite 25]{Townsend14:GSB}. In Abbildung \ref{FIG:l2cap} sind die einzelnen Arbeitsschritte und deren Zusammenhang dargestellt. Daraus geht hervor, dass jedes Datenpaket vier Bereiche durchlaufen muss, um von den oberen Schichten in das \ac{hci} zu gelangen. In die andere Richtung werden die selben Ebenen durchlaufen. Dementsprechend werden hier Pakete segmentiert, bevor sie von der Flusskontrolle des \ac{l2cap} an die Kapselung und den "`Scheduler"' weitergereicht werden. Dieser gibt die aufgeteilten Pakete dann nach und nach in die Fragmentierung weiter, in welcher die Nachricht in Pakete geteilt wird, die den \ac{ble} Standards entsprechen. Hier wird auch der "`Payload"' Teil der Paketstruktur angelegt, welche in Abbildung \ref{FIG:payload} dargestellt ist. Die maximale Größe des Paketes, welche durch die Fragmentierung laufen kann nennt sich \ac{mtu}. In Abbildung \ref{FIG:mtu} ist zu erkennen, wie die Fragmentierung funktioniert. Dabei wird ein Header definiert, der die notwendigen Informationen enthält, welche der Empfänger benötigt. Die restlichen Pakete werden dann gesendet und auf Empfängerseite wieder anhand der Headerinformationen zusammengesetzt. Die maximale Größe einer \ac{mtu} wird von Client und Server festgelegt. Dabei sendet der Client seine maximal unterstützte \ac{mtu} Größe und erfragt die serverseitige. Nachdem diese Informationen ausgetauscht sind, wird die \ac{mtu} auf die niedrigere Größe der Verbindungspartner gesetzt \cite{TI:WWW}.\\ 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.75\linewidth]{\figdir/MTU}
+	\caption{Fragmentierung der \ac{mtu} \cite{TI:WWW}}
+	\label{FIG:mtu}
+\end{figure}
+
+\noindent Auf der nächsten Ebene des Protokollstacks befinden sich wie in Abbildung \ref{FIG:protokollstack} zu sehen die beiden Protokolle \ac{smt} und \ac{att}.\\
+
+\noindent Bei \ac{ble} Geräten handelt es sich immer um Server, Client, oder beides. Das \ac{att} ist ein zustandsloses Client/Server Protokoll, welches Schnittstellen für die Kommunikation zwischen den jeweiligen Verbindungspartnern gewährleistet. Dabei kann maximal eine Anfrage parallel durchgeführt werden. Sollte also eine Anfrage länger benötigen, können keine weiteren Anfragen gesendet werden, bis die Schnittstelle wieder frei ist \cite[Seite 26]{Townsend14:GSB}.\\
+
+\noindent Auf Serverseite sind sogenannte Attribute hinterlegt. Diese enthalten einen Wert, der bei Zugriff auf dieses Attribut gelesen, oder überschrieben werden kann. Der Zugriff auf ein Attribut ist benötigt eine entsprechende Berechtigung. Sollte diese erfüllt sein, kann man über einen 16 Bit "`Handle"' oder einen \ac{uuid} auf die Ressource zugreifen. Neben den klassischen Lese und Schreibanfragen unterstützt das \ac{att} zusätzlich die Möglichkeit eine automatische Benachrichtigung auf ein Attribut einzurichten, welche gesendet wird, wenn man auf die Ressource schreibt. Des weiteren können Informationen bezüglich des Servers erfragt werden und Konfigurationen an diesem vorgenommen werden \cite[Seite 26ff]{Townsend14:GSB}.\\
+
+\noindent Das \ac{smt} ist das Protokoll, welches für die Verschlüsselung und den Schlüsselaustausch von \ac{ble} verantwortlich ist. Dabei gibt es wiederum zwei Rollen. Den Initiator, welcher dem Master aus dem Linked Layer entspricht, und den "`Responder"', welcher dementsprechend dem Slave aus dem "`Linked Layer"' entspricht.  
 
 \subsubsection{Profile}
 \label{sss:funktionsweise:profiles}
