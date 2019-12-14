@@ -30,13 +30,19 @@ A.~Tanenbaum und D.~Wetherall.
 \newblock
   http://dev.ti.com/tirex/content/simplelink\_cc2640r2\_sdk\_2\_20\_00\_49/docs
   /blestack/ble\_user\_guide/html/ble-stack-common/l2cap.html.
-\newblock Last visit: 12~Dez 2019.
+\newblock Last visit: 13~Dez 2019.
 
 \bibitem[Tow14]{Townsend14:GSB}
 K.~Townsend, C.~Cufi, Akiba und R.Davidson.
 \newblock Tools and techniques for lowpower networking.
 \newblock In \emph{{Getting Started with Bluetooth Low Energy}}, S. 1, 15 --
-  28, 75, 79. O'Reilly Media Inc., Sebastopol (Vereinigte Staaten von Amerika),
-  2014.
+  29, 33, 35, 38--42, 75, 79. O'Reilly Media Inc., Sebastopol (Vereinigte
+  Staaten von Amerika), 2014.
+
+\bibitem[Usa17]{Usama17:BBS}
+M.~Usama und B.~Aftab.
+\newblock Take your first steps in IoT.
+\newblock In \emph{{Building Bluetooth Low Energy Systems}}, S.~34. Packt,
+  Birmingham (Vereinigtes Koenigreich), Mumbai (Indien), 2017.
 
 \end{thebibliography}

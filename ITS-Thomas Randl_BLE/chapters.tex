@@ -154,7 +154,42 @@ In Abbildung \ref{FIG:protokollstack} ist zu erkennen, dass sich zwischen den Sc
 \subsubsection{Profile}
 \label{sss:funktionsweise:profiles}
 
-Lorem Ipsum
+An der Spitze des "`Controller"' Stacks befinden sich die beiden Profile \ac{gap} und \ac{gatt}. Diese bieten die Funktionen, die eine Anwendung benötigt, um \ac{ble} zum Einsatz bringen zu können.\\
+
+\noindent Das \ac{gap} liefert den Funktionsumfang, der es \ac{ble} Geräten erlaubt untereinander zu kommunizieren. Das Protokoll bietet die Möglichkeit, dass Geräte sich gegenseitig finden können. Zusätzlich erhalten Geräte die Möglichkeit, Daten zu broadcasten und sichere Verbindungen einzugehen. \ac{gap} ist also für das "`Advertisement"' und den Verbindungsaufbau zuständig \cite[Seite 33]{Townsend14:GSB}.\\
+
+\noindent Wie bereits in den vorherigen Kapiteln beschrieben sind in \ac{ble} sehr häufig Rollen vergeben, in die ein Gerät kategorisiert wird. Dieses Profil ist davon keine Ausnahme. In \ac{gap} werden vier Rollen definiert, welche ein Endgerät annehmen kann. Dabei besteht keine Möglichkeit, mehr als eine dieser Rollen zur selben Zeit auszuüben. Folgende Rollen sind definiert:
+\begin{itemize}
+	\item{Broadcaster}
+	\item{Observer}
+	\item{Central}
+	\item{Peripheral}
+\end{itemize}     
+
+\noindent Der "`Broadcaster"' ist ein Gerät, welches dauerhaft Daten sendet. Dies geschieht über die drei "`Advertisment"' Kanäle. Dabei ist die Nachricht allerdings ganz klar von den normalen Verbindungsanfragen zu unterscheiden, welche normalerweise über diese Kanäle versendet werden. Der "`Broadcaster"' sendet ohne auf aktive Verbindungen zu achten Daten, welche jedes andere \ac{ble} Gerät lesen kann, ohne eine Verbindung mit ihm einzugehen. Jedes \ac{ble} Gerät kann zu einem "`Broadcaster"' konfigutiert werden. Allerdings ist der gängige Gerätetyp ein \ac{ble} Beacon. Auf dieses Gerät wird unter Kapitel \ref{s:ibeacon} genauer eingegangen.\\ 
+
+\noindent Das Gegenstück zum "`Broadcaster"' ist wiederum der "`Observer"'. Dieser überprüft die "`Advertisement"' Kanäle auf entsprechende Nachrichten und akzeptiert diese ebenfalls ohne mit einem anderen Gerät verbunden zu sein.\\
+
+\noindent Die Rolle des "`Central"' ist die gängigste, welche unter \ac{gap} definiert ist. Sie entspricht dem "`Master"' aus dem "`Linked Layer"'. Ein Gerät mit dieser Rolle ist immer der Initiator der Verbindung. Zusätzlich ist es in der Lage mehrere Verbindungen zur selben Zeit aufrecht zu erhalten. Ein gängiges Beispiel ist ein Smartphone, welches gleichzeitig mit zwei "`Peripherals"', wie Kopfhörern und einer Smartwatch verbunden ist.\\
+
+\noindent Ein "`Peripheral"' ist in diesem Zusammenhang wiederum der "`Linked Layer Slave"'. Dieses Gerät sendet über die "`Advertisement"' Kanäle seine Bereitschaft eine Verbindung einzugehen. Eine Verbindung zwischen "`Central"' und "`Peripheral"' entspricht also der klassischen \ac{ble} Verbindung. \ac{gap} kann diese auch mit Hilfe des \ac{smt} verschlüsseln \cite[Seite 34]{Usama17:BBS}.\\  
+
+\noindent Neben den Rollen definiert \ac{gap} zusätzlich sogenannte Modi. Ein Modus steht hier für einen Zustand, in den sich ein Gerät für eine gewisse Zeit versetzten kann um eine bestimmte Aktion auszuführen \cite[Seite 35]{Townsend14:GSB}. Folgende sechs Modi sind dabei definiert:
+\begin{itemize}
+	\item{Broadcast}
+	\item{Nicht zu entdecken}
+	\item{Eingeschränkt zu entdecken}
+	\item{Normal zu entdecken}
+	\item{Nicht verbindbar}
+	\item{Verbindbar}
+\end{itemize} 
+Für jeden Modus gibt es weiterhin eine sogenannte Prozedur, welche von den betroffenen Geräten ausgeführt wird.\\
+
+\noindent Der "`Broadcast"' Modus hat beispielsweise als Prozedur die Observierung durch einen oder mehrere "`Observer"'. Den Modus selbst kann allerdings nur ein "`Boradcaster"' ausführen, wohingegen die Prozedur von einem "`Observer"' ausgeführt wird. Hier ist von besonderer Wichtigkeit, dass der "`Broadcaster"', welcher Daten aussendet, zu keinem Zeitpunkt wissen darf, ob die Daten auch ankommen und der "`Observer"', bei welchem die Daten ankommen, darf diese ausschließlich lesen. Dieser darf auch keine Anfragen stellen, ob ein "`Broadcaster"' in der Nähe ist. Es besteht also die Möglichkeit, dass niemals Pakete gelesen werden können, wenn kein "`Broadcaster"' in den Empfangsradius eintritt.\\
+
+\noindent Die Entdeckbarkeit von Geräten ist über drei Modi definiert. Ausschließlich ein "`Peripheral"' kann sich dabei in jeden der drei genannten versetzen. Abhängig davon, welcher Modus angewendet wird, gibt das "`Peripheral"' über die "`Advertisement"' Kanäle seine Entdeckbarkeit bekannt. Auch wenn ein Gerät angibt nicht entdeckbar zu sein, kann es dies in einem "`Advertisement"' Paket mitteilen. Das Entdecken bedeutet in diesem Zusammenhang also nur, dass dieses Gerät nicht, eingeschränkt oder immer in der Liste der Verfügbaren \ac{ble} Geräte angezeigt werden kann. Eingeschränkt im besonderen Fall bedeutet, dass das Gerät nur für einen bestimmten Zeitraum angezeigt wird.\\
+
+\noindent Wenn man nun die Modi bezüglich der Verbindung betrachtet, gibt es zwei Varianten. Zum Einen den Modus in dem keine Verbindung möglich ist und zum Anderen das Gegenstück, dass jede Verbindung erlaubt ist. Jedes Gerät ist in der Lage anzugeben, dass es keine Verbindung eingehen möchte. Dabei kann es ein entsprechendes "`Advertisement"' Paket senden, oder keinerlei Informationen über die eigene Präsenz preisgeben. Dementsprechend kann ein Gerät sich allerdings auch bereiterklären eine Verbindung einzugehen und dies preisgeben. Sollte das der Fall sein, gibt es vier mögliche Prozeduren, die von einem anderen Gerät ausgeführt werden können. Es besteht die Möglichkeit der automatischen Verbindung, bei der eine Verbindung mit einem bereits bekannten Gerät eingegangen wird. Die allgemeine Verbindung ist der Standardfall, bei dem nach verfügbaren Geräten gesucht wird und dann entschieden wird, mit welchem dieser Geräte eine Verbindung eingegangen werden soll. Eine spezifischere Version davon ist die selektive Verbindung, bei der nicht nach allen Geräten gesucht wird, sondern nur nach bekannten Geräten ohne automatische Verbindungsoption. \ac{ble} bietet zusätzlich noch eine sehr nützliche Verbindungsoption, bei der man sich direkt auf ein Gerät verbinden kann, indem man die Bluetooth Adresse des Gerätes direkt adressiert. So kann man sich in einem Schritt direkt auf das Gerät verbinden \cite[Seite 38ff]{Townsend14:GSB}.\\      
 
 \subsection{Kommunikation}
 \label{ss:funktionsweise:kommunkation}
