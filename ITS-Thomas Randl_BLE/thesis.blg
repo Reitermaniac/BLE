@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2018)
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: thesis.aux
 A level-1 auxiliary file: chapters.aux
@@ -8,43 +8,43 @@ Database file #1: thesis.bib
 Warning--empty title in Tanenbaum14:CN
 You've used 7 entries,
             2811 wiz_defined-function locations,
-            699 strings with 7787 characters,
-and the built_in function-call counts, 3762 in all, are:
-= -- 310
+            699 strings with 7805 characters,
+and the built_in function-call counts, 3991 in all, are:
+= -- 338
 > -- 73
 < -- 13
 + -- 24
 - -- 24
-* -- 241
-:= -- 455
+* -- 261
+:= -- 478
 add.period$ -- 26
 call.type$ -- 7
 change.case$ -- 46
 chr.to.int$ -- 7
 cite$ -- 8
-duplicate$ -- 311
-empty$ -- 338
+duplicate$ -- 315
+empty$ -- 361
 format.name$ -- 40
-if$ -- 816
+if$ -- 873
 int.to.chr$ -- 1
 int.to.str$ -- 0
 missing$ -- 71
 newline$ -- 38
 num.names$ -- 12
-pop$ -- 161
+pop$ -- 160
 preamble$ -- 1
 purify$ -- 48
 quote$ -- 0
-skip$ -- 113
+skip$ -- 120
 stack$ -- 0
-substring$ -- 215
-swap$ -- 176
+substring$ -- 278
+swap$ -- 180
 text.length$ -- 13
 text.prefix$ -- 7
 top$ -- 0
 type$ -- 56
 warning$ -- 1
-while$ -- 19
+while$ -- 20
 width$ -- 9
 write$ -- 82
 (There was 1 warning)
