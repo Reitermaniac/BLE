@@ -2,49 +2,48 @@ This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: thesis.aux
 A level-1 auxiliary file: chapters.aux
-A level-1 auxiliary file: append.aux
 The style file: natger.bst
 Database file #1: thesis.bib
 Warning--empty title in Tanenbaum14:CN
-You've used 9 entries,
+You've used 10 entries,
             2811 wiz_defined-function locations,
-            710 strings with 8230 characters,
-and the built_in function-call counts, 4617 in all, are:
-= -- 398
-> -- 75
-< -- 13
-+ -- 24
-- -- 24
-* -- 296
-:= -- 537
-add.period$ -- 32
-call.type$ -- 9
-change.case$ -- 56
-chr.to.int$ -- 9
-cite$ -- 10
-duplicate$ -- 359
-empty$ -- 430
-format.name$ -- 40
-if$ -- 1017
+            716 strings with 8304 characters,
+and the built_in function-call counts, 5336 in all, are:
+= -- 468
+> -- 82
+< -- 15
++ -- 26
+- -- 26
+* -- 341
+:= -- 622
+add.period$ -- 36
+call.type$ -- 10
+change.case$ -- 62
+chr.to.int$ -- 10
+cite$ -- 11
+duplicate$ -- 407
+empty$ -- 498
+format.name$ -- 44
+if$ -- 1183
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 81
-newline$ -- 48
-num.names$ -- 12
-pop$ -- 196
+missing$ -- 89
+newline$ -- 53
+num.names$ -- 14
+pop$ -- 212
 preamble$ -- 1
-purify$ -- 60
+purify$ -- 66
 quote$ -- 0
-skip$ -- 140
+skip$ -- 168
 stack$ -- 0
-substring$ -- 323
-swap$ -- 200
-text.length$ -- 13
-text.prefix$ -- 9
+substring$ -- 410
+swap$ -- 227
+text.length$ -- 15
+text.prefix$ -- 10
 top$ -- 0
-type$ -- 72
+type$ -- 80
 warning$ -- 1
-while$ -- 20
-width$ -- 11
-write$ -- 100
+while$ -- 25
+width$ -- 12
+write$ -- 111
 (There was 1 warning)

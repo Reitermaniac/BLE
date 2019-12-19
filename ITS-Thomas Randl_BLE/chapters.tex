@@ -35,7 +35,11 @@ Im einundzwanzigsten Jahrhundert steigt die Verwendung von Geräten, welche drah
 \subsection{Hardware}
 \label{ss:grundlagen:hardware}
 
-  Featureset (Kosten, Reichweite, Energieverbrauch, etc
+Auf Hardwareebene gibt es verschiedenste Ansätze, um ein \ac{ble} Modul zu entwickeln. Die bekanntesten Firmen, welche derartige Geräte produzieren sind unter anderem "`Texas Instruments"' und "`Nordic"'. Allerdings gibt es noch viele weitere Firmen mit eigenen \ac{ble} Chips. Aus diesem Grund gibt es keine einheitliche Hardware, die alle diese Chips verwenden. Die einzige Anforderung, welche diese Chips erfüllen müssen ist, dass sie nach den \ac{ble} Standards handeln müssen, welche die Bluetooth \ac{sig} vorgibt. Im folgenden werden nun einige markante Eigenschaften beschrieben, welche \ac{ble} auf Hardwareebene interessant machen.\\
+
+\noindent Betrachtet man beispielsweise den Kostenfaktor, so fällt auf, dass es hier eine große Preisspanne für verschiedenste Module gibt. Einfache Module, welche sich für die Programmierung mit der Arduino Entwicklungsumgebung eignen sind schon für unter 10€ verfügbar. Andere Geräte, welche einen höheren industriellen Standard erfüllen können wiederum mehr als 30€ kosten. Allerdings ist ein \ac{ble} Modul selten wirklich teuer. Der niedrige Preis von derartigen Geräten ist daher einer der Gründer für den großen Erfolg von \ac{ble} und das beinahe jedes Smartphone ein entsprechendes Modul besitzt hilft hier sicherlich auch enorm.\\
+
+\noindent Wenn man über drahtlose Kommunikation spricht ist ein Aspekt von besonderer Wichtigkeit. Die Reichweite, die das jeweilige Protokoll in der Lage ist zu erreichen. Im Fall von \ac{ble} sind drei Leistungsklassen definiert, anhand derer festgelegt wird, wie groß die Reichweite ist. Die meistgenutzte Klasse ist dabei die 3. Klasse, die eine Reichweite von 10 Metern erreicht. Diese hat die geringste Sendeleistung und kann auch maximal eine Wand durchdringen. Mit absteigender Klasse erhöht sich die Sendeleistung und die Reichweite. Das hat zur Folge, dass Geräte mit Sendeklasse eins bis zu 100 Meter Reichweite erreichen können. Der Energieverbrauch dieser Geräte ist jedoch um ein vielfaches höher als in Klasse drei. Wo Klasse drei mit einem Milliwatt sendet, sendet Klasse eins mit 100 Milliwatt. Da \ac{ble} jedoch großen Wert auf niedrigen Energieverbrauch legt, wird fast ausschließlich die dritte Klasse verwendet. Geräte mit unterschiedlichen Klassen können auch miteinander kommunizieren. Jedoch wird immer die Klasse für die Kommunikation gewählt, welche beide Kommunikationspartner bereit sind einzugehen. Wenn man also ein Gerät hat, welches mit Klasse eins senden möchte und ein weiteres mit Klasse drei, dann wird die gesamte Kommunikation in Klasse drei abgehalten \cite[Seite 411]{Sauter18:GMK}.\\ 
 
 \subsection{Frequenzbereich}
 \label{ss:grundlagen:frequenz}
@@ -270,10 +274,24 @@ Lorem Ipsum
 \section{Vergleich mit anderen Kommunikationsprotokollen}
 \label{s:vergleich}
 
-Lorem Ipsum
+Nachdem in den vorherigen Kapiteln ausführlich auf die Funktionsweise und die resultierenden Vorteile von \ac{ble} eingegangen wurde, widmet sich dieses Kapitel dem Vergleich mit anderen bekannten Protokollen aus dem Bereich der \ac{iot}. Besonders hervorgehoben werden dabei die Vorteile und Nachteile gegenüber diesen Protokollen. Um eine vernünftige Auswahl an Protokollen treffen zu können betrachten wir in diesem Zusammenhang den Protokollumfang, welchen die "`Amazon Echo"' mit sich bringt um im Jahr 2019 sämtliche Funktionen für eine "`Smarthome"' Integration zu erreichen. Zusätzlich wird eine weitere Technologie betrachtet, welche hauptsächlich im freien zur Anwendung kommt.\\  
 
 \subsection{ZigBee}
 \label{ss:vergleich:zigbee}
+
+Dieses Protokoll ist wie die meisten \ac{iot} Protokolle darauf ausgelegt möglichst wenig Energie zu verbrauchen. Es ist hauptsächlich für die Steuerung von Geräten wie beispielsweise Rollosteuerungen oder Lampen gedacht. "`Zigbee"' selbst verfügt aus Energiegründen über keine große Reichweite. Es kann dennoch ein komplettes Haus abdecken. Das liegt daran, dass dieses Protokoll ein Netzwerk mit verschiedenen "`Zigbee"' Geräten aufspannt. So kommuniziert die "`Amazon Alexa"' ausschließlich mit dem ersten Gerät des Netzwerkes. Die Information wird dann durch das Netzwerk gereicht und an das Zielgerät übermittelt. Dieses kann dann die gewünschte Aktion ausführen. In einem derartigen Netzwerk gibt es drei Instanzen. Zuallererst den Koordinator, der das Netzwerk startet und steuert. Jeder Teilnehmer, der kein Endknoten ist, nimmt die Rolle eines Routers an. Dieser gibt Nachrichten, die nicht an ihn gerichtet sind, weiter. Die letzte Instanz ist dann der Endknoten. Dieses Netzwerkkonstrukt hat jedoch zur Folge, dass der Einsatzort von "`Zigbee"' nur stationär möglich ist.\\
+
+\noindent Sollte man ein Gerät aus dem Netzwerk entfernen ist dieses dazu in der Lage die entfernte Route zu erkennen und eine Umleitung zu Geräten einzurichten, die sonst verloren werden würden. Um ein Gerät in das Netzwerk einzufügen muss man lediglich mit Hilfe des Koordinators einen Kanalscan ausführen. Dieser erkennt das Gerät, welches man mittels Nutzerinteraktion für 180 Sekunden sichtbar machen kann, und fügt dieses in das Netzwerk ein. Das Hinzufügen eines Gerätes ist also ähnlich einfach wie im \ac{ble} Standard \cite{ZA:Zig}.\\
+
+\noindent "`Zigbee"' ist ein Protokoll welches perfekt für die Fernsteuerung von Geräten wie Lichter, Steckdosen, oder Motorsteuerungen ist. Dafür benötigt es weniger Energie als \ac{ble}, da es seine Reichweite über ein Netzwerk erreicht. Zusätzlich sendet es kleinere Pakete, was wiederum Energie einspart. Allerdings ist es aufgrund des Netzwerkes auch an einen bestimmten Ort gebunden, wohingegen \ac{ble} nicht ortsgebunden ist. Durch die größeren Datenpakete ermöglicht \ac{ble} auch den Austausch größerer Datenmengen und bietet somit einen größeren Funktionsumfang.\\
+
+\subsection{Wifi}
+\label{ss:vergleich:wifi}
+
+Lorem Ipsum
+
+\subsection{LoRa}
+\label{ss:vergleich:lora}
 
 Lorem Ipsum
 

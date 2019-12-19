@@ -7,6 +7,11 @@
   \_16/modules/ble\_scan\_adv\_basic/ble\_scan\_adv\_basic.html.
 \newblock Last visit: 19~Dez 2019.
 
+\bibitem[All19]{ZA:Zig}
+Z.~Alliance.
+\newblock {The Standard for the IoT}.
+\newblock In \emph{Zigbee}, S. 15, 17 -- 19, 23. 2019.
+
 \bibitem[CON]{CON:WWW}
 {Bluetooth Low Energy Connections}.
 \newblock http://dev.ti.com/tirex/content/simplelink
@@ -31,8 +36,8 @@ S.~Gupta und R.~Kumar.
 \bibitem[Sau18]{Sauter18:GMK}
 M.~Sauter.
 \newblock LTE-Advanced Pro, UMTS, HSPA, GSM, GPRS, Wireless LAN und Bluetooth.
-\newblock In \emph{{Grundkurs Mobile Kommunikationssysteme}}, Bd.~7, S. 410.
-  Springer Vieweg, Wiesbaden (Deutschland), 2018.
+\newblock In \emph{{Grundkurs Mobile Kommunikationssysteme}}, Bd.~7, S. 410 --
+  411. Springer Vieweg, Wiesbaden (Deutschland), 2018.
 
 \bibitem[Tan14]{Tanenbaum14:CN}
 A.~Tanenbaum und D.~Wetherall.
