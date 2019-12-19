@@ -285,15 +285,23 @@ Dieses Protokoll ist wie die meisten \ac{iot} Protokolle darauf ausgelegt mögli
 
 \noindent "`Zigbee"' ist ein Protokoll welches perfekt für die Fernsteuerung von Geräten wie Lichter, Steckdosen, oder Motorsteuerungen ist. Dafür benötigt es weniger Energie als \ac{ble}, da es seine Reichweite über ein Netzwerk erreicht. Zusätzlich sendet es kleinere Pakete, was wiederum Energie einspart. Allerdings ist es aufgrund des Netzwerkes auch an einen bestimmten Ort gebunden, wohingegen \ac{ble} nicht ortsgebunden ist. Durch die größeren Datenpakete ermöglicht \ac{ble} auch den Austausch größerer Datenmengen und bietet somit einen größeren Funktionsumfang.\\
 
-\subsection{Wifi}
+\subsection{Wlan}
 \label{ss:vergleich:wifi}
 
-Lorem Ipsum
+Im Gegensatz zu \ac{ble} ist "`Wlan"' kein \ac{iot} Netzwerkprotokoll. Um dieses Protokoll zu betreiben benötigt man einen Router, welcher die verschieden Endgeräte miteinander verbindet. "`Wlan"' verfügt zwar über einen "`Ad-Hoc"' Modus, bei welchem sich Geräte direkt miteinander verbinden können. Dabei ist der Aufbau allerdings aufwändiger als bei \ac{ble}, da der Host manuell eine IP Adresse konfigurieren muss. Zusätzlich hat man in diesem Modus keinen Zugriff auf das Internet. Dieser Modus ist zwar sehr ähnlich einsetzbar wie \ac{ble}, benötigt allerdings viel mehr Energie, da der "`Wlan"' Standard größere Paketgrößen definiert. Dies wiederum bietet den Vorteil, dass eine schnellere Kommunikation möglich ist.\\
 
-\subsection{LoRa}
+\noindent Normalerweise wird "`Wlan"' im Infrastrukturmodus"' in Verbindung mit einem Router und Zugang zum Internet betrieben. Das bietet den Vorteil, dass die Reichweite von "`Wlan"' beinahe unbegrenzt ist. Im Zusammenhang mit dem "`Smarthome"' kann man so beispielsweise sein Zuhause überwachen, wenn man an einem gänzlich anderen Ort ist \cite{MUE:Wlan}.\\
+
+\noindent "`Wlan"' bietet einige Vorteile gegenüber \ac{ble}. Darunter sind ganz klar die Reichweite und die schnellere Übertragung von größeren Daten. Diese haben allerdings den Nachteil, dass sie an Infrastruktur gebunden sind, die nicht überall verfügbar ist. Auch der dadurch erhöhte Energieverbrauch stellt ein Problem dar. \ac{ble} hingegen benötigt keine Infrastruktur und ist überall verfügbar, wo man ein Gerät einsetzen möchte.\\ 
+
+\subsection{LoRaWAN}
 \label{ss:vergleich:lora}
 
-Lorem Ipsum
+"`LoRaWAN"' ist ein Netzwerk, welches nicht im "`Smarthome"' zum Einsatz kommt. Die Kernaufgabe stellt es dar, eine möglichst große Reichweite abzudecken. Dabei können bis zu 15 Kilometer mit einem Sendemast abgedeckt werden. Dies ist möglich, da sehr kleine Pakete versendet werden und daher eine Frequenz verwendet werden kann, die eine hohe Reichweite aufweist, jedoch im Datenfassungsvermögen eingeschränkt ist.\\
+
+\noindent Für dieses Protokoll benötigt man allerdings Infrastruktur. Es wird ein Netzwerkserver benötigt, der mit einem oder mehreren Gateways verbunden ist. Diese sind mit einer Antenne ausgestattet und kommunizieren mit den "`LoRa"' Sensoren \cite{LO:WWW}.\\
+
+\noindent Die beiden Protokolle \ac{ble} und "`LoRaWAN"' stellen also das genaue Gegenteil voneinander dar. Wohingegen \ac{ble} eine geringe Reichweite aufweist, allerdings keine Infrastruktur benötigt und eine moderate Datenrate besitzt, kann "`LoRaWAN"' ein riesiges Gebiet abdecken. Dabei muss dieses allerdings in sämtlichen anderen Bereichen große Abstriche machen. Die einzige Gemeinsamkeit, welche beide Protokolle aufweisen ist der Geringe Energieverbrauch.\\ 
 
 \section{Fazit}
 \label{s:fazit}

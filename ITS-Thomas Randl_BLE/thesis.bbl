@@ -33,6 +33,17 @@ S.~Gupta und R.~Kumar.
   https://www.electronicdesign.com/communications/ble-v42-creating-faster-more-secure-power-efficient-designs-part-1.
 \newblock Last visit: 8~Dez 2019.
 
+\bibitem[LOR]{LO:WWW}
+{What is the LoRaWAN Specification?}
+\newblock https://lora-alliance.org/about-lorawan.
+\newblock Last visit: 19~Dez 2019.
+
+\bibitem[Mue19]{MUE:Wlan}
+W.~Muehlbauer.
+\newblock {Kapitel 2: WLAN}.
+\newblock In \emph{Trends der drahtlosen Kommunikation}, S. 8 -- 9, 15, 18.
+  2019.
+
 \bibitem[Sau18]{Sauter18:GMK}
 M.~Sauter.
 \newblock LTE-Advanced Pro, UMTS, HSPA, GSM, GPRS, Wireless LAN und Bluetooth.

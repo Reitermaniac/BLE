@@ -5,45 +5,45 @@ A level-1 auxiliary file: chapters.aux
 The style file: natger.bst
 Database file #1: thesis.bib
 Warning--empty title in Tanenbaum14:CN
-You've used 10 entries,
+You've used 12 entries,
             2811 wiz_defined-function locations,
-            716 strings with 8304 characters,
-and the built_in function-call counts, 5336 in all, are:
-= -- 468
-> -- 82
-< -- 15
-+ -- 26
-- -- 26
-* -- 341
-:= -- 622
-add.period$ -- 36
-call.type$ -- 10
-change.case$ -- 62
-chr.to.int$ -- 10
-cite$ -- 11
-duplicate$ -- 407
-empty$ -- 498
-format.name$ -- 44
-if$ -- 1183
+            727 strings with 8496 characters,
+and the built_in function-call counts, 6181 in all, are:
+= -- 545
+> -- 90
+< -- 17
++ -- 28
+- -- 28
+* -- 388
+:= -- 718
+add.period$ -- 43
+call.type$ -- 12
+change.case$ -- 73
+chr.to.int$ -- 12
+cite$ -- 13
+duplicate$ -- 473
+empty$ -- 582
+format.name$ -- 48
+if$ -- 1374
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 89
-newline$ -- 53
-num.names$ -- 14
-pop$ -- 212
+missing$ -- 102
+newline$ -- 63
+num.names$ -- 16
+pop$ -- 246
 preamble$ -- 1
-purify$ -- 66
+purify$ -- 78
 quote$ -- 0
-skip$ -- 168
+skip$ -- 200
 stack$ -- 0
-substring$ -- 410
-swap$ -- 227
-text.length$ -- 15
-text.prefix$ -- 10
+substring$ -- 470
+swap$ -- 260
+text.length$ -- 17
+text.prefix$ -- 12
 top$ -- 0
-type$ -- 80
+type$ -- 96
 warning$ -- 1
-while$ -- 25
-width$ -- 12
-write$ -- 111
+while$ -- 29
+width$ -- 14
+write$ -- 131
 (There was 1 warning)
