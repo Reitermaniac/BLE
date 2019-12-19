@@ -35,7 +35,7 @@ Im einundzwanzigsten Jahrhundert steigt die Verwendung von Geräten, welche drah
 \subsection{Hardware}
 \label{ss:grundlagen:hardware}
 
-  
+  Featureset (Kosten, Reichweite, Energieverbrauch, etc
 
 \subsection{Frequenzbereich}
 \label{ss:grundlagen:frequenz}
@@ -216,27 +216,41 @@ Mit diesem Wissen über eine Charakteristik weis ein Client, welche Aktion er mi
 \subsection{Kommunikation}
 \label{ss:funktionsweise:kommunkation}
 
-Lorem Ipsum
+Nachdem in Kapitel \ref{ss:funktionsweise:protokollstack} der allgemeine Aufbau von \ac{ble} erläutert wurde, wird im nachfolgenden Kapitel auf das Kernelement, die tatsächliche Kommunikation zwischen zwei oder mehreren Geräten, von \ac{ble} eingegangen. Dabei werden drei Elemente im besonderen betrachtet. Die Bekanntmachung, die Verbindung und den Datenaustausch.\\
 
 \subsubsection{Advertisement}
 \label{sss:funktionsweise:advertisement}
 
-Lorem Ipsum
+Das "`Advertsement"' oder zu deutsch die Bekanntmachung ist die Funktion, mittels welcher sich Geräte, die Bereit sind sich zu koppeln bei suchenden Geräten bekanntmachen. Allerdings kann die Bekanntmachung auch für einen "`Broadcast"' von Daten ohne explizites Zielgerät verwendet werden.\\
 
+\noindent Für das "`Advertisement"' sind drei der 40 Kanäle, in die der Frequenzbereich auf dem \ac{ism} Band unterteilt ist, reserviert. Ein Gerät kann diese Kanäle nutzen und ein Paket senden, welches verbindungsspezifische Daten bereitstellt. Generell gibt es folgende vier unterschiedliche Pakete, welche somit gesendet werden können:
+\begin{itemize}
+	\item{ADV\_IND}
+	\item{ADV\_DIRECT\_IND}
+	\item{ADV\_SCAN\_IND}
+	\item{ADV\_NONCONN\_IND}
+\end{itemize} 
+Das "`ADV\_IND"' Paket sendet eine Bekanntmachung an alle Geräte, die zuhören und gibt bekannt, dass das Gerät bereit ist sich mit jeglichem Gerät zu verbinden. Im Gegensatz dazu sendet das "`ADV\_DIRECT\_IND"' Paket eine direkte Nachricht an ein bestimmtes Gerät, dass es bereit ist, sich mit genau diesem zu koppeln. Um das zu gewährleisten enthält die "`Payload"' des Paketes die beiden \ac{ble} Adressen der betroffenen Geräte. Diese beiden Pakete lassen auch zu, dass sich die Geräte miteinander verbinden. Die restlichen zwei Pakete lassen dies wiederum nicht zu. So ermöglicht das "`ADV\_SCAN\_IND"' Paket lediglich einen "`Broadcast"' an alle hörenden Geräte zu senden, dass dieses Gerät in Reichweite ist. Es ist als sichtbar für die anderen Geräte. Um jedoch eine Verbindung einzugehen müssen weitere Schritte unternommen werden. Das letzte Paket teilt allen Geräten in Reichweite mit, dass dieses Gerät nicht für eine Kopplung zu Verfügung steht. Alle Pakete bis auf das "`ADV\_DIRECT\_IND"' Paket können zusätzlich Daten enthalten, die über das "`Advertisement"' hinausgehen. Das ermöglicht auch den Einsatz von \ac{ble} Beacons, welche ohne eine Verbindung einzugehen Daten an alle Geräte in Reichweite senden können. \cite{ADV:WWW}.\\
+  Sollte das "`Peripheral"' diese akzeptieren
 \subsubsection{Verbindung}
 \label{sss:funktionsweise:verbindung}
 
-Lorem Ipsum
+Nachdem in Kapitel \ref{sss:funktionsweise:linked} erklärt wurde, wie Pakete aufgebaut sind und übertragen werden, gilt es noch zu erläutern, wie eine Verbindung in \ac{ble} abläuft, um diese Pakete tatsächlich transferieren zu können. Nachdem ein "`Central"' ein Gerät über das "`Advertisement"' gefunden hat, kann es eine Verbindungsanfrage initiieren. In diesem Paket sind drei wichtige Verbindungsparameter angegeben:
+\begin{itemize}
+	\item{Verbindungsintervall}
+	\item{"`Slave"' Latenz}
+	\item{Überwachungszeitüberschreitung}
+\end{itemize}
+Das Verbindungsintervall legt die Zeit fest, die zwischen zwei Verbindungsevents verstreicht. Eine Verbindung in \ac{ble} besteht ausschließlich aus derartigen Ereignissen und bleibt solange bestehen, wie diese regelmäßig stattfinden. Bei diesem Intervall gilt es abzuwägen, was wichtiger ist. Je geringer dieses Intervall ist, desto schneller ist die Verbindung. Jedoch verbraucht dieses Verhalten auch mehr Energie. Das "`Central"' muss also im Vorhinein festlegen, was für die kommende Verbindung wichtiger ist \cite{CON:WWW}. Die "`Slave"' Latenz legt die Nummer der Verbindungsevents an, die der "`Slave"' erlaubt ist zu überspringen, bevor die Verbindung als beendet gilt. Ein weiterer Weg, wie eine Verbindung vorzeitig abgebrochen werden kann, wird durch die Überwachungszeitüberschreitung festgelegt. Bei dieser wird definiert, wie viel Zeit zwischen zwei erfolgreichen Übertragungen verstreichen darf. Sollte es also zu dem Fall kommen, dass über einen längeren Zeitraum erfolglos Pakete versendet werden, wird die Verbindung beendet \cite[Seite 23]{Townsend14:GSB}.\\
 
-\subsubsection{Datenaustausch}
-\label{sss:funktionsweise:datenaustausch}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\linewidth]{\figdir/ConEv}
+	\caption{Ablauf einer \ac{ble} Verbindung \cite{CON:WWW}}
+	\label{FIG:conenv}
+\end{figure}
 
-Lorem Ipsum
-
-\subsection{Featureset (Kosten, Reichweite, Energieverbrauch, etc... am Titel muss ich noch schrauben)}
-\label{ss:funktionsweise:Featureset}
-
-Lorem Ipsum
+\noindent Wenn das "`Peripheral"' die Verbindung annimmt, wird diese, wie in Abbildung \ref{FIG:conenv} dargestellt, aufgenommen. Jedes dieser Ereignisse folgt einem bestimmten Ablauf. Zuerst überträgt der "`Master"' eine Anfrage an den "`Slave"'. Dieser empfängt die Anfrage und verarbeitet diese. Anschließende sendet er eine entsprechende Antwort, die der "`Master"' empfängt. Wichtig dabei ist, das der "`Master"' nicht nur die Verbindung initiiert, sondern auch sämtliche Anfragen. Nachdem das definierte Verbindungsintervall abgelaufen ist, wird das nächste Verbindungsevent gestartet \cite{CON:WWW}.\\       
 
 \section{Anwendungsbeispiel iBeacon}
 \label{s:ibeacon}

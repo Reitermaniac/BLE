@@ -15,13 +15,10 @@
 \contentsline {subsubsection}{\numberline {3.1.4}Profile}{12}
 \contentsline {subsection}{\numberline {3.2}Kommunikation}{17}
 \contentsline {subsubsection}{\numberline {3.2.1}Advertisement}{17}
-\contentsline {subsubsection}{\numberline {3.2.2}Verbindung}{17}
-\contentsline {subsubsection}{\numberline {3.2.3}Datenaustausch}{17}
-\contentsline {subsection}{\numberline {3.3}Featureset (Kosten, Reichweite, Energieverbrauch, etc... am Titel muss ich noch schrauben)}{17}
-\contentsline {section}{\numberline {4}Anwendungsbeispiel iBeacon}{17}
-\contentsline {subsection}{\numberline {4.1}Funktionsweise}{17}
-\contentsline {subsection}{\numberline {4.2}Kommunikation}{17}
-\contentsline {section}{\numberline {5}Vergleich mit anderen Kommunikationsprotokollen}{17}
-\contentsline {subsection}{\numberline {5.1}ZigBee}{17}
-\contentsline {section}{\numberline {6}Fazit}{18}
-\contentsline {section}{\numberline {A}Erster Abschnitt des Anhangs}{19}
+\contentsline {subsubsection}{\numberline {3.2.2}Verbindung}{18}
+\contentsline {section}{\numberline {4}Anwendungsbeispiel iBeacon}{18}
+\contentsline {subsection}{\numberline {4.1}Funktionsweise}{19}
+\contentsline {subsection}{\numberline {4.2}Kommunikation}{19}
+\contentsline {section}{\numberline {5}Vergleich mit anderen Kommunikationsprotokollen}{19}
+\contentsline {subsection}{\numberline {5.1}ZigBee}{19}
+\contentsline {section}{\numberline {6}Fazit}{19}

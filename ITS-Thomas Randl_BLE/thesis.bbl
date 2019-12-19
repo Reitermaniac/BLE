@@ -1,5 +1,19 @@
 \begin{thebibliography}{Tow14}
 
+\bibitem[ADV]{ADV:WWW}
+{Bluetooth Low Energy Scanning and Advertising}.
+\newblock
+  http://dev.ti.com/tirex/content/simplelink\_academy\_cc2640r2sdk\_1\_12\_01
+  \_16/modules/ble\_scan\_adv\_basic/ble\_scan\_adv\_basic.html.
+\newblock Last visit: 19~Dez 2019.
+
+\bibitem[CON]{CON:WWW}
+{Bluetooth Low Energy Connections}.
+\newblock http://dev.ti.com/tirex/content/simplelink
+  \_academy\_cc2640r2sdk\_2\_20\_03\_05/modules/blestack
+  /ble\_connections/ble\_connections.html.
+\newblock Last visit: 19~Dez 2019.
+
 \bibitem[Gas14]{Gast14:BPA}
 M.~Gast.
 \newblock Proximity and location services with Bluetooth low energy.
@@ -36,8 +50,8 @@ A.~Tanenbaum und D.~Wetherall.
 K.~Townsend, C.~Cufi, Akiba und R.Davidson.
 \newblock Tools and techniques for lowpower networking.
 \newblock In \emph{{Getting Started with Bluetooth Low Energy}}, S. 1, 15 --
-  29, 33, 35, 38--42, 53 -- 57, 75, 79. O'Reilly Media Inc., Sebastopol
-  (Vereinigte Staaten von Amerika), 2014.
+  29, 33, 35, 38--42, 53 -- 57, 59 -- 62, 75, 79. O'Reilly Media Inc.,
+  Sebastopol (Vereinigte Staaten von Amerika), 2014.
 
 \bibitem[Usa17]{Usama17:BBS}
 M.~Usama und B.~Aftab.

@@ -6,45 +6,45 @@ A level-1 auxiliary file: append.aux
 The style file: natger.bst
 Database file #1: thesis.bib
 Warning--empty title in Tanenbaum14:CN
-You've used 7 entries,
+You've used 9 entries,
             2811 wiz_defined-function locations,
-            699 strings with 7805 characters,
-and the built_in function-call counts, 3991 in all, are:
-= -- 338
-> -- 73
+            710 strings with 8230 characters,
+and the built_in function-call counts, 4617 in all, are:
+= -- 398
+> -- 75
 < -- 13
 + -- 24
 - -- 24
-* -- 261
-:= -- 478
-add.period$ -- 26
-call.type$ -- 7
-change.case$ -- 46
-chr.to.int$ -- 7
-cite$ -- 8
-duplicate$ -- 315
-empty$ -- 361
+* -- 296
+:= -- 537
+add.period$ -- 32
+call.type$ -- 9
+change.case$ -- 56
+chr.to.int$ -- 9
+cite$ -- 10
+duplicate$ -- 359
+empty$ -- 430
 format.name$ -- 40
-if$ -- 873
+if$ -- 1017
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 71
-newline$ -- 38
+missing$ -- 81
+newline$ -- 48
 num.names$ -- 12
-pop$ -- 160
+pop$ -- 196
 preamble$ -- 1
-purify$ -- 48
+purify$ -- 60
 quote$ -- 0
-skip$ -- 120
+skip$ -- 140
 stack$ -- 0
-substring$ -- 278
-swap$ -- 180
+substring$ -- 323
+swap$ -- 200
 text.length$ -- 13
-text.prefix$ -- 7
+text.prefix$ -- 9
 top$ -- 0
-type$ -- 56
+type$ -- 72
 warning$ -- 1
 while$ -- 20
-width$ -- 9
-write$ -- 82
+width$ -- 11
+write$ -- 100
 (There was 1 warning)

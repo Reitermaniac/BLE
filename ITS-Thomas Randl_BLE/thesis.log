@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.2.5)  17 DEC 2019 21:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.2.5)  19 DEC 2019 16:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -927,7 +927,7 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
 \c@lips@count=\count109
 ) (./thesis.aux
-(./chapters.aux) (./append.aux))
+(./chapters.aux))
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
@@ -944,8 +944,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
 LaTeX Font Info:    ... okay on input line 49.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 49.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 49.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 49.
@@ -1166,10 +1165,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 49--51
 
  []
 
-
-Underfull \vbox (badness 1264) has occurred while \output is active []
-
- [5]
+[5]
 Package acronym Info: Label `acro:hci' newly defined as it shall be overridden
 although it is yet undefined on input line 55.
 
@@ -1402,58 +1398,99 @@ Underfull \hbox (badness 10000) in paragraph at lines 214--215
 
  []
 
-[16 <./figures/GATT.png>]) [17] [18]
-\openout2 = `append.aux'.
+[16 <./figures/GATT.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 219--220
 
- (./append.tex) [19
+ []
 
 
-] (./thesis.bbl
-Underfull \hbox (badness 10000) in paragraph at lines 10--16
+Underfull \hbox (badness 10000) in paragraph at lines 224--225
+
+ []
+
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 244--245
+
+ []
+
+<figures/ConEv.png, id=84, 1557.82pt x 184.69pt>
+File: figures/ConEv.png Graphic file (type png)
+<use figures/ConEv.png>
+Package pdftex.def Info: figures/ConEv.png  used on input line 248.
+(pdftex.def)             Requested size: 443.86305pt x 52.62027pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 253--254
+
+ []
+
+[18 <./figures/ConEv.png>]) [19] (./thesis.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 4--9
+[]\T1/lmr/m/n/12 (+20) Bluetooth Low Ener-gy Scan-ning and Ad-ver-ti-sing.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--9
+\T1/lmr/m/n/12 (-4) http://dev.ti.com/tirex/content/simplelink_academy_cc2640r2
+sdk_1_12_01
+ []
+
+
+Overfull \hbox (0.6947pt too wide) in paragraph at lines 11--16
+[]\T1/lmr/m/n/12 (-20) Bluetooth Low Ener-gy Connec-ti-ons.  http://dev.ti.com/
+tirex/content/simplelink
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--16
+\T1/lmr/m/n/12 (+20) _aca-de-my_cc2640r2sdk_2_20_03_05/modules/blestack
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--30
 []\T1/lmr/m/n/12 (+20) S. Gupta und R. Ku-mar.  BLE v4.2: Crea-ting Fas-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--16
+Underfull \hbox (badness 10000) in paragraph at lines 24--30
 \T1/lmr/m/n/12 (+20) ter, Mo-re Se-cu-re, Power-Efficient De-si-gns - Part 1.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--16
+Underfull \hbox (badness 10000) in paragraph at lines 24--30
 \T1/lmr/m/n/12 (+20) https://www.electronicdesign.com/communications/ble-v42-cr
 eating-faster-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--34
+Underfull \hbox (badness 10000) in paragraph at lines 43--48
 []\T1/lmr/m/n/12 (+20) Logical Link Con-trol and Ad-ap-ta-ti-on Layer Pro-to-co
 l (L2CAP).
  []
 
 ) [20
 
-] (./thesis.aux (./chapters.aux) (./append.aux)) ) 
+] (./thesis.aux (./chapters.aux)) ) 
 Here is how much of TeX's memory you used:
- 11334 strings out of 492982
- 211673 string characters out of 6134897
- 506579 words of memory out of 5000000
- 14531 multiletter control sequences out of 15000+600000
- 80450 words of font info for 127 fonts, out of 8000000 for 9000
+ 11333 strings out of 492982
+ 211592 string characters out of 6134897
+ 506241 words of memory out of 5000000
+ 14530 multiletter control sequences out of 15000+600000
+ 80761 words of font info for 130 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,19n,82p,8817b,500s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/d
-vips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/t
-exmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathi
-t.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/te
-xmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lm
-mi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fo
-nts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb
-></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/urw/helvetic/uhvb8a.pfb>
-Output written on thesis.pdf (20 pages, 386005 bytes).
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.e
+nc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf/fonts/enc/
+dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/sha
+re/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf/fonts/type1
+/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/
+share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/publi
+c/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/te
+xmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/urw/helvetic/uhvb8a.pfb>
+Output written on thesis.pdf (20 pages, 399103 bytes).
 PDF statistics:
- 126 PDF objects out of 1000 (max. 8388607)
+ 128 PDF objects out of 1000 (max. 8388607)
  83 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 22047 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 22052 words of extra memory for PDF output out of 24883 (max. 10000000)
 
