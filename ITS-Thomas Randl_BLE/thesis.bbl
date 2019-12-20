@@ -12,6 +12,12 @@ Z.~Alliance.
 \newblock {The Standard for the IoT}.
 \newblock In \emph{Zigbee}, S. 15, 17 -- 19, 23. 2019.
 
+\bibitem[BKS]{BKS:WWW}
+{iBKS Config Tool}.
+\newblock https://play.google.com/store/apps/details?id=com.accent
+  \_systems.ibks\_config\_tool\&hl=de.
+\newblock Last visit: 20~Dez 2019.
+
 \bibitem[CON]{CON:WWW}
 {Bluetooth Low Energy Connections}.
 \newblock http://dev.ti.com/tirex/content/simplelink
@@ -19,10 +25,15 @@ Z.~Alliance.
   /ble\_connections/ble\_connections.html.
 \newblock Last visit: 19~Dez 2019.
 
+\bibitem[EDD]{EDD:WWW}
+{Eddystone format}.
+\newblock https://developers.google.com/beacons/eddystone.
+\newblock Last visit: 20~Dez 2019.
+
 \bibitem[Gas14]{Gast14:BPA}
 M.~Gast.
 \newblock Proximity and location services with Bluetooth low energy.
-\newblock In \emph{{Building Proximity Applications with iBeacon}}, S.~13.
+\newblock In \emph{{Building Proximity Applications with iBeacon}}, S. 13, 16.
   O'Reilly, Beijing (China), Koeln (Deutschland), 2014.
 
 \bibitem[Gup]{Gupta:WWW}
@@ -43,6 +54,12 @@ W.~Muehlbauer.
 \newblock {Kapitel 2: WLAN}.
 \newblock In \emph{Trends der drahtlosen Kommunikation}, S. 8 -- 9, 15, 18.
   2019.
+
+\bibitem[PRX]{PRX:WWW}
+{Proximi.io Management App}.
+\newblock https://play.google.com/store/apps/details?id=io.
+  proximi.management\&hl=gsw.
+\newblock Last visit: 20~Dez 2019.
 
 \bibitem[Sau18]{Sauter18:GMK}
 M.~Sauter.

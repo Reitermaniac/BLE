@@ -5,45 +5,45 @@ A level-1 auxiliary file: chapters.aux
 The style file: natger.bst
 Database file #1: thesis.bib
 Warning--empty title in Tanenbaum14:CN
-You've used 12 entries,
+You've used 15 entries,
             2811 wiz_defined-function locations,
-            727 strings with 8496 characters,
-and the built_in function-call counts, 6181 in all, are:
-= -- 545
-> -- 90
+            743 strings with 8858 characters,
+and the built_in function-call counts, 7071 in all, are:
+= -- 629
+> -- 93
 < -- 17
 + -- 28
 - -- 28
-* -- 388
-:= -- 718
-add.period$ -- 43
-call.type$ -- 12
-change.case$ -- 73
-chr.to.int$ -- 12
-cite$ -- 13
-duplicate$ -- 473
-empty$ -- 582
+* -- 433
+:= -- 801
+add.period$ -- 52
+call.type$ -- 15
+change.case$ -- 88
+chr.to.int$ -- 15
+cite$ -- 16
+duplicate$ -- 541
+empty$ -- 680
 format.name$ -- 48
-if$ -- 1374
+if$ -- 1579
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 102
-newline$ -- 63
+missing$ -- 117
+newline$ -- 78
 num.names$ -- 16
-pop$ -- 246
+pop$ -- 300
 preamble$ -- 1
-purify$ -- 78
+purify$ -- 96
 quote$ -- 0
-skip$ -- 200
+skip$ -- 233
 stack$ -- 0
-substring$ -- 470
-swap$ -- 260
+substring$ -- 516
+swap$ -- 292
 text.length$ -- 17
-text.prefix$ -- 12
+text.prefix$ -- 15
 top$ -- 0
-type$ -- 96
+type$ -- 120
 warning$ -- 1
-while$ -- 29
-width$ -- 14
-write$ -- 131
+while$ -- 30
+width$ -- 17
+write$ -- 158
 (There was 1 warning)

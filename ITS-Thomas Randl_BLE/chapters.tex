@@ -256,20 +256,62 @@ Das Verbindungsintervall legt die Zeit fest, die zwischen zwei Verbindungsevents
 
 \noindent Wenn das "`Peripheral"' die Verbindung annimmt, wird diese, wie in Abbildung \ref{FIG:conenv} dargestellt, aufgenommen. Jedes dieser Ereignisse folgt einem bestimmten Ablauf. Zuerst überträgt der "`Master"' eine Anfrage an den "`Slave"'. Dieser empfängt die Anfrage und verarbeitet diese. Anschließende sendet er eine entsprechende Antwort, die der "`Master"' empfängt. Wichtig dabei ist, das der "`Master"' nicht nur die Verbindung initiiert, sondern auch sämtliche Anfragen. Nachdem das definierte Verbindungsintervall abgelaufen ist, wird das nächste Verbindungsevent gestartet \cite{CON:WWW}.\\       
 
-\section{Anwendungsbeispiel iBeacon}
+\section{Anwendungsbeispiel Eddystone Beacon}
 \label{s:ibeacon}
 
-Lorem Ipsum
+In den vorherigen Kapiteln wurde hauptsächlich auf die klassischen Einsatzmöglichkeiten von \ac{ble} eingegangen. Allerdings gibt es neben der verbindungsorientierten Kommunikation auch noch die "`Beacon"' Technologie. Im folgenden Kapitel wird nun auf deren Funktionsweise eingegangen und anhand eines beispielhaften Testaufbaus wird erklärt welchen Nutzen dies mit sich bringt.\\   
 
 \subsection{Funktionsweise}
 \label{ss:ibeacon:funktionsweise}
 
-Lorem Ipsum
+In Kapitel \ref{sss:funktionsweise:advertisement} wurde erklärt, wie sich ein "`Preripheral"' erkennbar macht. In der Regel ist das Ziel, ein Gerät zu finden, welches eine Verbindung sucht. Ein "`Beacon"' nutzt die "`Advertisement"' Kanäle jedoch um Daten an sämtliche Geräte in Reichweite zu senden. Dabei hat er niemals die Absicht, eine Verbindung einzugehen. Die "`Beacon"' Technologie im \ac{ble} Standard wird durch dessen Annäherungsspezfikation ermöglicht. Dafür ist ein eigenes Paket definiert, welches in Abbildung \ref{FIG:beaconPayload} zu sehen ist. Eine Besonderheit bei diesem Paket ist, dass ein Nutzer ausschließlich die Annäherungs \ac{uuid} ändern kann. Diese beträgt immer 32 Stellen. Das führt zusätzlich dazu, dass alle derartigen Pakete die selbe Länge aufweisen \cite[Seite 16]{Gast14:BPA}.\\
 
-\subsection{Kommunikation}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\linewidth]{\figdir/BeaconPayload}
+	\caption{"`Beacon"' "`Advertisement"' Paketstruktur \cite[Seite 16]{Gast14:BPA}}
+	\label{FIG:beaconPayload}
+\end{figure}
+
+\noindent Der in diesem Testaufbau verwendete "`Beacon"' der Firma "`Accent Systems"' bietet Unterstützung für die beiden verbreitetsten Protokolle. Das ist zum Einen das hier verwendete "`Eddystone"' Protokoll der Firma Google und zum Anderen das von der Firma "`Apple"' entwickelte "`iBeacon"' Protokoll. Da "`Eddystone"' über mehr Funktionen verfügt wurde dieses hier ausgewählt. Mit diesem Protokoll kann neben der \ac{uuid} auch ein Link auf eine Website geteilt werden. Weiterhin kann mit Hilfe des TLM Paketes ein Monitoring des "`Beacons"' betrieben werden, bei dem das Gerät Informationen über den eigenen Zustand weitergibt. Abschließend können mit Hilfe eines \ac{eid} Paketes Nachrichten versendet werden, die nur von definierten Anwendungen gelesen werden können. Dies bietet eine Sicherheitskomponente, da der "`Beacon"' selbst keine Nachrichten empfangen kann und daher nicht feststellen kann, wer die Nachrichten empfängt \cite{EDD:WWW}.\\
+
+\subsection{Testaufbau}
 \label{ss:ibeacon:kommunikation}
 
-Lorem Ipsum
+Für den Testaufbau wurden drei \ac{ble} "`Beacons"' der Firma "`Accent Systems"', siehe Abbildung \ref{FIG:beacon}, verwendet. Dieser kann neben dem verwendeten "`Eddystone"' Protokoll auch das "`iBeacon"' Protokoll senden. Um die Signale der "`Beacons"' auszuwerten und diese zu konfigurieren wurde ein Smartphone mit Android 9 verwendet. Die Firma "`Accent Systems"' liefert eine eigens entwickelte Smartphone Applikation, um "`Beacons"' zu konfigurieren. Diese trägt den Namen "`iBKS Config Tool"' \cite{BKS:WWW}. Mit dieser können alle Einstellungen vorgenommen werden, die der "`Beacon"' ausführen kann. Für die Positionsbestimmung im Gebäude wurde eine Applikation der Firma "`Proximi"' verwendet. Diese trägt den Namen "`Proximi.io Management App"' \cite{PRX:WWW}. In dieser können die "`Beacons"' mit ihren GPS Koordinaten hinterlegt werden. Die App übernimmt dann eigenständig die Triangulationsberechnung und bestimmt die Postion des Empfangsgerätes.\\ 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.35\linewidth]{\figdir/beacon}
+	\caption{"`Beacon"' der Firma "`Accent Systems"'}
+	\label{FIG:beacon}
+\end{figure}
+
+\noindent Da der Funktionsumfang von \ac{ble} "`Beacons"' sehr eingeschränkt ist, sind auch die Konfigurationsparameter sehr übersichtlich. In Abbildung \ref{FIG:overview} ist ersichtlich, welche Möglichkeiten es gibt und dass für den vorliegenden Testfall der "`iBeacon"' deaktiviert wurde und über zwei der "`Eddystone slots"' ein \ac{url} und eine \ac{uuid} gesendet werden. Näheres zu diesen beiden Nachrichten findet sich in den folgenden Sektionen. Was man in der Abbildung auch erkennen kann ist die Batterielaufzeit des Gerätes. Dies kann mit einer Knopfzelle noch 15 Monate Daten senden. Man kann hier also erkennen, das ein "`Beacon"' sehr energiearm arbeitet.\\
+
+\subsubsection{URL Benachrichtigung}
+\label{sss:ibeacon:url}
+
+Das "`Eddystone"' Protokoll ist in der Lage eine \ac{url} an alle Geräte in Reichweite zu senden. Dieser kann über die "`iBKS Config Tool"' Applikation im "`Beacon"' eingestellt werden. In Abbildung \ref{FIG:url} ist die Konfigurationsseite für diese Funktion zu sehen. Mit diesen Einstellungen sendet der "`Beacon"' in einem Intervall von 950 Millisekunden die \ac{url} "`https://accent-systems.com"'. Das Endgerät kann mit Aktivierung direkt auf diese Seite wechseln.\\   
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.3\linewidth]{\figdir/URL}
+	\caption{Konfigurationsfenster für die \ac{url}}
+	\label{FIG:url}
+\end{figure}
+
+\subsubsection{Positionsbestimmung}
+\label{sss:ibeacon:position}
+
+Um die Postion im geschlossenen Raum bestimmen zu können, werden mindestens drei "`Beacons"' benötigt. Diese müssen so im Raum verteilt werden, dass sich an jeder Postion im Raum mindestens drei Signale treffen. Die jeweilige Position wird in der Applikation hinterlegt, die für die Positionsbestimmung zuständig ist. Zusätzlich wird, wie in Abbildung \ref{FIG:poition} ersichtlich, die \ac{uuid}, welche im "`Beacon"' konfiguriert ist, in für die Positionsbestimmung hinterlegt. Anhand dieser Daten kann die Applikation die Position im Raum erfassen. Dafür wird die Zeit gemessen die die Nachrichtenpakete benötigen um vom "`Beacon"' zum Smartphone zu gelangen. Danach werden die Daten ausgewertet und ein Abstand zu dem "`Beacon"' ermittelt. Mit Hilfe von drei Signalen kann man diese Abstände dann auf einen Punkt im Raum festlegen. Die \ac{uuid} von allen drei "`Beacons"' wird in diesem Beispiel alle zwei Sekunden übertragen. Deshalb wird die Position des Smartphones auch erst alle zwei Sekunden aktualisiert.\\
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\linewidth]{\figdir/Positionsbestimmung}
+	\caption{Einstellungen und Auswertung der Positionsbestimmung mit Hilfe von \ac{ble}}
+	\label{FIG:poition}
+\end{figure}
 
 \section{Vergleich mit anderen Kommunikationsprotokollen}
 \label{s:vergleich}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.2.5)  19 DEC 2019 18:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.2.5)  20 DEC 2019 18:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1436,57 +1436,133 @@ Underfull \hbox (badness 10000) in paragraph at lines 257--258
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 262--263
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 267--268
+
+ []
+
 [19 <./figures/ConEv.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 277--278
+<figures/BeaconPayload.png, id=93, 1286.8075pt x 82.3075pt>
+File: figures/BeaconPayload.png Graphic file (type png)
+<use figures/BeaconPayload.png>
+Package pdftex.def Info: figures/BeaconPayload.png  used on input line 271.
+(pdftex.def)             Requested size: 443.86305pt x 28.39108pt.
+Package acronym Info: Label `acro:eid' newly defined as it shall be overridden
+although it is yet undefined on input line 276.
+
+Underfull \hbox (badness 10000) in paragraph at lines 276--277
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 282--283
+Underfull \hbox (badness 10000) in paragraph at lines 281--282
 
  []
 
+<figures/beacon.png, id=94, 1390.19376pt x 1467.4825pt>
+File: figures/beacon.png Graphic file (type png)
+<use figures/beacon.png>
+Package pdftex.def Info: figures/beacon.png  used on input line 285.
+(pdftex.def)             Requested size: 155.35477pt x 163.97626pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 284--285
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `FIG:overview' on page 20 undefined on input line 290.
+
+
+Package acronym Info: Label `acro:url' newly defined as it shall be overridden
+although it is yet undefined on input line 290.
+
+Underfull \hbox (badness 10000) in paragraph at lines 290--291
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 286--287
-
- []
-
-[20]
-Underfull \hbox (badness 10000) in paragraph at lines 291--292
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 293--294
-
- []
-
-
+[20 <./figures/BeaconPayload.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 295--296
 
  []
 
+<figures/URL.png, id=99, 1084.05pt x 2168.1pt>
+File: figures/URL.png Graphic file (type png)
+<use figures/URL.png>
+Package pdftex.def Info: figures/URL.png  used on input line 299.
+(pdftex.def)             Requested size: 133.16026pt x 266.31412pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 300--301
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 307--308
+
+ []
+
+[21 <./figures/beacon.png>]
+<figures/Positionsbestimmung.png, id=104, 3596.43625pt x 2324.685pt>
+File: figures/Positionsbestimmung.png Graphic file (type png)
+<use figures/Positionsbestimmung.png>
+Package pdftex.def Info: figures/Positionsbestimmung.png  used on input line 31
+1.
+(pdftex.def)             Requested size: 443.86305pt x 286.89584pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--320
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 302--303
+Underfull \hbox (badness 10000) in paragraph at lines 324--325
+
+ []
+
+[22 <./figures/URL.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 326--327
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 304--305
+Underfull \hbox (badness 10000) in paragraph at lines 328--329
 
  []
 
-[21]) [22] (./thesis.bbl
+[23 <./figures/Positionsbestimmung.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 333--334
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 335--336
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 337--338
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 342--343
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 344--345
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 346--347
+
+ []
+
+[24]) [25] (./thesis.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 4--9
 []\T1/lmr/m/n/12 (+20) Bluetooth Low Ener-gy Scan-ning and Ad-ver-ti-sing.
  []
@@ -1498,62 +1574,71 @@ sdk_1_12_01
  []
 
 
-Overfull \hbox (0.6947pt too wide) in paragraph at lines 16--21
+Overfull \hbox (0.6947pt too wide) in paragraph at lines 22--27
 []\T1/lmr/m/n/12 (-20) Bluetooth Low Ener-gy Connec-ti-ons.  http://dev.ti.com/
 tirex/content/simplelink
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--21
+Underfull \hbox (badness 10000) in paragraph at lines 22--27
 \T1/lmr/m/n/12 (+20) _aca-de-my_cc2640r2sdk_2_20_03_05/modules/blestack
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--35
+Underfull \hbox (badness 10000) in paragraph at lines 40--46
 []\T1/lmr/m/n/12 (+20) S. Gupta und R. Ku-mar.  BLE v4.2: Crea-ting Fas-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--35
+Underfull \hbox (badness 10000) in paragraph at lines 40--46
 \T1/lmr/m/n/12 (+20) ter, Mo-re Se-cu-re, Power-Efficient De-si-gns - Part 1.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--35
+Underfull \hbox (badness 10000) in paragraph at lines 40--46
 \T1/lmr/m/n/12 (+20) https://www.electronicdesign.com/communications/ble-v42-cr
 eating-faster-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--64
+Overfull \hbox (1.97289pt too wide) in paragraph at lines 59--63
+[]\T1/lmr/m/n/12 (-20) Proximi.io Ma-na-ge-ment App.  htt-ps://play.google.com/
+store/apps/details?id=io.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--81
 []\T1/lmr/m/n/12 (+20) Logical Link Con-trol and Ad-ap-ta-ti-on Layer Pro-to-co
 l (L2CAP).
  []
 
-) [23
+[26
 
-] (./thesis.aux (./chapters.aux)) ) 
+]) [27] (./thesis.aux (./chapters.aux))
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 11346 strings out of 492982
- 211757 string characters out of 6134897
- 506285 words of memory out of 5000000
- 14541 multiletter control sequences out of 15000+600000
- 80890 words of font info for 131 fonts, out of 8000000 for 9000
+ 11393 strings out of 492982
+ 212558 string characters out of 6134897
+ 506467 words of memory out of 5000000
+ 14586 multiletter control sequences out of 15000+600000
+ 80761 words of font info for 130 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,19n,82p,8817b,500s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.e
-nc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/d
-vips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/sha
-re/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf/fonts/type1
-/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/
-share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/publi
-c/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/te
-xmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/urw/helvetic/uhvb8a.pfb>
-Output written on thesis.pdf (23 pages, 409098 bytes).
+ 55i,19n,79p,8817b,500s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
+ips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share
+/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texlive/texmf-dist/fonts/enc/d
+vips/base/8r.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share
+/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm
+/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/
+fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb>
+Output written on thesis.pdf (27 pages, 4393828 bytes).
 PDF statistics:
- 137 PDF objects out of 1000 (max. 8388607)
- 89 compressed objects within 1 object stream
+ 157 PDF objects out of 1000 (max. 8388607)
+ 98 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 22052 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 22072 words of extra memory for PDF output out of 24883 (max. 10000000)
 
