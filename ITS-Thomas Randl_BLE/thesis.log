@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.2.5)  20 DEC 2019 19:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.2.5)  20 DEC 2019 19:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1104,92 +1104,78 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
  []
 
-Package acronym Info: Label `acro:SIG' newly defined as it shall be overridden
+Package acronym Info: Label `acro:sig' newly defined as it shall be overridden
 although it is yet undefined on input line 8.
-
-Package acronym Warning: Acronym `SIG' is not defined on input line 8.
-
-
-Package acronym Warning: Acronym `SIG' is not defined on input line 8.
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
 
+<figures/Logo.png, id=25, 1204.5pt x 394.47375pt>
+File: figures/Logo.png Graphic file (type png)
+<use figures/Logo.png>
+Package pdftex.def Info: figures/Logo.png  used on input line 12.
+(pdftex.def)             Requested size: 332.89728pt x 109.02534pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--11
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
+
+Underfull \vbox (badness 1622) has occurred while \output is active []
+
+ [4
+
+ <./figures/Logo.png>]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 17.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 24.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 13.67995pt on input line 17.
+(Font)              scaled to size 13.67995pt on input line 24.
 
-Underfull \hbox (badness 10000) in paragraph at lines 20--21
-
- []
-
-[4
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 22--23
-
- []
-
-Package acronym Info: Label `acro:sig' newly defined as it shall be overridden
-although it is yet undefined on input line 24.
-
-Underfull \hbox (badness 10000) in paragraph at lines 24--25
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--27
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 28--29
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--31
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
+
+ []
+
+<figures/Smartwatch.jpg, id=32, 356.33125pt x 356.33125pt>
+File: figures/Smartwatch.jpg Graphic file (type jpg)
+<use figures/Smartwatch.jpg>
+Package pdftex.def Info: figures/Smartwatch.jpg  used on input line 37.
+(pdftex.def)             Requested size: 155.35477pt x 155.35081pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 34--35
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 36--37
+Underfull \hbox (badness 10000) in paragraph at lines 46--47
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--42
-
- []
-
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 43.
-(/usr/share/texmf/tex/latex/lm/ts1lmr.fd
-File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-Underfull \hbox (badness 10000) in paragraph at lines 43--44
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 45--46
+Underfull \hbox (badness 10000) in paragraph at lines 48--49
 
  []
 
@@ -1199,92 +1185,100 @@ Underfull \hbox (badness 10000) in paragraph at lines 50--51
  []
 
 
-Underfull \vbox (badness 1910) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
- [6]
+ []
+
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 57.
+(/usr/share/texmf/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
+
+ []
+
+[6 <./figures/Smartwatch.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 59--60
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
+
+ []
+
 Package acronym Info: Label `acro:ism' newly defined as it shall be overridden
-although it is yet undefined on input line 52.
+although it is yet undefined on input line 66.
 
-Underfull \hbox (badness 10000) in paragraph at lines 52--53
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--72
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--58
+Underfull \vbox (badness 2529) has occurred while \output is active []
 
- []
-
+ [7]
 Package acronym Info: Label `acro:hci' newly defined as it shall be overridden
-although it is yet undefined on input line 62.
+although it is yet undefined on input line 76.
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--63
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
 
  []
 
-<figures/BLE_Protokolstack.png, id=35, 708.6475pt x 569.12625pt>
+<figures/BLE_Protokolstack.png, id=44, 708.6475pt x 569.12625pt>
 File: figures/BLE_Protokolstack.png Graphic file (type png)
 <use figures/BLE_Protokolstack.png>
-Package pdftex.def Info: figures/BLE_Protokolstack.png  used on input line 66.
+Package pdftex.def Info: figures/BLE_Protokolstack.png  used on input line 80.
 (pdftex.def)             Requested size: 443.86305pt x 356.47592pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--75
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
 
  []
 
-[7] [8 <./figures/BLE_Protokolstack.png>]
+[8]
 Package acronym Info: Label `acro:rssi' newly defined as it shall be overridden
 
-although it is yet undefined on input line 84.
-
-Underfull \hbox (badness 10000) in paragraph at lines 89--90
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
+although it is yet undefined on input line 98.
+ [9 <./figures/BLE_Protokolstack.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 103--104
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 98--99
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--101
-
- []
-
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 102--103
+Underfull \hbox (badness 10000) in paragraph at lines 112--113
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--112
+Underfull \hbox (badness 10000) in paragraph at lines 114--115
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--114
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
 
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 115--116
+Underfull \hbox (badness 10000) in paragraph at lines 125--126
 
  []
 
-<figures/Payload.png, id=54, 663.47874pt x 151.56625pt>
-File: figures/Payload.png Graphic file (type png)
-<use figures/Payload.png>
-Package pdftex.def Info: figures/Payload.png  used on input line 119.
-(pdftex.def)             Requested size: 443.86305pt x 101.39621pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--125
+Underfull \hbox (badness 10000) in paragraph at lines 127--128
 
  []
 
@@ -1293,88 +1287,93 @@ Underfull \hbox (badness 10000) in paragraph at lines 129--130
 
  []
 
-[11 <./figures/Payload.png>]
+<figures/Payload.png, id=57, 663.47874pt x 151.56625pt>
+File: figures/Payload.png Graphic file (type png)
+<use figures/Payload.png>
+Package pdftex.def Info: figures/Payload.png  used on input line 133.
+(pdftex.def)             Requested size: 443.86305pt x 101.39621pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--139
+
+ []
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 143--144
+
+ []
+
 Package acronym Info: Label `acro:l2cap' newly defined as it shall be overridde
 n
-although it is yet undefined on input line 131.
+although it is yet undefined on input line 145.
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--132
+Underfull \hbox (badness 10000) in paragraph at lines 145--146
 
  []
 
-<figures/L2CAP.png, id=59, 893.3375pt x 784.9325pt>
+<figures/L2CAP.png, id=61, 893.3375pt x 784.9325pt>
 File: figures/L2CAP.png Graphic file (type png)
 <use figures/L2CAP.png>
-Package pdftex.def Info: figures/L2CAP.png  used on input line 135.
+Package pdftex.def Info: figures/L2CAP.png  used on input line 149.
 (pdftex.def)             Requested size: 221.93152pt x 194.999pt.
-Package acronym Info: Label `acro:mtu' newly defined as it shall be overridden
-although it is yet undefined on input line 140.
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--141
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Package acronym Info: Label `acro:mtu' newly defined as it shall be overridden
+although it is yet undefined on input line 154.
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--155
 
  []
 
-[12 <./figures/L2CAP.png>]
-<figures/MTU.png, id=64, 1206.5075pt x 222.8325pt>
+[12 <./figures/Payload.png>]
+<figures/MTU.png, id=66, 1206.5075pt x 222.8325pt>
 File: figures/MTU.png Graphic file (type png)
 <use figures/MTU.png>
-Package pdftex.def Info: figures/MTU.png  used on input line 144.
+Package pdftex.def Info: figures/MTU.png  used on input line 158.
 (pdftex.def)             Requested size: 332.89728pt x 61.48143pt.
 Package acronym Info: Label `acro:smt' newly defined as it shall be overridden
-although it is yet undefined on input line 149.
+although it is yet undefined on input line 163.
 Package acronym Info: Label `acro:att' newly defined as it shall be overridden
-although it is yet undefined on input line 149.
+although it is yet undefined on input line 163.
 
-Underfull \hbox (badness 10000) in paragraph at lines 149--150
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 151--152
+Underfull \hbox (badness 10000) in paragraph at lines 163--164
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 165--166
+
+ []
+
+[13 <./figures/L2CAP.png> <./figures/MTU.png>]
 Package acronym Info: Label `acro:uuid' newly defined as it shall be overridden
 
-although it is yet undefined on input line 153.
+although it is yet undefined on input line 167.
 
-Underfull \hbox (badness 10000) in paragraph at lines 153--154
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 155--156
+Underfull \hbox (badness 10000) in paragraph at lines 167--168
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--158
+Underfull \hbox (badness 10000) in paragraph at lines 169--170
 
  []
 
-[13 <./figures/MTU.png>]
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--172
+
+ []
+
 Package acronym Info: Label `acro:gatt' newly defined as it shall be overridden
 
-although it is yet undefined on input line 159.
+although it is yet undefined on input line 173.
 Package acronym Info: Label `acro:gap' newly defined as it shall be overridden
-although it is yet undefined on input line 159.
+although it is yet undefined on input line 173.
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--160
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 164--165
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 166--167
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 176--177
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
 
  []
 
@@ -1383,103 +1382,99 @@ Underfull \hbox (badness 10000) in paragraph at lines 178--179
 
  []
 
-[14]
+
 Underfull \hbox (badness 10000) in paragraph at lines 180--181
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 182--183
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 193--194
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 190--191
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--196
+Underfull \hbox (badness 10000) in paragraph at lines 192--193
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 197--198
+Underfull \hbox (badness 10000) in paragraph at lines 194--195
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
 
  []
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 199--200
+Underfull \hbox (badness 10000) in paragraph at lines 207--208
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 201--202
+Underfull \hbox (badness 10000) in paragraph at lines 209--210
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 203--204
+Underfull \hbox (badness 10000) in paragraph at lines 211--212
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--214
 
  []
 
 [16]
-<figures/GATT.png, id=79, 965.6075pt x 1055.945pt>
+Underfull \hbox (badness 10000) in paragraph at lines 215--216
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 217--218
+
+ []
+
+<figures/GATT.png, id=82, 965.6075pt x 1055.945pt>
 File: figures/GATT.png Graphic file (type png)
 <use figures/GATT.png>
-Package pdftex.def Info: figures/GATT.png  used on input line 207.
+Package pdftex.def Info: figures/GATT.png  used on input line 221.
 (pdftex.def)             Requested size: 332.89728pt x 364.04362pt.
- [17 <./figures/GATT.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 221--222
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 235--236
+
+ []
+
+[18 <./figures/GATT.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 240--241
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--227
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 231--232
-
- []
-
-[18]
-Underfull \hbox (badness 10000) in paragraph at lines 251--252
+Underfull \hbox (badness 10000) in paragraph at lines 245--246
 
  []
 
 [19]
-<figures/ConEv.png, id=91, 1557.82pt x 184.69pt>
-File: figures/ConEv.png Graphic file (type png)
-<use figures/ConEv.png>
-Package pdftex.def Info: figures/ConEv.png  used on input line 255.
-(pdftex.def)             Requested size: 443.86305pt x 52.62027pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 260--261
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 265--266
 
  []
 
+<figures/ConEv.png, id=94, 1557.82pt x 184.69pt>
+File: figures/ConEv.png Graphic file (type png)
+<use figures/ConEv.png>
+Package pdftex.def Info: figures/ConEv.png  used on input line 269.
+(pdftex.def)             Requested size: 443.86305pt x 52.62027pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 270--271
+Underfull \hbox (badness 10000) in paragraph at lines 274--275
 
  []
 
-<figures/BeaconPayload.png, id=92, 1286.8075pt x 82.3075pt>
-File: figures/BeaconPayload.png Graphic file (type png)
-<use figures/BeaconPayload.png>
-Package pdftex.def Info: figures/BeaconPayload.png  used on input line 274.
-(pdftex.def)             Requested size: 443.86305pt x 28.39108pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-Package acronym Info: Label `acro:eid' newly defined as it shall be overridden
-although it is yet undefined on input line 279.
 
 Underfull \hbox (badness 10000) in paragraph at lines 279--280
 
@@ -1490,19 +1485,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 284--285
 
  []
 
-<figures/beacon.png, id=97, 1390.19376pt x 1467.4825pt>
-File: figures/beacon.png Graphic file (type png)
-<use figures/beacon.png>
-Package pdftex.def Info: figures/beacon.png  used on input line 288.
-(pdftex.def)             Requested size: 155.35477pt x 163.97626pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: Reference `FIG:overview' on page 21 undefined on input line 293.
-
-
-Package acronym Info: Label `acro:url' newly defined as it shall be overridden
+<figures/BeaconPayload.png, id=99, 1286.8075pt x 82.3075pt>
+File: figures/BeaconPayload.png Graphic file (type png)
+<use figures/BeaconPayload.png>
+Package pdftex.def Info: figures/BeaconPayload.png  used on input line 288.
+(pdftex.def)             Requested size: 443.86305pt x 28.39108pt.
+Package acronym Info: Label `acro:eid' newly defined as it shall be overridden
 although it is yet undefined on input line 293.
 
 Underfull \hbox (badness 10000) in paragraph at lines 293--294
@@ -1514,59 +1502,68 @@ Underfull \hbox (badness 10000) in paragraph at lines 298--299
 
  []
 
+[21 <./figures/BeaconPayload.png>]
+<figures/beacon.png, id=104, 1390.19376pt x 1467.4825pt>
+File: figures/beacon.png Graphic file (type png)
+<use figures/beacon.png>
+Package pdftex.def Info: figures/beacon.png  used on input line 302.
+(pdftex.def)             Requested size: 110.96576pt x 117.1323pt.
 
-Underfull \vbox (badness 6461) has occurred while \output is active []
 
- [21 <./figures/BeaconPayload.png>]
-<figures/URL.png, id=102, 1084.05pt x 2168.1pt>
+LaTeX Warning: Reference `FIG:overview' on page 22 undefined on input line 307.
+
+
+Package acronym Info: Label `acro:url' newly defined as it shall be overridden
+although it is yet undefined on input line 307.
+
+Underfull \hbox (badness 10000) in paragraph at lines 307--308
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 312--313
+
+ []
+
+<figures/URL.png, id=105, 1084.05pt x 2168.1pt>
 File: figures/URL.png Graphic file (type png)
 <use figures/URL.png>
-Package pdftex.def Info: figures/URL.png  used on input line 302.
-(pdftex.def)             Requested size: 133.16026pt x 266.31412pt.
+Package pdftex.def Info: figures/URL.png  used on input line 316.
+(pdftex.def)             Requested size: 119.84491pt x 239.68271pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 310--311
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 324--325
 
  []
 
-[22 <./figures/beacon.png> <./figures/URL.png>]
-<figures/Positionsbestimmung.png, id=107, 3596.43625pt x 2324.685pt>
+[22 <./figures/beacon.png>]
+<figures/Positionsbestimmung.png, id=110, 3596.43625pt x 2324.685pt>
 File: figures/Positionsbestimmung.png Graphic file (type png)
 <use figures/Positionsbestimmung.png>
-Package pdftex.def Info: figures/Positionsbestimmung.png  used on input line 31
-4.
-(pdftex.def)             Requested size: 443.86305pt x 286.89584pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 322--323
-
- []
-
-[23 <./figures/Positionsbestimmung.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 327--328
-
- []
+Package pdftex.def Info: figures/Positionsbestimmung.png  used on input line 32
+8.
+(pdftex.def)             Requested size: 332.89728pt x 215.17188pt.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 329--330
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 331--332
-
- []
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 336--337
 
  []
 
-[24]
-Underfull \hbox (badness 10000) in paragraph at lines 338--339
+
+Underfull \hbox (badness 10000) in paragraph at lines 341--342
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 340--341
+Underfull \vbox (badness 6842) has occurred while \output is active []
+
+ [23 <./figures/URL.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 343--344
 
  []
 
@@ -1575,13 +1572,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 345--346
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 347--348
+[24 <./figures/Positionsbestimmung.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 350--351
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 349--350
+Underfull \hbox (badness 10000) in paragraph at lines 352--353
 
  []
 
@@ -1590,18 +1587,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 354--355
 
  []
 
-[25]
-Underfull \hbox (badness 10000) in paragraph at lines 356--357
+
+Underfull \hbox (badness 10000) in paragraph at lines 359--360
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 358--359
+Underfull \hbox (badness 10000) in paragraph at lines 361--362
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 363--364
+
+ []
+
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 368--369
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 370--371
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 372--373
 
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 360--107
+Underfull \hbox (badness 10000) in paragraph at lines 374--107
 
  []
 
@@ -1617,40 +1634,40 @@ sdk_1_12_01
  []
 
 
-Overfull \hbox (0.6947pt too wide) in paragraph at lines 22--27
+Overfull \hbox (0.6947pt too wide) in paragraph at lines 27--32
 []\T1/lmr/m/n/12 (-20) Bluetooth Low Ener-gy Connec-ti-ons.  http://dev.ti.com/
 tirex/content/simplelink
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 22--27
+Underfull \hbox (badness 10000) in paragraph at lines 27--32
 \T1/lmr/m/n/12 (+20) _aca-de-my_cc2640r2sdk_2_20_03_05/modules/blestack
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--46
+Underfull \hbox (badness 10000) in paragraph at lines 45--51
 []\T1/lmr/m/n/12 (+20) S. Gupta und R. Ku-mar.  BLE v4.2: Crea-ting Fas-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--46
+Underfull \hbox (badness 10000) in paragraph at lines 45--51
 \T1/lmr/m/n/12 (+20) ter, Mo-re Se-cu-re, Power-Efficient De-si-gns - Part 1.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--46
+Underfull \hbox (badness 10000) in paragraph at lines 45--51
 \T1/lmr/m/n/12 (+20) https://www.electronicdesign.com/communications/ble-v42-cr
 eating-faster-
  []
 
 
-Overfull \hbox (1.97289pt too wide) in paragraph at lines 59--63
+Overfull \hbox (1.97289pt too wide) in paragraph at lines 64--68
 []\T1/lmr/m/n/12 (-20) Proximi.io Ma-na-ge-ment App.  htt-ps://play.google.com/
 store/apps/details?id=io.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--81
+Underfull \hbox (badness 10000) in paragraph at lines 81--86
 []\T1/lmr/m/n/12 (+20) Logical Link Con-trol and Ad-ap-ta-ti-on Layer Pro-to-co
 l (L2CAP).
  []
@@ -1663,13 +1680,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 11396 strings out of 492982
- 212572 string characters out of 6134897
- 507465 words of memory out of 5000000
- 14589 multiletter control sequences out of 15000+600000
+ 11410 strings out of 492982
+ 212834 string characters out of 6134897
+ 506486 words of memory out of 5000000
+ 14600 multiletter control sequences out of 15000+600000
  80761 words of font info for 130 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,19n,79p,8817b,500s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,19n,82p,8817b,500s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
 ips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share
 /texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texlive/texmf-dist/fonts/enc/d
@@ -1678,10 +1695,10 @@ vips/base/8r.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share
 /lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/
 fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb>
-Output written on thesis.pdf (28 pages, 4398231 bytes).
+Output written on thesis.pdf (28 pages, 4461876 bytes).
 PDF statistics:
- 160 PDF objects out of 1000 (max. 8388607)
+ 163 PDF objects out of 1000 (max. 8388607)
  100 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 22072 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 22082 words of extra memory for PDF output out of 24883 (max. 10000000)
 

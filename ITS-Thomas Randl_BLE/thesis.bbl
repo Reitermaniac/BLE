@@ -18,6 +18,11 @@ Z.~Alliance.
   \_systems.ibks\_config\_tool\&hl=de.
 \newblock Last visit: 20~Dez 2019.
 
+\bibitem[BLE]{BLE:WWW}
+{Bluetooth Low Energy}.
+\newblock https://de.wikipedia.org/wiki/Bluetooth\_Low\_Energy.
+\newblock Last visit: 20~Dez 2019.
+
 \bibitem[CON]{CON:WWW}
 {Bluetooth Low Energy Connections}.
 \newblock http://dev.ti.com/tirex/content/simplelink
@@ -91,5 +96,11 @@ M.~Usama und B.~Aftab.
 \newblock Take your first steps in IoT.
 \newblock In \emph{{Building Bluetooth Low Energy Systems}}, S. 30 -- 32, 34.
   Packt, Birmingham (Vereinigtes Koenigreich), Mumbai (Indien), 2017.
+
+\bibitem[WTC]{WTC:WWW}
+{LayOPO Smart Watch}.
+\newblock
+  https://www.amazon.de/LayOPO-SmartWatch-Wasserdicht-Schrittz%C3%A4hler-Smartphones/dp/B07GNNVKXY.
+\newblock Last visit: 20~Dez 2019.
 
 \end{thebibliography}

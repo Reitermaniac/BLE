@@ -5,7 +5,14 @@ Drahtlose Kommunikation ist in der heutigen Zeit kaum mehr wegzudenken. Beinahe 
 
 \noindent Vor einigen Jahren kam nun der Begriff der \ac{iot} auf. Es wurden Gerätschaften entwickelt, die den Alltag noch mehr vereinfachen sollten. Darunter befanden sich anfangs noch hauptsächlich Lampen, die man mit Hilfe des Smartphones an- und ausschalten konnte. Seit dem hat sich allerdings viel getan und es gibt mittlerweile zum Beispiel Gesundheitsassistenten, die man im Alltag an der Kleidung trägt und die einem mit Rat und Tat zur Seite stehen. Ein weiterer wichtiger Punkt, der für viele Menschen interessant zu sein scheint ist die Heimautomatisierung, bei der man das eigene Zuhause mit Intelligenz ausstattet. Dies erreicht man durch Gerätschaften, wie beispielsweise eine automatische Temperaturregelung, die mit dem Smartphone der Hausbesitzer kommuniziert.\\
 
-\noindent Um derartige Geräte benutzen zu können wurde allerdings eine neue Form der Kommunikationsprotokolle benötigt. Da "`Wlan"' sehr energieintensiv ist und Geräte, die ohne dauerhafte Stromversorgung am Körper getragen werden daher zu große Akkus benötigen würden, wurden neue Protokolle entwickelt, die energiearme Kommunikation ermöglichen. Eines von diesen ist \ac{ble}. Dieses wurde von der Bluetooth \ac{SIG} entwickelt und leitet sich aus dem herkömmlichen Bluetooth Protokoll ab. Anfangs gab es noch einige Konkurrenten, jedoch konnte sich \ac{ble} langfristig behaupten. Heute führt es den Bereich der \ac{iot} Protokolle an und ist in fast jedem Smartphone integriert.\\
+\noindent Um derartige Geräte benutzen zu können wurde allerdings eine neue Form der Kommunikationsprotokolle benötigt. Da "`Wlan"' sehr energieintensiv ist und Geräte, die ohne dauerhafte Stromversorgung am Körper getragen werden daher zu große Akkus benötigen würden, wurden neue Protokolle entwickelt, die energiearme Kommunikation ermöglichen. Eines von diesen ist \ac{ble}. Dieses wurde von der Bluetooth \ac{sig} entwickelt und leitet sich aus dem herkömmlichen Bluetooth Protokoll ab. Anfangs gab es noch einige Konkurrenten, jedoch konnte sich \ac{ble} langfristig behaupten. Heute führt es den Bereich der \ac{iot} Protokolle an und ist in fast jedem Smartphone integriert.\\
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.75\linewidth]{\figdir/Logo}
+	\caption{Offizielles Logo von \ac{ble} \cite{BLE:WWW}}
+	\label{FIG:logo}
+\end{figure}
 
 \noindent In den folgenden Kapiteln wird erläutert, wie \ac{ble} funktioniert und welche Anwendungen mit diesem Protokoll möglich sind. Abschließende wird ein Vergleich mit anderen \ac{iot} Protokollen getroffen, um den genauen Anwendungsbereich einzugrenzen.\\   
 
@@ -23,7 +30,14 @@ Im einundzwanzigsten Jahrhundert steigt die Verwendung von Geräten, welche drah
 
 \noindent Nachdem das Smartphone immer mehr an Beliebtheit gewonnen hat und sich der Begriff des \ac{iot} entwickelt hat, reagierte die Bluetooth \ac{sig}, indem sie ein Protokoll erarbeiteten, welches einen möglichst geringen Stromverbrauch, eine geringe Bandbreite und niedrige Komplexität bietet \cite[Seite 1]{Townsend14:GSB}.\\
 
-\noindent Mit der Einführung von \ac{ble} kam die Möglichkeit kleine Datensignale zwischen Geräten auszutauschen. Ein aktuell sehr bekanntes Beispiel sind dabei sogenannte "`Smartwatches"'. Diese bieten neben der Möglichkeit die Uhrzeit bereitzustellen viele weitere Funktionen, wie beispielsweise die Steuerung von Telefongesprächen, oder die Fernsteuerung der Musikwiedergabe. Der Nutzer erhält durch ein derartiges Gerät die Möglichkeit, sein Smartphone in gewissen Bereichen fernzusteuern.\\
+\noindent Mit der Einführung von \ac{ble} kam die Möglichkeit kleine Datensignale zwischen Geräten auszutauschen. Ein aktuell sehr bekanntes Beispiel sind dabei sogenannte "`Smartwatches"' (Abbildung \ref{FIG:smartwatch}). Diese bieten neben der Möglichkeit die Uhrzeit bereitzustellen viele weitere Funktionen, wie beispielsweise die Steuerung von Telefongesprächen, oder die Fernsteuerung der Musikwiedergabe. Der Nutzer erhält durch ein derartiges Gerät die Möglichkeit, sein Smartphone in gewissen Bereichen fernzusteuern.\\
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.35\linewidth]{\figdir/Smartwatch}
+	\caption{Die LayOPO Smart Watch und deren Funktionsumfang \cite{WTC:WWW}}
+	\label{FIG:smartwatch}
+\end{figure}
 
 \noindent Beinahe jeder Mensch in der heutigen Zeit besitzt und nutzt ein Smartphone. Jedes Smartphone ist dabei mit einer Bluetoothschnittstelle ausgestattet. Dieser Sachverhalt liefert die Möglichkeit, nicht nur eine "`Smartwatch"' mit dem Smartphone zu verbinden, sondern jegliches Empfangsgerät, welches der Nutzer benötigen könnte. Besonders beliebt sind dabei Fitnessgeräte, die dem Nutzer Informationen über sein Fitnesslevel liefern.\\
 
@@ -285,7 +299,7 @@ Für den Testaufbau wurden drei \ac{ble} "`Beacons"' der Firma "`Accent Systems"
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.35\linewidth]{\figdir/beacon}
+	\includegraphics[width=0.25\linewidth]{\figdir/beacon}
 	\caption{"`Beacon"' der Firma "`Accent Systems"'}
 	\label{FIG:beacon}
 \end{figure}
@@ -299,7 +313,7 @@ Das "`Eddystone"' Protokoll ist in der Lage eine \ac{url} an alle Geräte in Rei
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.3\linewidth]{\figdir/URL}
+	\includegraphics[width=0.27\linewidth]{\figdir/URL}
 	\caption{Konfigurationsfenster für die \ac{url}}
 	\label{FIG:url}
 \end{figure}
@@ -311,7 +325,7 @@ Um die Postion im geschlossenen Raum bestimmen zu können, werden mindestens dre
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=\linewidth]{\figdir/Positionsbestimmung}
+	\includegraphics[width=0.75\linewidth]{\figdir/Positionsbestimmung}
 	\caption{Einstellungen und Auswertung der Positionsbestimmung mit Hilfe von \ac{ble}}
 	\label{FIG:poition}
 \end{figure}

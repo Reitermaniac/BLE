@@ -2,26 +2,26 @@
 \babel@toc {ngerman}{}
 \babel@toc {ngerman}{}
 \contentsline {section}{\numberline {1}Einleitung}{4}
-\contentsline {section}{\numberline {2}Technische Grundlagen und Implementierungen}{4}
-\contentsline {subsection}{\numberline {2.1}Beispiele f\IeC {\"u}r Implementierungen}{4}
+\contentsline {section}{\numberline {2}Technische Grundlagen und Implementierungen}{5}
+\contentsline {subsection}{\numberline {2.1}Beispiele f\IeC {\"u}r Implementierungen}{5}
 \contentsline {subsection}{\numberline {2.2}Hardware}{6}
 \contentsline {subsection}{\numberline {2.3}Frequenzbereich}{7}
-\contentsline {section}{\numberline {3}Funktionsweise Bluetooth Low Energy}{7}
-\contentsline {subsection}{\numberline {3.1}Protokollstack}{7}
-\contentsline {subsubsection}{\numberline {3.1.1}Physical Layer}{7}
-\contentsline {subsubsection}{\numberline {3.1.2}Linked Layer}{9}
-\contentsline {subsubsection}{\numberline {3.1.3}Protokolle}{11}
+\contentsline {section}{\numberline {3}Funktionsweise Bluetooth Low Energy}{8}
+\contentsline {subsection}{\numberline {3.1}Protokollstack}{8}
+\contentsline {subsubsection}{\numberline {3.1.1}Physical Layer}{8}
+\contentsline {subsubsection}{\numberline {3.1.2}Linked Layer}{10}
+\contentsline {subsubsection}{\numberline {3.1.3}Protokolle}{12}
 \contentsline {subsubsection}{\numberline {3.1.4}Profile}{14}
-\contentsline {subsection}{\numberline {3.2}Kommunikation}{18}
-\contentsline {subsubsection}{\numberline {3.2.1}Advertisement}{18}
-\contentsline {subsubsection}{\numberline {3.2.2}Verbindung}{19}
-\contentsline {section}{\numberline {4}Anwendungsbeispiel Eddystone Beacon}{20}
-\contentsline {subsection}{\numberline {4.1}Funktionsweise}{20}
+\contentsline {subsection}{\numberline {3.2}Kommunikation}{19}
+\contentsline {subsubsection}{\numberline {3.2.1}Advertisement}{19}
+\contentsline {subsubsection}{\numberline {3.2.2}Verbindung}{20}
+\contentsline {section}{\numberline {4}Anwendungsbeispiel Eddystone Beacon}{21}
+\contentsline {subsection}{\numberline {4.1}Funktionsweise}{21}
 \contentsline {subsection}{\numberline {4.2}Testaufbau}{21}
 \contentsline {subsubsection}{\numberline {4.2.1}URL Benachrichtigung}{22}
-\contentsline {subsubsection}{\numberline {4.2.2}Positionsbestimmung}{23}
+\contentsline {subsubsection}{\numberline {4.2.2}Positionsbestimmung}{22}
 \contentsline {section}{\numberline {5}Vergleich mit anderen Kommunikationsprotokollen}{23}
 \contentsline {subsection}{\numberline {5.1}ZigBee}{24}
-\contentsline {subsection}{\numberline {5.2}Wlan}{24}
+\contentsline {subsection}{\numberline {5.2}Wlan}{25}
 \contentsline {subsection}{\numberline {5.3}LoRaWAN}{25}
-\contentsline {section}{\numberline {6}Fazit}{25}
+\contentsline {section}{\numberline {6}Fazit}{26}
