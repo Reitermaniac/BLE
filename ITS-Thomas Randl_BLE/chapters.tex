@@ -2,9 +2,6 @@
 \label{s:intro}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Ein Abschnitt der Einleitung}
-\label{ss:intro:abc}
 
 \section{Technische Grundlagen und Implementierungen}
 \label{s:grundlagen}
@@ -348,7 +345,13 @@ Im Gegensatz zu \ac{ble} ist "`Wlan"' kein \ac{iot} Netzwerkprotokoll. Um dieses
 \section{Fazit}
 \label{s:fazit}
 
-Lorem Ipsum
+Das \ac{ble} Protokoll bietet viele Möglichkeiten für eine Kommunikation, die wenig Energie benötigt und überall verfügbar ist, wo sich zwei entsprechende Geräte befinden. Mit ihm ist es möglich ohne großen Aufwand eine Verbindung mit einem Gerät herzustellen. Zusätzlich bietet es weitere Komfortfunktionen im Protokollstack, welche beispielsweise eine verschlüsselte Kommunikation ermöglichen. Zusätzlich kann man den vollen Stack für eine eigene Anwendung nutzen, die man auf diesem Stack aufbaut und welche lediglich mit den beiden Protokollen \ac{gatt} und \ac{gap} kommunizieren muss. Sämtliche anderen Funktionen sind im Protokollstack enthalten.\\
+
+\noindent Neben der klassischen Kommunikation, die darauf beruht, dass zwei Geräte verbunden sind, gibt es zusätzlich die \ac{ble} "`Beacons"'. Diese können eingesetzt werden, um Geräte, die sich einer bestimmten Position nähern eine Nachricht zukommen zu lassen. Des weiteren kann man mit diesen Geräten endlich das Problem der Positionsbestimmung in geschlossenen Gebäuden beheben. Da GPS Signale nur im freien vernünftig funktionieren ist dies eine großartige Erweiterung des \ac{ble} Protokollstacks.\\
+
+\noindent Selbstverständlich stößt auch \ac{ble} an einige physikalische Grenzen. So ist es durch eine Reichweite von zehn Metern sehr eingeschränkt und eignet sich nur für Geräte, die nahe beieinander sind. Des weiteren ist die Paketgröße im Vergleich zu anderen Protokollen wie "`Wlan"' sehr klein und die Übertragung größerer Datenmengen dauert unangenehm lange.\\
+
+\noindent Wenn man allerdings über diese Hürden hinwegsehen kann, da keine große Reichweite von Nöten ist und keine riesigen Datenmengen übertragen werden müssen, ist \ac{ble} die Perfekte Wahl. Nicht ohne Grund haben beinahe alle Smartphones in der heutigen Zeit eine entsprechende Unterstützung. Man kann getrost sagen, dass \ac{ble} den Bereich der \ac{iot} maßgeblich geprägt hat und sich solide in der Mitte dieser Technologien ansiedelt.\\     
 %%% Local Variables: 
 %%% mode: latex
 %%% TeX-master: "thesis.tex"
