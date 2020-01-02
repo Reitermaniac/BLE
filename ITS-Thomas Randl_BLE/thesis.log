@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.2.5)  2 JAN 2020 19:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.2.5)  2 JAN 2020 20:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1574,59 +1574,71 @@ Underfull \hbox (badness 10000) in paragraph at lines 360--361
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 365--366
+Underfull \hbox (badness 10000) in paragraph at lines 362--363
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 364--365
 
  []
 
 [25]
-Underfull \hbox (badness 10000) in paragraph at lines 367--368
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 369--370
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 374--375
+Underfull \hbox (badness 10000) in paragraph at lines 371--372
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 376--377
+Underfull \hbox (badness 10000) in paragraph at lines 373--374
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 378--379
+Underfull \hbox (badness 10000) in paragraph at lines 377--378
+
+ []
+
+[26]
+Underfull \hbox (badness 10000) in paragraph at lines 382--383
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 383--384
+Underfull \hbox (badness 10000) in paragraph at lines 384--385
 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [26]
-Underfull \hbox (badness 10000) in paragraph at lines 385--386
+Underfull \hbox (badness 10000) in paragraph at lines 386--387
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 387--388
+Underfull \hbox (badness 10000) in paragraph at lines 391--392
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 393--394
+
+ []
+
+[27]
+Underfull \hbox (badness 10000) in paragraph at lines 395--396
 
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 389--107
+Underfull \hbox (badness 10000) in paragraph at lines 397--107
 
  []
 
-[27] (./thesis.bbl
+[28] (./thesis.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 4--9
 []\T1/lmr/m/n/12 (+20) Bluetooth Low Ener-gy Scan-ning and Ad-ver-ti-sing.
  []
@@ -1649,41 +1661,41 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--32
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--51
+Underfull \hbox (badness 10000) in paragraph at lines 50--56
 []\T1/lmr/m/n/12 (+20) S. Gupta und R. Ku-mar.  BLE v4.2: Crea-ting Fas-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--51
+Underfull \hbox (badness 10000) in paragraph at lines 50--56
 \T1/lmr/m/n/12 (+20) ter, Mo-re Se-cu-re, Power-Efficient De-si-gns - Part 1.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--51
+Underfull \hbox (badness 10000) in paragraph at lines 50--56
 \T1/lmr/m/n/12 (+20) https://www.electronicdesign.com/communications/ble-v42-cr
 eating-faster-
  []
 
 
-Overfull \hbox (1.97289pt too wide) in paragraph at lines 64--68
+Overfull \hbox (1.97289pt too wide) in paragraph at lines 69--73
 []\T1/lmr/m/n/12 (-20) Proximi.io Ma-na-ge-ment App.  htt-ps://play.google.com/
 store/apps/details?id=io.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--86
+Underfull \hbox (badness 10000) in paragraph at lines 86--91
 []\T1/lmr/m/n/12 (+20) Logical Link Con-trol and Ad-ap-ta-ti-on Layer Pro-to-co
 l (L2CAP).
  []
 
-[28
+[29
 
-]) [29] (./thesis.aux (./chapters.aux)) ) 
+]) [30] (./thesis.aux (./chapters.aux)) ) 
 Here is how much of TeX's memory you used:
- 11418 strings out of 492982
- 212981 string characters out of 6134897
- 506496 words of memory out of 5000000
- 14605 multiletter control sequences out of 15000+600000
+ 11420 strings out of 492982
+ 213011 string characters out of 6134897
+ 506504 words of memory out of 5000000
+ 14607 multiletter control sequences out of 15000+600000
  80890 words of font info for 131 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,19n,82p,8817b,500s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1696,10 +1708,10 @@ sr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf/fonts
 /public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/sh
 are/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/urw/helvetic/uhvb8a.pfb>
-Output written on thesis.pdf (29 pages, 4556486 bytes).
+Output written on thesis.pdf (30 pages, 4559898 bytes).
 PDF statistics:
- 168 PDF objects out of 1000 (max. 8388607)
- 102 compressed objects within 2 object streams
+ 171 PDF objects out of 1000 (max. 8388607)
+ 104 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  22087 words of extra memory for PDF output out of 24883 (max. 10000000)
 

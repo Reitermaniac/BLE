@@ -4,46 +4,47 @@ The top-level auxiliary file: thesis.aux
 A level-1 auxiliary file: chapters.aux
 The style file: natger.bst
 Database file #1: thesis.bib
+Warning--empty title in Gessler14:WNN
 Warning--empty title in Tanenbaum14:CN
-You've used 17 entries,
+You've used 18 entries,
             2811 wiz_defined-function locations,
-            753 strings with 9099 characters,
-and the built_in function-call counts, 7735 in all, are:
-= -- 693
-> -- 95
-< -- 17
-+ -- 28
-- -- 28
-* -- 472
-:= -- 866
-add.period$ -- 58
-call.type$ -- 17
-change.case$ -- 98
-chr.to.int$ -- 17
-cite$ -- 18
-duplicate$ -- 585
-empty$ -- 753
-format.name$ -- 48
-if$ -- 1731
+            760 strings with 9236 characters,
+and the built_in function-call counts, 8626 in all, are:
+= -- 777
+> -- 107
+< -- 19
++ -- 32
+- -- 32
+* -- 541
+:= -- 966
+add.period$ -- 61
+call.type$ -- 18
+change.case$ -- 105
+chr.to.int$ -- 18
+cite$ -- 20
+duplicate$ -- 640
+empty$ -- 836
+format.name$ -- 55
+if$ -- 1932
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 127
-newline$ -- 88
-num.names$ -- 16
-pop$ -- 336
+missing$ -- 138
+newline$ -- 92
+num.names$ -- 18
+pop$ -- 361
 preamble$ -- 1
-purify$ -- 108
+purify$ -- 115
 quote$ -- 0
-skip$ -- 252
+skip$ -- 278
 stack$ -- 0
-substring$ -- 573
-swap$ -- 312
-text.length$ -- 17
-text.prefix$ -- 17
+substring$ -- 694
+swap$ -- 345
+text.length$ -- 19
+text.prefix$ -- 18
 top$ -- 0
-type$ -- 136
-warning$ -- 1
-while$ -- 30
-width$ -- 20
-write$ -- 176
-(There was 1 warning)
+type$ -- 144
+warning$ -- 2
+while$ -- 34
+width$ -- 21
+write$ -- 186
+(There were 2 warnings)
