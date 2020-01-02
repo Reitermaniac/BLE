@@ -75,12 +75,12 @@ Im nachfolgenden Kapitel wird nun auf die Softwareseitigen Aspekte des \ac{ble} 
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=\linewidth]{\figdir/BLE_Protokolstack}
+	\includegraphics[width=0.9\linewidth]{\figdir/BLE_Protokolstack}
 	\caption{\ac{ble} Protokollstack \cite[Seite 16]{Townsend14:GSB}}
 	\label{FIG:protokollstack}
 \end{figure}
 
-In Abbildung \ref{FIG:protokollstack} ist der Protokollstack von \ac{ble} zu sehen. Dabei sind die drei Ebenen "`Controller"', "`Host"' und "`Application"' zu erkennen. Auf der untersten Ebene liegt der "`Controller"', in welchem das "`Physical Layer"' und das "`Linked Layer"' enthalten sind. Zwischen "`Host und "`Controller"' liegt das sogenannte \ac{hci}, welches die Schnittstelle zwischen den beiden Kommunikationspartnern darstellt. Im "`Host"' wiederum befinden sich sämtliche Protokolle und Profile, die notwendig sind, um Kommunikation zu ermöglichen. An der Spitze des Protokollstacks befindet sich die "`Applikation"' in der die Logik und Nutzerschnittstelle des aktuellen Anwendungsfalls liegt \cite[15]{Townsend14:GSB}. Wie diese einzelnen Komponenten funktionieren und untereinander kommunizieren ist in den nachfolgenden Abschnitten erläutert.\\  
+\noindent In Abbildung \ref{FIG:protokollstack} ist der Protokollstack von \ac{ble} zu sehen. Dabei sind die drei Ebenen "`Controller"', "`Host"' und "`Application"' zu erkennen. Auf der untersten Ebene liegt der "`Controller"', in welchem das "`Physical Layer"' und das "`Linked Layer"' enthalten sind. Zwischen "`Host und "`Controller"' liegt das sogenannte \ac{hci}, welches die Schnittstelle zwischen den beiden Kommunikationspartnern darstellt. Im "`Host"' wiederum befinden sich sämtliche Protokolle und Profile, die notwendig sind, um Kommunikation zu ermöglichen. An der Spitze des Protokollstacks befindet sich die "`Applikation"' in der die Logik und Nutzerschnittstelle des aktuellen Anwendungsfalls liegt \cite[15]{Townsend14:GSB}. Wie diese einzelnen Komponenten funktionieren und untereinander kommunizieren ist in den nachfolgenden Abschnitten erläutert.\\  
 
 \subsubsection{Physical Layer}
 \label{sss:funktionsweise:physical}
@@ -126,14 +126,14 @@ Sollte der "`Advertiser"' ein "`Broadcaster"' sein ist es erlaubt, nutzerspezifi
 
 \noindent Für den Fall, dass der "`Advertiser"' kein "`Broadcaster"' ist, ergibt sich die Möglichkeit eine Verbindung aufzubauen. Um das zu bewerkstelligen sendet der "`Scanner"' eine Verbindungsanfrage. Eine Verbindung in \ac{ble} steht für eine Abfolge von Verbindungsevents, bei denen Nachrichten ausgetauscht werden. Der "`Scanner"' nimmt nun die Rolle des "`Masters"' an und legt in der Verbindungsanfrage drei grundlegende Eckpunkte fest. Zum einen die Zeitspanne, die vergeht, bis ein neues Verbindungsevent stattfindet. Je größer diese Zeitspanne ist, desto weniger Energie wird verbraucht. Ein weiterer Punkt ist die Anzahl der Verbindungsevents, welche der "`Slave"' überspringen darf, ohne die Verbindung zu beenden. Der letzte Punkt ist die Zeit, die vergehen darf, bis ein Timeout ausgelöst wird \cite[Seite 21f]{Townsend14:GSB}.\\ 
 
-\noindent Im "`Linked Layer"' wird die maximale Paketgröße festgelegt. In älteren Versionen von \ac{ble} lag die Payloadgröße, welche jedes Nachrichtenpaket maximal beinhalten konnte, bei 27 Byte. In Abbildung \ref{FIG:payload} ist der Aufbau eines Nachrichtenpaketes dargestellt. Besonders wichtig ist hierbei die Größe der Payload. Bezüglich dieser kann man erkennen, dass sich diese mit Version 4.2 auf 251 Bytes erhöht hat. Das wurde durch die Einführung der "`Data Length Extension"' ermöglicht. Dieses Upgrade schafft die Voraussetzungen dafür, Nachrichten in weniger Zeit übertragen zu können, da mehr Informationen in ein Paket passen \cite{Gupta:WWW}.\\   
-
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\linewidth]{\figdir/Payload}
 	\caption{Aufbau eines Nachrichtenpaketes bei \ac{ble}}
 	\label{FIG:payload}
 \end{figure}
+
+\noindent Im "`Linked Layer"' wird die maximale Paketgröße festgelegt. In älteren Versionen von \ac{ble} lag die Payloadgröße, welche jedes Nachrichtenpaket maximal beinhalten konnte, bei 27 Byte. In Abbildung \ref{FIG:payload} ist der Aufbau eines Nachrichtenpaketes dargestellt. Besonders wichtig ist hierbei die Größe der Payload. Bezüglich dieser kann man erkennen, dass sich diese mit Version 4.2 auf 251 Bytes erhöht hat. Das wurde durch die Einführung der "`Data Length Extension"' ermöglicht. Dieses Upgrade schafft die Voraussetzungen dafür, Nachrichten in weniger Zeit übertragen zu können, da mehr Informationen in ein Paket passen \cite{Gupta:WWW}.\\   
 
 \noindent Sollte ein Paket fehlerhaft übertragen werden, wird dieses mittels der CRC Checksumme entdeckt und dieses Paket wird so lange wiederholt, bis die Checksumme korrekt ist. Dabei gibt es keine Obergrenze für die Anzahl an Wiederholungen \cite[Seite 23]{Townsend14:GSB}.\\
 
@@ -214,14 +214,14 @@ Für jeden Modus gibt es weiterhin eine sogenannte Prozedur, welche von den betr
 
 \noindent Neben dem \ac{gap}, welches die Rahmenbedingungen für die \ac{ble} Kommunikation bereitstellt, gibt es zusätzlich das \ac{gatt}. Dieses stellt der darüberliegenden Applikation eine Schnittstelle zur Kommunikation bereit. Dabei nutzt es das untergeordnete \ac{att}, welches in Kapitel \ref{sss:funktionsweise:protocoll} beschrieben ist. In diesem Profil wird festgelegt ob das jeweilige Gerät ein Server oder ein Client ist. Dies legt in erster Linie fest, ob das Gerät Kommunikationsanfragen stellt, oder verarbeitet. Dabei ist der Server ein Gerät, welches den Client auf dessen Anfrage hin mit den gewünschten Informationen versorgt, oder eine gewünschte Aktion ausführt \cite[Seite 30]{Usama17:BBS}.\\
 
-\noindent Sowohl im \ac{att}, als auch im \ac{gatt} gibt es sogenannte Attribute. Diese stellen kleine Dateneinheiten dar, welche Informationen enthalten. Die beiden Einheiten des Protokollstacks arbeiten ausschließlich mit Attributen. Diese liegen in der Regel auf dem Server und können von einem Client adressiert werden. Um ein Attribut anzusprechen gibt es zwei Möglichkeiten. Zum einen kann es über den "`Handle"' adressiert werden. Dieser ist eine vierstellige Hexadezimalzahl. Der Client hat die Möglichkeit eine Liste aller "`Handles"' beim Server zu erfragen. Es ist garantiert, dass sich der "`Handle"' während, oder zwischen Verbindungen nicht ändert, weshalb der Client immer wieder den selben verwenden kann \cite[Seite 53f]{Townsend14:GSB}. Ähnlich verhält es sich mit der zweiten Methode ein Attribut anzusprechen. Jedes Attribut besitzt einen Typ, welcher einer \ac{uuid} entspricht. Dabei gibt es einige vordefinierte, welche die Bluetooth \ac{sig} definiert hat. Der Typ gibt an, welchen Zweck das jeweilige Attribut ausführt. Entsprechende vorgaben sind im Protokoll hinterlegt. Sollte man jedoch einen neuen Typ definieren wollen, kann man dies anhand der gegeben Vorgaben umsetzen \cite[Seite 31]{Usama17:BBS}. Weiterhin verfügt ein Attribut über die klassischen Berechtigungen, welche der Server verwaltet. So kann ein Client über Schreibrechte, Leserechte, oder sogar beide verfügen. Ebenfalls kann ihm der Zugriff auf ein Attribut gänzlich untersagt sein. Die zentrale Einheit eines Attributes ist jedoch der Wert, den dieses enthält. Dieser kann frei definiert werden und ist an keine festen Vorschriften gebunden. So kann es sich beispielsweise um einen String, einen Integerwert, oder sogar eine Gleitkommazahl handeln \cite[Seite 54ff]{Townsend14:GSB}.\\   
-
+\noindent Sowohl im \ac{att}, als auch im \ac{gatt} gibt es sogenannte Attribute. Diese stellen kleine Dateneinheiten dar, welche Informationen enthalten. Die beiden Einheiten des Protokollstacks arbeiten ausschließlich mit Attributen. Diese liegen in der Regel auf dem Server und können von einem Client adressiert werden. Um ein Attribut anzusprechen gibt es zwei Möglichkeiten. Zum einen kann es über den "`Handle"' adressiert werden. Dieser ist eine vierstellige Hexadezimalzahl. Der Client hat die Möglichkeit eine Liste aller "`Handles"' beim Server zu erfragen. Es ist garantiert, dass sich der "`Handle"' während, oder zwischen Verbindungen nicht ändert, weshalb der Client immer wieder den selben verwenden kann \cite[Seite 53f]{Townsend14:GSB}. Ähnlich verhält es sich mit der zweiten Methode ein Attribut anzusprechen. Jedes Attribut besitzt einen Typ, welcher einer \ac{uuid} entspricht. Dabei gibt es einige vordefinierte, welche die Bluetooth \ac{sig} definiert hat. Der Typ gibt an, welchen Zweck das jeweilige Attribut ausführt. 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.75\linewidth]{\figdir/GATT}
+	\includegraphics[width=0.60\linewidth]{\figdir/GATT}
 	\caption{Aufbau eines \ac{gatt} Servers \cite[Seite 57]{Townsend14:GSB}}
 	\label{FIG:gatt}
 \end{figure}
+Entsprechende vorgaben sind im Protokoll hinterlegt. Sollte man jedoch einen neuen Typ definieren wollen, kann man dies anhand der gegeben Vorgaben umsetzen \cite[Seite 31]{Usama17:BBS}. Weiterhin verfügt ein Attribut über die klassischen Berechtigungen, welche der Server verwaltet. So kann ein Client über Schreibrechte, Leserechte, oder sogar beide verfügen. Ebenfalls kann ihm der Zugriff auf ein Attribut gänzlich untersagt sein. Die zentrale Einheit eines Attributes ist jedoch der Wert, den dieses enthält. Dieser kann frei definiert werden und ist an keine festen Vorschriften gebunden. So kann es sich beispielsweise um einen String, einen Integerwert, oder sogar eine Gleitkommazahl handeln \cite[Seite 54ff]{Townsend14:GSB}.\\   
 
 \noindent In Abbildung \ref{FIG:gatt} ist ein \ac{gatt} Server abgebildet. Man kann hier verschiedene Ebenen erkennen. Jeder Server kann über einen oder mehrere Services verfügen. Diese wiederum können eine oder mehrere Charakteristiken enthalten. Jeder Service ist so konfiguriert, dass mit ihm eine bestimmte Aufgabe erfüllt werden kann. So kann ein Service beispielsweise dafür gedacht sein, sämtliche Funktionen bereitzustellen um Daten an den Server zu schreiben. Ein anderer Service wiederum kann dann für sämtliche Lesezugriffe gedacht sein \cite[Seite 32]{Usama17:BBS}. Die Charakteristiken, welche jeder Service enthält enthalten dann mindestens zwei Attribute. Zum Einen ein Leseattribut, welches Informationen über die Charakteristik, wie unter anderem den "`Handle"', die \ac{uuid} und die Eigenschaften enthält. Zum Anderen den eigentlichen Wert, den die Charakteristik enthält. Die Charakteristikeigenschaft sagt dabei aus, um welche Art es sich bei ihr handelt. Folgende Möglichkeiten stehen unter anderem zur Auswahl: 
 \begin{itemize}
@@ -281,7 +281,7 @@ In den vorherigen Kapiteln wurde hauptsächlich auf die klassischen Einsatzmögl
 \subsection{Funktionsweise}
 \label{ss:ibeacon:funktionsweise}
 
-In Kapitel \ref{sss:funktionsweise:advertisement} wurde erklärt, wie sich ein "`Preripheral"' erkennbar macht. In der Regel ist das Ziel, ein Gerät zu finden, welches eine Verbindung sucht. Ein "`Beacon"' nutzt die "`Advertisement"' Kanäle jedoch um Daten an sämtliche Geräte in Reichweite zu senden. Dabei hat er niemals die Absicht, eine Verbindung einzugehen. Die "`Beacon"' Technologie im \ac{ble} Standard wird durch dessen Annäherungsspezfikation ermöglicht. Dafür ist ein eigenes Paket definiert, welches in Abbildung \ref{FIG:beaconPayload} zu sehen ist. Eine Besonderheit bei diesem Paket ist, dass ein Nutzer ausschließlich die Annäherungs \ac{uuid} ändern kann. Diese beträgt immer 32 Stellen. Das führt zusätzlich dazu, dass alle derartigen Pakete die selbe Länge aufweisen \cite[Seite 16]{Gast14:BPA}.\\
+In Kapitel \ref{sss:funktionsweise:advertisement} wurde erklärt, wie sich ein "`Preripheral"' erkennbar macht. In der Regel ist das Ziel, ein Gerät zu finden, welches eine Verbindung sucht. Ein "`Beacon"' nutzt die "`Advertisement"' Kanäle jedoch um Daten an sämtliche Geräte in Reichweite zu senden. Dabei hat er niemals die Absicht eine Verbindung einzugehen. Die "`Beacon"' Technologie im \ac{ble} Standard wird durch dessen Annäherungsspezfikation ermöglicht. Dafür ist ein eigenes Paket definiert, welches in Abbildung \ref{FIG:beaconPayload} zu sehen ist. Eine Besonderheit bei diesem Paket ist, dass ein Nutzer ausschließlich die Annäherungs \ac{uuid} ändern kann. Diese beträgt immer 32 Stellen. Das führt zusätzlich dazu, dass alle derartigen Pakete die selbe Länge aufweisen \cite[Seite 16]{Gast14:BPA}.\\
 
 \begin{figure}[h]
 	\centering
@@ -290,24 +290,37 @@ In Kapitel \ref{sss:funktionsweise:advertisement} wurde erklärt, wie sich ein "
 	\label{FIG:beaconPayload}
 \end{figure}
 
-\noindent Der in diesem Testaufbau verwendete "`Beacon"' der Firma "`Accent Systems"' bietet Unterstützung für die beiden verbreitetsten Protokolle. Das ist zum Einen das hier verwendete "`Eddystone"' Protokoll der Firma Google und zum Anderen das von der Firma "`Apple"' entwickelte "`iBeacon"' Protokoll. Da "`Eddystone"' über mehr Funktionen verfügt wurde dieses hier ausgewählt. Mit diesem Protokoll kann neben der \ac{uuid} auch ein Link auf eine Website geteilt werden. Weiterhin kann mit Hilfe des TLM Paketes ein Monitoring des "`Beacons"' betrieben werden, bei dem das Gerät Informationen über den eigenen Zustand weitergibt. Abschließend können mit Hilfe eines \ac{eid} Paketes Nachrichten versendet werden, die nur von definierten Anwendungen gelesen werden können. Dies bietet eine Sicherheitskomponente, da der "`Beacon"' selbst keine Nachrichten empfangen kann und daher nicht feststellen kann, wer die Nachrichten empfängt \cite{EDD:WWW}.\\
+\noindent Der in diesem Testaufbau verwendete "`Beacon"' der Firma "`Accent Systems"' bietet Unterstützung für die beiden verbreitetsten Protokolle. Dabei handelt es sich zum Einen um das hier verwendete "`Eddystone"' Protokoll der Firma Google und zum Anderen das von der Firma Apple entwickelte "`iBeacon"' Protokoll.\\ 
+
+\noindent Die beiden Protokolle unterscheiden sich in erster Linie anhand ihres Funktionsumfanges. Während das "`iBeacon"' Protokoll lediglich eine Nutzer definierte \ac{uuid} senden kann, verfügt das "`Eddystone"' Protokoll über vier verschiedene Arten, Informationen zu senden. Mit diesem Protokoll kann neben der \ac{uuid} auch ein Link in Form einer \ac{url} geteilt werden. Weiterhin kann mit Hilfe des TLM Paketes ein Monitoring des "`Beacons"' betrieben werden, bei dem das Gerät Informationen über den eigenen Zustand weitergibt. Abschließend können mit Hilfe eines \ac{eid} Paketes Nachrichten versendet werden, die nur von definierten Anwendungen gelesen werden können. Dies bietet eine Sicherheitskomponente, da der "`Beacon"' selbst keine Nachrichten empfangen kann und daher nicht feststellen kann, wer die Nachrichten empfängt \cite{EDD:WWW}.\\
+
+\noindent Das "`iBeacon"' Protokoll auf der anderen Seite ist lediglich dafür gedacht eine Applikation in Reichweite zu informieren, dass ein "`Beacon"' erreichbar ist. Welche Aktion das Gerät mit dieser Information ausführt ist dann davon abhängig, welche Applikationen auf dem Endgerät installiert sind. In der Regel handelt es sich hier um Positionsbestimmung im Gebäude (siehe \ref{sss:ibeacon:position}) oder das auslösen einer Aktion am Endgerät, bei eintritt in einen bestimmten Bereich \cite[Seite 32f]{Gast14:BPA}. "`iBeacons"' liefern allerdings einen enormen Vorteil gegenüber "`Eddystone"' Beacons. So ist nämlich jedes moderne Smartphone und jeder Laptop der Firma Apple mit einer "`iBeacon"' Funktion ausgestattet und somit kann jedes dieser Geräte direkt als "`Beacon"' fungieren \cite[Seite 21]{Gast14:BPA}.\\     
+
+\noindent Es gibt mehrere Möglichkeiten einen eigenen "`Beacon"' mit dem gewünschten Protokoll zu erstellen. Die einfachsten Lösungen liefern dabei entsprechende Bibliotheken für den "`Raspberry Pi"' oder einen "`Arduino"', der mit einem Bluetooth Modul ausgestattet wurde. Zusätzlich kann ein "`iBeacon"' auch auf einem "`Semiconductor"' der Firma Nordic konfiguriert werden \cite[Seite 21]{Gast14:BPA}.
 
 \subsection{Testaufbau}
 \label{ss:ibeacon:kommunikation}
 
-Für den Testaufbau wurden drei \ac{ble} "`Beacons"' der Firma "`Accent Systems"', siehe Abbildung \ref{FIG:beacon}, verwendet. Dieser kann neben dem verwendeten "`Eddystone"' Protokoll auch das "`iBeacon"' Protokoll senden. Um die Signale der "`Beacons"' auszuwerten und diese zu konfigurieren wurde ein Smartphone mit Android 9 verwendet. Die Firma "`Accent Systems"' liefert eine eigens entwickelte Smartphone Applikation, um "`Beacons"' zu konfigurieren. Diese trägt den Namen "`iBKS Config Tool"' \cite{BKS:WWW}. Mit dieser können alle Einstellungen vorgenommen werden, die der "`Beacon"' ausführen kann. Für die Positionsbestimmung im Gebäude wurde eine Applikation der Firma "`Proximi"' verwendet. Diese trägt den Namen "`Proximi.io Management App"' \cite{PRX:WWW}. In dieser können die "`Beacons"' mit ihren GPS Koordinaten hinterlegt werden. Die App übernimmt dann eigenständig die Triangulationsberechnung und bestimmt die Postion des Empfangsgerätes.\\ 
-
+Für den Testaufbau wurden drei \ac{ble} "`Beacons"' der Firma "`Accent Systems"', siehe Abbildung \ref{FIG:beacon}, verwendet.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.25\linewidth]{\figdir/beacon}
 	\caption{"`Beacon"' der Firma "`Accent Systems"'}
 	\label{FIG:beacon}
 \end{figure}
+Dieser kann neben dem verwendeten "`Eddystone"' Protokoll auch das "`iBeacon"' Protokoll senden. Um die Signale der "`Beacons"' auszuwerten und diese zu konfigurieren wurde ein Smartphone mit Android 9 verwendet. Die Firma "`Accent Systems"' liefert eine eigens entwickelte Smartphone Applikation, um "`Beacons"' zu konfigurieren. Diese trägt den Namen "`iBKS Config Tool"' \cite{BKS:WWW}.
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=0.25\linewidth]{\figdir/Overview}
+	\caption{Hauptmenü des Konfigurationstools "`iBKS Config Tool"'}
+	\label{FIG:overview}
+\end{figure}
+Mit dieser können alle Einstellungen vorgenommen werden, die der "`Beacon"' ausführen kann. Für die Positionsbestimmung im Gebäude wurde eine Applikation der Firma "`Proximi"' verwendet. Diese trägt den Namen "`Proximi.io Management App"' \cite{PRX:WWW}. In dieser können die "`Beacons"' mit ihren GPS Koordinaten hinterlegt werden. Die App übernimmt dann eigenständig die Triangulationsberechnung und bestimmt die Postion des Empfangsgerätes.\\  
 
 \noindent Da der Funktionsumfang von \ac{ble} "`Beacons"' sehr eingeschränkt ist, sind auch die Konfigurationsparameter sehr übersichtlich. In Abbildung \ref{FIG:overview} ist ersichtlich, welche Möglichkeiten es gibt und dass für den vorliegenden Testfall der "`iBeacon"' deaktiviert wurde und über zwei der "`Eddystone slots"' ein \ac{url} und eine \ac{uuid} gesendet werden.
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=0.27\linewidth]{\figdir/URL}
+	\includegraphics[width=0.25\linewidth]{\figdir/URL}
 	\caption{Konfigurationsfenster für die \ac{url}}
 	\label{FIG:url}
 \end{figure}
@@ -316,12 +329,12 @@ Näheres zu diesen beiden Nachrichten findet sich in den folgenden Sektionen. Wa
 \subsubsection{URL Benachrichtigung}
 \label{sss:ibeacon:url}
 
-Das "`Eddystone"' Protokoll ist in der Lage eine \ac{url} an alle Geräte in Reichweite zu senden. Dieser kann über die "`iBKS Config Tool"' Applikation im "`Beacon"' eingestellt werden. In Abbildung \ref{FIG:url} ist die Konfigurationsseite für diese Funktion zu sehen. Mit diesen Einstellungen sendet der "`Beacon"' in einem Intervall von 950 Millisekunden die \ac{url} "`https://accent-systems.com"'. Das Endgerät kann mit Aktivierung direkt auf diese Seite wechseln.\\   
+Das "`Eddystone"' Protokoll ist in der Lage eine \ac{url} an alle Geräte in Reichweite zu senden. Dieser kann über die "`iBKS Config Tool"' Applikation im "`Beacon"' eingestellt werden. In Abbildung \ref{FIG:url} ist die Konfigurationsseite für diese Funktion zu sehen. Mit diesen Einstellungen sendet der "`Beacon"' in einem Intervall von 950 Millisekunden die \ac{url} "`https://accent-systems.com"'. Das Endgerät kann mit Aktivierung direkt auf diese Seite wechseln. Mit der Hilfe dieser Funktion kann ein Endgerät mit entsprechender Applikation bei Eintritt in den Bereich des "`Beacons"' getriggert werden und auf dem Endgerät kann die gewünschte Website geöffnet werden.\\   
 
 \subsubsection{Positionsbestimmung}
 \label{sss:ibeacon:position}
 
-Um die Postion im geschlossenen Raum bestimmen zu können, werden mindestens drei "`Beacons"' benötigt. Diese müssen so im Raum verteilt werden, dass sich an jeder Postion im Raum mindestens drei Signale treffen. Die jeweilige Position wird in der Applikation hinterlegt, die für die Positionsbestimmung zuständig ist. Zusätzlich wird, wie in Abbildung \ref{FIG:poition} ersichtlich, die \ac{uuid}, welche im "`Beacon"' konfiguriert ist, für die Positionsbestimmung hinterlegt. Anhand dieser Daten kann die Applikation die Position im Raum erfassen. Dafür wird die Zeit gemessen die die Nachrichtenpakete benötigen um vom "`Beacon"' zum Smartphone zu gelangen. Danach werden die Daten ausgewertet und ein Abstand zu dem "`Beacon"' ermittelt.
+Für die Positionsbestimmung im Raum wird das Konzept der Triangulation angewendet. Hierfür werden mindestens drei "`Beacons"' benötigt. Diese müssen so im Raum verteilt werden, dass sich an jeder Postion im Raum mindestens drei Signale treffen. Die jeweilige Position des "`Beacons"' wird nach der Installation in der Applikation hinterlegt, die für die Positionsbestimmung zuständig ist. Zusätzlich wird, wie in Abbildung \ref{FIG:poition} ersichtlich, die \ac{uuid}, welche im "`Beacon"' konfiguriert ist, für die Positionsbestimmung hinterlegt. Anhand dieser Daten kann die Applikation die Position im Raum erfassen. Dafür wird die Zeit gemessen die die Nachrichtenpakete benötigen um vom "`Beacon"' zum Smartphone zu gelangen. Danach werden die Daten ausgewertet und ein Abstand zu dem "`Beacon"' ermittelt.
 \begin{figure}[hbtp]
 	\centering
 	\includegraphics[width=0.75\linewidth]{\figdir/Positionsbestimmung}
@@ -329,6 +342,8 @@ Um die Postion im geschlossenen Raum bestimmen zu können, werden mindestens dre
 	\label{FIG:poition}
 \end{figure} 
 Mit Hilfe von drei Signalen kann man diese Abstände dann auf einen Punkt im Raum festlegen. Die \ac{uuid} von allen drei "`Beacons"' wird in diesem Beispiel alle zwei Sekunden übertragen. Deshalb wird die Position des Smartphones auch erst alle zwei Sekunden aktualisiert.\\
+
+\noindent Diese Art der Positionsbestimmung ist mit jeglicher Art von "`Beacon"' Protokoll möglich. Dies liegt daran, dass hierfür nur eine \ac{uuid} von Seiten des Gerätes übertragen wird und jegliches "`Beacon"' Protokoll über diese Funktion verfügt. Die Auswertung und Berechnung der Position geschieht in diesem Fall immer auf Seiten des Empfangsgerätes.\\ 
 
 \section{Vergleich mit anderen Kommunikationsprotokollen}
 \label{s:vergleich}
